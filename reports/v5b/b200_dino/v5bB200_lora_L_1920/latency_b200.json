@@ -1,0 +1,13 @@
+{
+  "device": "cuda:0",
+  "width": 1920,
+  "height": 1088,
+  "n": 50,
+  "batch1_ms_mean": 284.83,
+  "batch1_ms_median": 283.77,
+  "batch1_ms_p90": 285.22,
+  "batch1_ms_min": 282.75,
+  "batch1_ms_max": 311.71,
+  "preprocess_ms_median": 24.79,
+  "infer_ms_median": 259.04
+}

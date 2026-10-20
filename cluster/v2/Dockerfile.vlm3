@@ -1,0 +1,7 @@
+# smoke-detect-vlm:v3 = v2 + trl (GRPO feasibility spike, iteration-2 §6).
+# trl 1.13.0 verified on devbox against the pinned stack: requires
+# transformers>=4.56.2 (have 5.17.0), datasets>=4.7.0 (5.0.1),
+# accelerate>=1.4.0 (1.15.0), peft>=0.13.0 (0.20.0); GRPOTrainer has
+# native VLM support (prompt/image columns, Qwen image_grid_thw handling).
+FROM 000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect-vlm:v2
+RUN pip install --no-cache-dir trl==1.13.0

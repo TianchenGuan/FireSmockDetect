@@ -1,0 +1,49 @@
+# smoke-detect-vlm:v1 — Qwen3.5 SFT stack (LoRA + deepspeed) for green g6e
+# (8x L40S, us-east-1) Leviathan pods. Pods have NO internet: everything the
+# training run needs at import time must be baked here; entry/code/data are
+# fetched per-job via presigned GET (see cluster/v2/orchestrate_vlm.py), and
+# model weights are staged separately to /scratch (NOT baked — 19–250 GB).
+#
+# Base verified on Docker Hub 2026-09-10 (same as iteration-1 cluster/Dockerfile):
+# digest sha256:417bd75df6365104c283ea4c1651fb3530d9eb5a4c2fafa51943cff2a94e6385
+# Python 3.11.13, torch 2.8.0+cu128 (cxx11abi TRUE), torchvision 0.23.0+cu128.
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+# curl: presigned S3 PUT/GET (base pytorch images ship NO curl/wget; silent
+# upload no-ops burned a full debug day in iteration 1). git: utility/VCS.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      curl ca-certificates git \
+ && rm -rf /var/lib/apt/lists/*
+
+# Pinned VLM SFT stack, verified 2026-09-11 (see cluster/v2/CONTAINER_NOTES.md).
+# transformers: model_type "qwen3_5" (Qwen3_5ForConditionalGeneration) does NOT
+# exist in 4.57.x — support landed in 5.2.0; the Qwen3.5-9B model card requires
+# "the latest transformers" -> pin latest stable 5.17.0 (AutoConfig /
+# AutoProcessor / meta-device from_config verified against Qwen/Qwen3.5-9B
+# @ c202236235762e1c871ad0ccb60c8ee5ba337b9a).
+# qwen-vl-utils deliberately absent: the Qwen3.5 card does not use/require it
+# and nothing in src/ imports it. No opencv anywhere (nothing here pulls cv2;
+# if a later layer ever adds it, use opencv-python-headless — GUI cv2 fails
+# with a libxcb import error in these pods).
+RUN pip install --no-cache-dir \
+      transformers==5.17.0 \
+      accelerate==1.15.0 \
+      peft==0.20.0 \
+      deepspeed==0.19.6 \
+      datasets==5.0.1 \
+      pillow==12.3.0 \
+      pandas==3.0.5 \
+      pyarrow==25.0.1 \
+      uvloop==0.22.1
+
+# flash-attn: prebuilt wheel ONLY (never build from source here — hours).
+# cp311 / torch2.8 / cu12 / cxx11abiTRUE matches the base image exactly.
+# L40S = sm_89 (Ada), supported by FA2 kernels.
+RUN pip install --no-cache-dir \
+      "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3.post1/flash_attn-2.8.3.post1+cu12torch2.8cxx11abiTRUE-cp311-cp311-linux_x86_64.whl"
+
+# Pods have no internet: hard-fail any accidental hub call instead of hanging.
+ENV HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1
+
+WORKDIR /opt

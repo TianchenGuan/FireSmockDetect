@@ -1,0 +1,12 @@
+{
+  "iteration": 4,
+  "window_start_utc": "2026-09-14T08:33:10Z",
+  "window_deadline_utc": "2026-09-15T08:33:10Z",
+  "max_concurrent_gpus": 128,
+  "max_concurrent_nodes": 16,
+  "node_gpu_count": 8,
+  "gpu_type": "L40S",
+  "max_allocation_gpu_hours": 3072,
+  "max_allocation_node_hours": 384,
+  "notes": "Ceilings, not targets. Whole-node allocations (g6e.48xlarge = 8x L40S). Budget persists across process/session restarts — never reset window_start_utc. All v4 submissions must reserve via cluster/v4/registry.py before kraken create."
+}

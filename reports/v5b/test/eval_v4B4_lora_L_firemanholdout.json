@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v4B4_lora_L_test/firemanholdout_preds.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/fireman_holdout_s10.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1949,
+  "n_positive_images": 1949,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.7299,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.901,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.9375,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.9567,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.9663,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.9732,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.9771,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.9791,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.9826,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9846,
+      "recall": 0.9856,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9856
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    }
+  ]
+}

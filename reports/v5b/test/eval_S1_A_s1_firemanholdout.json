@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v5bfb2/S1_A_s1__firemanholdout.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/fireman_holdout_s10.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1949,
+  "n_positive_images": 1949,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.4216,
+      "recall": 1.0,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 1.0
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.4927,
+      "recall": 1.0,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 1.0
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.5481,
+      "recall": 0.9974,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9974
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.5938,
+      "recall": 0.9903,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9903
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.6303,
+      "recall": 0.9826,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9826
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.6665,
+      "recall": 0.9733,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9733
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.743,
+      "recall": 0.9241,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9241
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.7815,
+      "recall": 0.8184,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.8184
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.8685,
+      "recall": 0.6234,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.6234
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9287,
+      "recall": 0.3073,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.3073
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    }
+  ]
+}

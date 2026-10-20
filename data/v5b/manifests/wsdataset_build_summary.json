@@ -1,0 +1,531 @@
+{
+ "rows": 11753,
+ "by_material": {
+  "multinatsmoke_copy": 11539,
+  "github_demo_author": 214
+ },
+ "by_label_type": {
+  "mask": 11539,
+  "image": 208,
+  "box": 6
+ },
+ "by_origin": {
+  "model_assisted": 11539,
+  "author": 214
+ },
+ "explicit_negatives": 126,
+ "new_data_images": 129,
+ "new_data_bytes": 101107985,
+ "units_A": 67,
+ "units_A_recovered_from_kaggle": 11339,
+ "unit_recovery_method": {
+  "kaggle_listing_frame_name": 10239,
+  "kaggle_listing_unit_frame_name": 1100,
+  "kaggle_listing_ambiguous": 200
+ },
+ "units_B": 3,
+ "A_dup_class": {
+  "dup_multinat only": 11539
+ },
+ "A_proposed_split": {
+  "train": 11539
+ },
+ "B_dup_class": {
+  "samescene_neardup_multinat:wsdataset (n=287)": 120,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=33)": 14,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=114)": 6,
+  "none": 6,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=152)": 5,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=9)": 5,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=202)": 5,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=59)": 5,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=111)": 5,
+  "dup_multinat_resized;samescene_neardup_multinat:wsdataset (n=50)": 4
+ },
+ "A_eval_or_figlib_hits": 0,
+ "wsd_self_neardup_pairs": 22851264,
+ "wsd_frames_with_self_neardup": 11518,
+ "A_boxes_total": 12929,
+ "A_boxes_per_image": {
+  "min": 1.0,
+  "50%": 1.0,
+  "mean": 1.1204610451512262,
+  "max": 6.0
+ },
+ "A_units_by_final_unit": {
+  "wsd_orig_smoke_61": 2678,
+  "wsd_orig_smoke_63": 1673,
+  "wsd_orig_smoke_68": 918,
+  "wsd_orig_smoke_20": 560,
+  "wsd_orig_smoke_62": 449,
+  "wsd_orig_smoke_14": 404,
+  "wsd_orig_smoke_16": 331,
+  "wsd_orig_smoke_65": 292,
+  "wsd_orig_smoke_14_1": 265,
+  "wsd_orig_smoke_67": 202,
+  "mns_wsd_frames_unknown": 200,
+  "wsd_orig_smoke_09": 190,
+  "wsd_orig_smoke_04": 125,
+  "wsd_orig_smoke_19": 124,
+  "wsd_orig_smoke_66": 101,
+  "wsd_orig_smoke_03": 85,
+  "wsd_orig_smoke_10": 82,
+  "wsd_orig_smoke_31": 70,
+  "wsd_orig_smoke_37": 70,
+  "wsd_orig_smoke_38": 69,
+  "wsd_orig_smoke_29": 69,
+  "wsd_orig_smoke_50": 69,
+  "wsd_orig_smoke_54": 69,
+  "wsd_orig_smoke_42": 69,
+  "wsd_orig_smoke_26": 69,
+  "wsd_orig_smoke_48": 69,
+  "wsd_orig_smoke_51": 68,
+  "wsd_orig_smoke_43": 68,
+  "wsd_orig_smoke_52": 68,
+  "wsd_orig_smoke_46": 68,
+  "wsd_orig_smoke_35": 67,
+  "wsd_orig_smoke_33": 67,
+  "wsd_orig_smoke_18": 67,
+  "wsd_orig_smoke_27": 67,
+  "wsd_orig_smoke_47": 66,
+  "wsd_orig_smoke_53": 66,
+  "wsd_orig_smoke_45": 66,
+  "wsd_orig_smoke_30": 66,
+  "wsd_orig_smoke_44": 66,
+  "wsd_orig_smoke_23": 66,
+  "wsd_orig_smoke_58": 66,
+  "wsd_orig_smoke_56": 65,
+  "wsd_orig_smoke_40": 65,
+  "wsd_orig_smoke_39": 65,
+  "wsd_orig_smoke_32": 65,
+  "wsd_orig_smoke_49": 65,
+  "wsd_orig_smoke_57": 65,
+  "wsd_orig_smoke_41": 65,
+  "wsd_orig_smoke_28": 64,
+  "wsd_orig_smoke_36": 64,
+  "wsd_orig_smoke_59": 64,
+  "wsd_orig_smoke_24": 63,
+  "wsd_orig_smoke_55": 62,
+  "wsd_orig_smoke_34": 61,
+  "wsd_orig_smoke_07": 59,
+  "wsd_orig_smoke_25": 44,
+  "wsd_orig_smoke_21": 39,
+  "wsd_orig_smoke_08": 37,
+  "wsd_orig_smoke_22": 37,
+  "wsd_orig_smoke_60": 27,
+  "wsd_orig_smoke_15": 27,
+  "wsd_orig_smoke_11": 26,
+  "wsd_orig_smoke_01": 26,
+  "wsd_orig_smoke_13": 24,
+  "wsd_orig_smoke_12": 20,
+  "wsd_orig_smoke_02": 18,
+  "wsd_orig_smoke_17": 18
+ },
+ "A_orig_split_kaggle": {
+  "train": 10239,
+  "test": 1100,
+  "": 200
+ },
+ "kaggle_original_structure": {
+  "n_entries": 57194,
+  "total_bytes": 18398231432,
+  "classification_by_split_class": {
+   "test/nonsmoke": {
+    "units": 16,
+    "frames": 2572,
+    "bytes": 1700006091
+   },
+   "test/smoke": {
+    "units": 10,
+    "frames": 1100,
+    "bytes": 733032385
+   },
+   "train/nonsmoke": {
+    "units": 43,
+    "frames": 10523,
+    "bytes": 7680148221
+   },
+   "train/smoke": {
+    "units": 58,
+    "frames": 10439,
+    "bytes": 6724623914
+   }
+  },
+  "detection_by_split_class": {
+   "test/nonsmoke": {
+    "units": 16,
+    "frames": 2572,
+    "bytes": 453092481
+   },
+   "test/smoke": {
+    "units": 11,
+    "frames": 1318,
+    "bytes": 102807790
+   },
+   "train/smoke": {
+    "units": 1,
+    "frames": 12280,
+    "bytes": 954404592
+   }
+  },
+  "detection_label_files": {
+   "train": 12281,
+   "test": 3890
+  },
+  "classification_units": {
+   "test/nonsmoke/non_smoke_71": 187,
+   "test/nonsmoke/non_smoke_73": 171,
+   "test/nonsmoke/non_smoke_75": 180,
+   "test/nonsmoke/nonsmoke_00": 120,
+   "test/nonsmoke/nonsmoke_14": 120,
+   "test/nonsmoke/nonsmoke_24": 120,
+   "test/nonsmoke/nonsmoke_32": 120,
+   "test/nonsmoke/nonsmoke_34": 120,
+   "test/nonsmoke/nonsmoke_46": 155,
+   "test/nonsmoke/nonsmoke_47": 311,
+   "test/nonsmoke/nonsmoke_49": 316,
+   "test/nonsmoke/nonsmoke_75": 101,
+   "test/nonsmoke/nonsmoke_76": 188,
+   "test/nonsmoke/nonsmoke_77": 121,
+   "test/nonsmoke/nonsmoke_78": 121,
+   "test/nonsmoke/nonsmoke_79": 121,
+   "test/smoke/smoke_01": 26,
+   "test/smoke/smoke_02": 18,
+   "test/smoke/smoke_08": 37,
+   "test/smoke/smoke_14_1": 265,
+   "test/smoke/smoke_30": 66,
+   "test/smoke/smoke_45": 66,
+   "test/smoke/smoke_60": 27,
+   "test/smoke/smoke_65": 292,
+   "test/smoke/smoke_66": 101,
+   "test/smoke/smoke_67": 202,
+   "train/nonsmoke/nonsmoke_00": 120,
+   "train/nonsmoke/nonsmoke_01": 120,
+   "train/nonsmoke/nonsmoke_02": 120,
+   "train/nonsmoke/nonsmoke_03": 120,
+   "train/nonsmoke/nonsmoke_04": 120,
+   "train/nonsmoke/nonsmoke_05": 120,
+   "train/nonsmoke/nonsmoke_06": 120,
+   "train/nonsmoke/nonsmoke_07": 120,
+   "train/nonsmoke/nonsmoke_08": 120,
+   "train/nonsmoke/nonsmoke_09": 120,
+   "train/nonsmoke/nonsmoke_10": 120,
+   "train/nonsmoke/nonsmoke_11": 120,
+   "train/nonsmoke/nonsmoke_12": 120,
+   "train/nonsmoke/nonsmoke_13": 120,
+   "train/nonsmoke/nonsmoke_15": 120,
+   "train/nonsmoke/nonsmoke_16": 120,
+   "train/nonsmoke/nonsmoke_17": 120,
+   "train/nonsmoke/nonsmoke_18": 120,
+   "train/nonsmoke/nonsmoke_19": 120,
+   "train/nonsmoke/nonsmoke_20": 120,
+   "train/nonsmoke/nonsmoke_21": 120,
+   "train/nonsmoke/nonsmoke_22": 120,
+   "train/nonsmoke/nonsmoke_23": 120,
+   "train/nonsmoke/nonsmoke_25": 120,
+   "train/nonsmoke/nonsmoke_26": 120,
+   "train/nonsmoke/nonsmoke_27": 120,
+   "train/nonsmoke/nonsmoke_28": 120,
+   "train/nonsmoke/nonsmoke_29": 120,
+   "train/nonsmoke/nonsmoke_30": 120,
+   "train/nonsmoke/nonsmoke_31": 120,
+   "train/nonsmoke/nonsmoke_33": 120,
+   "train/nonsmoke/nonsmoke_35": 120,
+   "train/nonsmoke/nonsmoke_36": 120,
+   "train/nonsmoke/nonsmoke_37": 120,
+   "train/nonsmoke/nonsmoke_38": 120,
+   "train/nonsmoke/nonsmoke_39": 120,
+   "train/nonsmoke/nonsmoke_40": 120,
+   "train/nonsmoke/nonsmoke_41": 120,
+   "train/nonsmoke/nonsmoke_42": 120,
+   "train/nonsmoke/nonsmoke_43": 120,
+   "train/nonsmoke/nonsmoke_44": 1459,
+   "train/nonsmoke/nonsmoke_45": 2229,
+   "train/nonsmoke/nonsmoke_48": 2035,
+   "train/smoke/smoke_03": 88,
+   "train/smoke/smoke_04": 125,
+   "train/smoke/smoke_05": 37,
+   "train/smoke/smoke_06": 109,
+   "train/smoke/smoke_07": 60,
+   "train/smoke/smoke_09": 190,
+   "train/smoke/smoke_10": 82,
+   "train/smoke/smoke_11": 26,
+   "train/smoke/smoke_12": 20,
+   "train/smoke/smoke_13": 24,
+   "train/smoke/smoke_14": 404,
+   "train/smoke/smoke_15": 27,
+   "train/smoke/smoke_16": 331,
+   "train/smoke/smoke_17": 18,
+   "train/smoke/smoke_18": 75,
+   "train/smoke/smoke_19": 166,
+   "train/smoke/smoke_20": 560,
+   "train/smoke/smoke_21": 39,
+   "train/smoke/smoke_22": 37,
+   "train/smoke/smoke_23": 66,
+   "train/smoke/smoke_24": 63,
+   "train/smoke/smoke_25": 44,
+   "train/smoke/smoke_26": 69,
+   "train/smoke/smoke_27": 67,
+   "train/smoke/smoke_28": 64,
+   "train/smoke/smoke_29": 69,
+   "train/smoke/smoke_31": 70,
+   "train/smoke/smoke_32": 65,
+   "train/smoke/smoke_33": 67,
+   "train/smoke/smoke_34": 61,
+   "train/smoke/smoke_35": 67,
+   "train/smoke/smoke_36": 64,
+   "train/smoke/smoke_37": 70,
+   "train/smoke/smoke_38": 69,
+   "train/smoke/smoke_39": 65,
+   "train/smoke/smoke_40": 65,
+   "train/smoke/smoke_41": 65,
+   "train/smoke/smoke_42": 69,
+   "train/smoke/smoke_43": 68,
+   "train/smoke/smoke_44": 66,
+   "train/smoke/smoke_46": 68,
+   "train/smoke/smoke_47": 66,
+   "train/smoke/smoke_48": 69,
+   "train/smoke/smoke_49": 65,
+   "train/smoke/smoke_50": 69,
+   "train/smoke/smoke_51": 68,
+   "train/smoke/smoke_52": 68,
+   "train/smoke/smoke_53": 66,
+   "train/smoke/smoke_54": 69,
+   "train/smoke/smoke_55": 62,
+   "train/smoke/smoke_56": 65,
+   "train/smoke/smoke_57": 65,
+   "train/smoke/smoke_58": 66,
+   "train/smoke/smoke_59": 64,
+   "train/smoke/smoke_61": 2678,
+   "train/smoke/smoke_62": 449,
+   "train/smoke/smoke_63": 1673,
+   "train/smoke/smoke_68": 918
+  },
+  "detection_units": {
+   "test/non_smoke_71": {
+    "images": 187,
+    "labels": 187,
+    "bytes": 25815134
+   },
+   "test/non_smoke_73": {
+    "images": 171,
+    "labels": 171,
+    "bytes": 33060240
+   },
+   "test/non_smoke_75": {
+    "images": 180,
+    "labels": 180,
+    "bytes": 11995438
+   },
+   "test/nonsmoke_00": {
+    "images": 120,
+    "labels": 120,
+    "bytes": 26601699
+   },
+   "test/nonsmoke_14": {
+    "images": 120,
+    "labels": 120,
+    "bytes": 18874144
+   },
+   "test/nonsmoke_24": {
+    "images": 120,
+    "labels": 120,
+    "bytes": 24431097
+   },
+   "test/nonsmoke_32": {
+    "images": 120,
+    "labels": 120,
+    "bytes": 26167956
+   },
+   "test/nonsmoke_34": {
+    "images": 120,
+    "labels": 120,
+    "bytes": 25683160
+   },
+   "test/nonsmoke_46": {
+    "images": 155,
+    "labels": 155,
+    "bytes": 35265388
+   },
+   "test/nonsmoke_47": {
+    "images": 311,
+    "labels": 311,
+    "bytes": 54839131
+   },
+   "test/nonsmoke_49": {
+    "images": 316,
+    "labels": 316,
+    "bytes": 55335192
+   },
+   "test/nonsmoke_75": {
+    "images": 101,
+    "labels": 101,
+    "bytes": 18441818
+   },
+   "test/nonsmoke_76": {
+    "images": 188,
+    "labels": 188,
+    "bytes": 39692518
+   },
+   "test/nonsmoke_77": {
+    "images": 121,
+    "labels": 121,
+    "bytes": 25283090
+   },
+   "test/nonsmoke_78": {
+    "images": 121,
+    "labels": 121,
+    "bytes": 13288868
+   },
+   "test/nonsmoke_79": {
+    "images": 121,
+    "labels": 121,
+    "bytes": 18317608
+   },
+   "test/noprefix": {
+    "images": 218,
+    "labels": 218,
+    "bytes": 10059177
+   },
+   "test/smoke_01": {
+    "images": 26,
+    "labels": 26,
+    "bytes": 1995924
+   },
+   "test/smoke_02": {
+    "images": 18,
+    "labels": 18,
+    "bytes": 1712257
+   },
+   "test/smoke_08": {
+    "images": 37,
+    "labels": 37,
+    "bytes": 4040617
+   },
+   "test/smoke_14_1": {
+    "images": 265,
+    "labels": 265,
+    "bytes": 22447982
+   },
+   "test/smoke_30": {
+    "images": 66,
+    "labels": 66,
+    "bytes": 4734301
+   },
+   "test/smoke_45": {
+    "images": 66,
+    "labels": 66,
+    "bytes": 4600310
+   },
+   "test/smoke_60": {
+    "images": 27,
+    "labels": 27,
+    "bytes": 2057728
+   },
+   "test/smoke_65": {
+    "images": 292,
+    "labels": 292,
+    "bytes": 25239508
+   },
+   "test/smoke_66": {
+    "images": 101,
+    "labels": 101,
+    "bytes": 8593818
+   },
+   "test/smoke_67": {
+    "images": 202,
+    "labels": 202,
+    "bytes": 17326168
+   },
+   "train/noprefix": {
+    "images": 12280,
+    "labels": 12281,
+    "bytes": 954404592
+   }
+  },
+  "other_files": [
+   [
+    "WSdataset_.png",
+    355081
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0000.jpg",
+    229615
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0001.jpg",
+    229263
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0002.jpg",
+    230155
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0003.jpg",
+    230425
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0004.jpg",
+    230385
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0005.jpg",
+    230071
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0006.jpg",
+    230791
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0007.jpg",
+    230936
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0008.jpg",
+    230921
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0009.jpg",
+    229885
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0010.jpg",
+    229974
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0011.jpg",
+    230002
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0012.jpg",
+    229581
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0013.jpg",
+    230314
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0014.jpg",
+    230159
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0015.jpg",
+    230235
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0016.jpg",
+    230543
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0017.jpg",
+    230554
+   ],
+   [
+    "wildfire_smoke_dataset/wildfire_smoke_dataset/classification/non_smoke_74/non_smoke_0018.jpg",
+    230105
+   ]
+  ],
+  "detection_noprefix_images": 12498,
+  "known_units": 126
+ }
+}

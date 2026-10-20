@@ -1,0 +1,72 @@
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13710.87it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 0: 200/917 (60s, 3.33 img/s)
+shard 0: 400/917 (119s, 3.36 img/s)
+shard 0: 600/917 (178s, 3.37 img/s)
+shard 0: 800/917 (237s, 3.37 img/s)
+shard 0 DONE 917 imgs in 287s (3.19 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13413.55it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 1: 200/917 (60s, 3.33 img/s)
+shard 1: 400/917 (119s, 3.36 img/s)
+shard 1: 600/917 (178s, 3.37 img/s)
+shard 1: 800/917 (237s, 3.37 img/s)
+shard 1 DONE 917 imgs in 272s (3.37 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13564.17it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 2: 200/917 (59s, 3.36 img/s)
+shard 2: 400/917 (118s, 3.39 img/s)
+shard 2: 600/917 (176s, 3.40 img/s)
+shard 2: 800/917 (234s, 3.42 img/s)
+shard 2 DONE 917 imgs in 268s (3.42 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13130.24it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 3: 200/917 (60s, 3.34 img/s)
+shard 3: 400/917 (119s, 3.36 img/s)
+shard 3: 600/917 (178s, 3.37 img/s)
+shard 3: 800/917 (237s, 3.38 img/s)
+shard 3 DONE 917 imgs in 272s (3.38 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13766.93it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 4: 200/917 (60s, 3.35 img/s)
+shard 4: 400/917 (119s, 3.37 img/s)
+shard 4: 600/917 (178s, 3.37 img/s)
+shard 4: 800/917 (237s, 3.38 img/s)
+shard 4 DONE 917 imgs in 271s (3.39 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 16776.25it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 5: 200/917 (60s, 3.34 img/s)
+shard 5: 400/917 (119s, 3.37 img/s)
+shard 5: 600/917 (178s, 3.38 img/s)
+shard 5: 800/917 (237s, 3.38 img/s)
+shard 5 DONE 917 imgs in 271s (3.38 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 16108.65it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 6: 200/917 (61s, 3.27 img/s)
+shard 6: 400/917 (120s, 3.34 img/s)
+shard 6: 600/917 (179s, 3.36 img/s)
+shard 6: 800/917 (238s, 3.37 img/s)
+shard 6 DONE 917 imgs in 272s (3.37 img/s)
+
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13284.87it/s]
+loaded ckpt step=8862 best_map=0.4162263765515944 ckpt_keys=238 lora_params=3145728
+shard 7: 200/916 (63s, 3.17 img/s)
+shard 7: 400/916 (125s, 3.19 img/s)
+shard 7: 600/916 (188s, 3.19 img/s)
+shard 7: 800/916 (250s, 3.20 img/s)
+shard 7 DONE 916 imgs in 286s (3.20 img/s)

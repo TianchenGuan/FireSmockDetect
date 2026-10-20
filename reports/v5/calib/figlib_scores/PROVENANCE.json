@@ -1,0 +1,32 @@
+{
+ "expB": {
+  "source_replay": "reports/replay_expB_figlib.json",
+  "weights": "models/trained/expB_mix_y11s_1280/seg03/best.pt",
+  "imgsz": 1280,
+  "n_scores": 3056,
+  "n_manifest_frames": 3056,
+  "n_unmapped": 0,
+  "n_frame_errors": 0,
+  "note": "max_smoke rounded to 4 dp in the source replay; conf_floor 0.05 applied there; DIAGNOSTIC ONLY"
+ },
+ "expE": {
+  "source_replay": "reports/replay_expE_figlib.json",
+  "weights": "models/trained/expE_mix_y11m_1280_v2/seg05/best.pt",
+  "imgsz": 1280,
+  "n_scores": 3056,
+  "n_manifest_frames": 3056,
+  "n_unmapped": 0,
+  "n_frame_errors": 0,
+  "note": "max_smoke rounded to 4 dp in the source replay; conf_floor 0.05 applied there; DIAGNOSTIC ONLY"
+ },
+ "v4a_s2": {
+  "source_replay": "reports/v4/replay/replay_v4a_s2_figlib39.json",
+  "weights": "models/trained/expV4A_ctrl_s2/seg05/best.pt",
+  "imgsz": 1280,
+  "n_scores": 3056,
+  "n_manifest_frames": 3056,
+  "n_unmapped": 0,
+  "n_frame_errors": 0,
+  "note": "max_smoke rounded to 4 dp in the source replay; conf_floor 0.05 applied there; DIAGNOSTIC ONLY"
+ }
+}

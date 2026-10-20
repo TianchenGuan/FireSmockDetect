@@ -1,0 +1,64 @@
+20160604_FIRE_rm-n-mobo-c: detected=True first_alert_offset=60.0
+20160722_FIRE_mg-s-iqeye: detected=False first_alert_offset=None
+20161113_FIRE_bl-n-mobo-c: detected=True first_alert_offset=180.0
+20170625_BBM_bm-n-mobo: detected=True first_alert_offset=480.0
+20170708_Whittier_syp-n-mobo-m: detected=True first_alert_offset=421.0
+20170807_FIRE_bh-n-mobo-c: detected=False first_alert_offset=None
+20180517_FIRE_smer-tcs10-mobo-c: detected=False first_alert_offset=None
+20180806_Holy_sp-s-mobo-c: detected=True first_alert_offset=-2340.0
+20180827_Holyflareup_sp-e-mobo-c: detected=False first_alert_offset=None
+20180910_FIRE_smer-tcs8-mobo-c: detected=True first_alert_offset=240.0
+20190717_FIRE_pi-w-mobo-c: detected=True first_alert_offset=180.0
+20190826_FIRE_pi-s-mobo-c: detected=False first_alert_offset=None
+20190924_FIRE_ml-w-mobo-c: detected=True first_alert_offset=240.0
+20191007_FIRE_sm-s-mobo-c: detected=True first_alert_offset=480.0
+20200202_FIRE_hp-w-mobo-c: detected=True first_alert_offset=-1680.0
+20200614_DrumCanyon_syp-w-mobo-c: detected=True first_alert_offset=240.0
+20200705_FIRE_wc-n-mobo-c: detected=True first_alert_offset=180.0
+20200806_SpringsFire_sm-e-mobo-m: detected=False first_alert_offset=None
+20210107_Miguelfire_om-w-mobo-c: detected=True first_alert_offset=960.0
+20210302_FIRE_lp-e-mobo-m: detected=False first_alert_offset=None
+20210711_FIRE_wc-e-mobo-c: detected=True first_alert_offset=240.0
+20220210-EmeraldFire-marconi-w-mobo-c: detected=False first_alert_offset=None
+20220405-fire-in-Fallbrook-rm-s-mobo-m: detected=True first_alert_offset=1740.0
+20220831-Border32fire-pi-s-mobo-m: detected=True first_alert_offset=0.0
+20230809.111619-BunnieFire-bm-s-mobo-c: detected=True first_alert_offset=-779.0
+20231027.095514-prescribed-bi-s-mobo-c: detected=True first_alert_offset=1139.0
+20231108.221213-AmagoFire-bi-s-mobo-m: detected=False first_alert_offset=None
+20231123.134319-SageFire-sm-e-mobo-c: detected=True first_alert_offset=301.0
+20240130.091751-FIRE-wilson-e-mobo-c: detected=True first_alert_offset=1200.0
+20240201.064352-FIRE-mlo-n-mobo-c: detected=False first_alert_offset=None
+20240721_EagleFire_stgo-n-mobo-c: detected=True first_alert_offset=-568.0
+20241007_Posta3Fire_ws-w-mobo-c: detected=True first_alert_offset=361.0
+20250123_GilmanFire_tdlln-s-mobo-c: detected=True first_alert_offset=61.0
+20250709_SteeleFire_sm-n-mobo-c: detected=True first_alert_offset=1200.0
+20250710_SpringsFire_lp-n-mobo-c: detected=True first_alert_offset=0.0
+20251102_ScissorsFire_mp-n-mobo-m: detected=True first_alert_offset=419.0
+20260618_MissionFire_rm-s-mobo-c: detected=True first_alert_offset=1020.0
+20260622_BernardoFire_wc-w-mobo-c: detected=True first_alert_offset=480.0
+20260820_ChiaFire_hp-n-mobo-c: detected=True first_alert_offset=475.0
+{
+  "n_events": 39,
+  "n_detected": 29,
+  "n_missed": 10,
+  "n_pre_visible_alerts": 4,
+  "median_delay_s_among_detected": 240.0,
+  "mean_delay_s_among_detected": 424.0344827586207,
+  "config": {
+    "imgsz": 1280,
+    "tile_size": 0,
+    "single_frame_alert_conf": 0.33,
+    "seq_frame_conf": 0.28,
+    "seq_window": 5,
+    "seq_hits_required": 3,
+    "weights": "models/trained/expV4A_ctrl_s2/seg05/best.pt",
+    "backend": "yolo",
+    "scores_jsonl": null,
+    "n_frames_without_score": 0
+  },
+  "caveats": [
+    "Delay measured from FIgLib first-visible-smoke frame (offset 0), not ignition.",
+    "No bounding-box ground truth: event-level alerting only.",
+    "Fixed-camera imagery; drone generalization NOT demonstrated by this eval."
+  ]
+}

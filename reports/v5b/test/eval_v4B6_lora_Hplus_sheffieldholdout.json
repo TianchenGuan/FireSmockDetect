@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v4B6_lora_Hplus_test/sheffieldholdout_preds.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/sheffield_holdout.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 327,
+  "n_positive_images": 327,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.2744,
+      "recall": 0.3665,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0743,
+        "large": 0.4444
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.2977,
+      "recall": 0.2848,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0676,
+        "large": 0.343
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.3094,
+      "recall": 0.2478,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0473,
+        "large": 0.3011
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.3239,
+      "recall": 0.235,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0405,
+        "large": 0.2866
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.3378,
+      "recall": 0.2261,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0338,
+        "large": 0.277
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.3583,
+      "recall": 0.2197,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.027,
+        "large": 0.2705
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.3784,
+      "recall": 0.2146,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0068,
+        "large": 0.2689
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.3957,
+      "recall": 0.2107,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0068,
+        "large": 0.2641
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.41,
+      "recall": 0.2095,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.2641
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.4238,
+      "recall": 0.2095,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.2641
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    }
+  ]
+}

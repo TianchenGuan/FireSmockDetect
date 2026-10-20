@@ -1,0 +1,112 @@
+{
+  "arm": "E_ET",
+  "version": "v1",
+  "corpus": "E_ET_v1",
+  "created_utc": "2026-09-14T12:06:26+00:00",
+  "seed": 0,
+  "composition": [
+    "E",
+    "T"
+  ],
+  "composition_note": "components parsed from arm name; D_pre = stage-1 pretrain corpus (G), D_adapt = stage-2 adapt corpus (E+T; same content family as E_ET, differs by init)",
+  "verified_empty_negatives": true,
+  "target_subsources": [
+    "AuSmoke",
+    "Boreal",
+    "Forest_Fire"
+  ],
+  "counts": {
+    "per_component": {
+      "E": 38454,
+      "T": 12966
+    },
+    "per_source": {
+      "existing": 38454,
+      "boreal": 2062,
+      "multinatsmoke": 10904
+    },
+    "per_label_origin": {
+      "existing": 38454,
+      "background_neg": 37,
+      "box-yolo": 2025,
+      "mask-derived": 10904
+    },
+    "n_smoke_boxes_v4": 16993,
+    "n_train_lines": 51420
+  },
+  "excluded": {
+    "aerial_holdout(boreal_val_test)": 3912,
+    "policy:no_usable_label": 7,
+    "policy:non_image_file": 105,
+    "dedup:origin_class": 40959,
+    "component_G_not_in_arm": 14609,
+    "forest_holdout(ausmoke_val_test)": 4342,
+    "dedup:neardup_v4": 2,
+    "convert:mask_not_found": 628
+  },
+  "multiplicities": {
+    "E": {
+      "n_raw": 38454,
+      "multiplicity": 1,
+      "n_effective": 38454
+    },
+    "T": {
+      "n_raw": 12966,
+      "multiplicity": 1,
+      "n_effective": 12966
+    }
+  },
+  "lists": {
+    "lists/local/train.txt": {
+      "n": 51420,
+      "sha256": "113ef7e1209ce73b3bf07b82627b9bd567fa8059a463b10d2de539f6da7728cb"
+    },
+    "lists/pod/train.txt": {
+      "n": 51420,
+      "sha256": "385933b52e72379cde378331a174274b19cc4186ad955bb6b0907f7df606bb80"
+    },
+    "lists/local/train_E.txt": {
+      "n": 38454,
+      "sha256": "51ac91f791de57211d0f31c45365c047230d30ff5f8a4869c71b3891a05f358d"
+    },
+    "lists/pod/train_E.txt": {
+      "n": 38454,
+      "sha256": "d87e07b0839a2145ab137f57473fc6e439180094531249abfae65c9a0fd2acb3"
+    },
+    "lists/local/train_T.txt": {
+      "n": 12966,
+      "sha256": "1e6ad89e4476f599098cc64925ddea9808da68a640fd4138451ae3fd22e04de5"
+    },
+    "lists/pod/train_T.txt": {
+      "n": 12966,
+      "sha256": "882bc49dd08b3406a5209c0c3000c05a7fc48689d5d1043f61859b8e07255d84"
+    }
+  },
+  "yamls": {
+    "local": "/local/home/tianrgua/cvproject/data/v4/yolo/E_ET_v1/yamls/local.yaml",
+    "pod": "/local/home/tianrgua/cvproject/data/v4/yolo/E_ET_v1/yamls/pod.yaml"
+  },
+  "val": {
+    "local": "/local/home/tianrgua/cvproject/data/yolo/lists/local/sdis_val.txt",
+    "pod": "/mnt/local/smoke_data/lists/pod/sdis_val.txt"
+  },
+  "tar": {
+    "path": "/local/home/tianrgua/cvproject/data/v4/stage/E_ET_v1.tar",
+    "bytes": 13949634560,
+    "sha256": "880940559dcc4b573f2e18ca9469cef235232c1e08fcf3597d3bdfa8aa549c91"
+  },
+  "missing_sources": [],
+  "box_count_mismatches": {
+    "n": 0,
+    "examples": []
+  },
+  "dedup": {
+    "parquet": "/local/home/tianrgua/cvproject/data/v4/manifests/dedup_v4.parquet",
+    "sha256": "98b03ab68eed8d232765baf0315fbb2a96ecd3ea2cd63b5b102ea5696540f2a0"
+  },
+  "aerial_split": {
+    "path": "/local/home/tianrgua/cvproject/data/v4/manifests/aerial_split_v4.json",
+    "sha256": "5307a0b6e49950c8ca1adbabe8bfc78e967c6dc387187befa3537e47f03ce866"
+  },
+  "pod_root": "/scratch/scratch/tianrgua-sandbox/smoke/v4data/E_ET_v1"
+}

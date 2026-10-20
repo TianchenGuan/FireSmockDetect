@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v5bval2/S4b_D2__firemanval.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/fireman_val_s5.yaml",
+  "split": "val",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1706,
+  "n_positive_images": 1475,
+  "n_negative_images": 231,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.572,
+      "recall": 0.9939,
+      "neg_image_fp_rate": 0.0519,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9939
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.5939,
+      "recall": 0.9885,
+      "neg_image_fp_rate": 0.0216,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9885
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.6113,
+      "recall": 0.9871,
+      "neg_image_fp_rate": 0.0173,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9871
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.6226,
+      "recall": 0.9763,
+      "neg_image_fp_rate": 0.013,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9763
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.6352,
+      "recall": 0.9681,
+      "neg_image_fp_rate": 0.0087,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9681
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.6481,
+      "recall": 0.9627,
+      "neg_image_fp_rate": 0.0087,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9627
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.6747,
+      "recall": 0.9437,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9437
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.7143,
+      "recall": 0.9051,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9051
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.773,
+      "recall": 0.8475,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.8475
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9284,
+      "recall": 0.6149,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.6149
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    }
+  ]
+}

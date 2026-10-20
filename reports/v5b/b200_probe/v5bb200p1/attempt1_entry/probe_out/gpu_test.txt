@@ -1,0 +1,9 @@
+torch version: 2.8.0+cu128
+torch cuda version: 12.8
+cuda available: True
+device count: 8
+device name: NVIDIA B200
+cuda capability: sm_100
+conv fwd+bwd OK, loss=2.3419
+bf16 autocast matmul OK, dtype=torch.bfloat16, mean=0.0339
+GPU_TEST_PASS

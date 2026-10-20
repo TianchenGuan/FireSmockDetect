@@ -1,0 +1,2060 @@
+{
+ "weights": "models/trained/expE_mix_y11m_1280_v2/seg05/best.pt",
+ "imgsz": 1280,
+ "device": "cpu",
+ "seed": 20261002,
+ "note": "DIAGNOSTIC only; model-assisted, not human review; labels for (a) are v4 mask->box conversions of MultiNatSmoke model-assisted masks, NOT author boxes",
+ "wsd_mns_positives_200": {
+  "n_images": 200,
+  "n_gt_boxes": 225,
+  "gt_boxes_recalled_iou04_conf02": 95,
+  "box_recall": 0.4222222222222222,
+  "images_with_any_det_conf02": 159,
+  "image_recall": 0.795
+ },
+ "github_demo_explicit_negatives": {
+  "n_images": 126,
+  "images_with_any_det_conf03": 28,
+  "fp_image_rate": 0.2222222222222222
+ },
+ "github_demo_smoke_sequence_imagelevel": {
+  "n_images": 88,
+  "images_with_any_det_conf02": 88,
+  "rate": 1.0
+ },
+ "per_image_pos": [
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4086",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4427793025970459
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05232_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.42228010296821594
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3496",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.6396470665931702
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02130_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.5435466170310974
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00124_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00414_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 3,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05608_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.39620307087898254
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_8559",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1769",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.5021939277648926
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04795_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.2579280138015747
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01427_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.2872384786605835
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_6703",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.36491313576698303
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3915",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3216361999511719
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01076_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04109_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 1,
+   "max_conf": 0.2736111879348755
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04151_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.38091588020324707
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3560",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.513976514339447
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_14_1_frame_2242",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 1,
+   "max_conf": 0.642270028591156
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05298_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.49660006165504456
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00775_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_752",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5144062638282776
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_4549",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4500925838947296
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00189_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.5225178599357605
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01727_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1528",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3820490539073944
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01654_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.34828057885169983
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04525_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.47232386469841003
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_2662",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.7785449624061584
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_14_1_frame_2304",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4904007017612457
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_925",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 0,
+   "max_conf": 0.3548732399940491
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04656_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.37111014127731323
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_231",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4244513213634491
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_309",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.46339529752731323
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_7742",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5455752611160278
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1332",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.2536877393722534
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05532_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.41773077845573425
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_66_smoke_03493_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.33949071168899536
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3556",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.512435257434845
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04343_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.4103729724884033
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00809_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00569_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_318",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4964444637298584
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_7179",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.31913506984710693
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01180_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_03289_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3571702539920807
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_2155",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.6163714528083801
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01306_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.2337677776813507
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05409_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.6213035583496094
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00297_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00340_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.5265655517578125
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4882",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00229_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5445378422737122
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05376_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.45958226919174194
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_5114",
+   "n_gt": 2,
+   "n_det": 4,
+   "gt_matched": 0,
+   "max_conf": 0.41353529691696167
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_66_smoke_03504_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3629297912120819
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_03197_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.31438061594963074
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_152",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3573779761791229
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01028_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_8215",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4838392734527588
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_14_1_frame_2088",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.7246858477592468
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04992_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.3991171717643738
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_2996",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.38947364687919617
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3654",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3841530978679657
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00382_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 2,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_65_smoke_02940_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_8198",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.497367262840271
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02657_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.35247716307640076
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02142_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.4760517477989197
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_521",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 1,
+   "max_conf": 0.5978933572769165
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_65_smoke_02718_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.20170694589614868
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_2049",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.47133001685142517
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3562",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5372685790061951
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_7753",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3551468253135681
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02397_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.26077085733413696
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04605_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3868308961391449
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_5326",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.23779241740703583
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00449_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00755_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4792",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.478367418050766
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04681_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.49314409494400024
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00562_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5466039180755615
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01010_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_67_smoke_05811_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.20839865505695343
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3218",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.7215290665626526
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04542_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5575416684150696
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1347",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.2604796886444092
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1525",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4381186068058014
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3284",
+   "n_gt": 1,
+   "n_det": 4,
+   "gt_matched": 1,
+   "max_conf": 0.31886908411979675
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_65_smoke_02790_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05577_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5234780311584473
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02068_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3527058959007263
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_67_smoke_05775_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.36824965476989746
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3068",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.550103485584259
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_2666",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.26185837388038635
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_67_smoke_05728_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.3794142007827759
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01624_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3211223781108856
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1460",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.49011972546577454
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01417_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.25607308745384216
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3642",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5106195211410522
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00416_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.48813557624816895
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1953",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4349253177642822
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_7184",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4291914999485016
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00335_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.31376513838768005
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00918_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_5436",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.4489131271839142
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_65_smoke_02783_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00280_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.25969788432121277
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00686_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4330",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.56916344165802
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04315_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.45494693517684937
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04314_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.48309585452079773
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02300_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.48830482363700867
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4516",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5349533557891846
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00306_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.21001900732517242
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3112",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5457332134246826
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00207_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3135",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.6145069003105164
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00603_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.37181589007377625
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01172_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00430_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.4325922727584839
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01488_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.23277917504310608
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_8098",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5638089179992676
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00268_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.33727848529815674
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04978_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.49618294835090637
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_14_1_frame_2388",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.6912961006164551
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01960_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.552824854850769
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4352",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.5697446465492249
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01503_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.20646969974040985
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01272_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00860_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_45_frame_camera_4_12_07_2022_15_03_00_4985",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5886173844337463
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3905",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_1236",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.6644464135169983
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00423_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.45262208580970764
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02527_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_964",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5989704132080078
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04860_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.4152411222457886
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_2540",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.53554767370224
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05611_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.36265212297439575
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3474",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.6377301216125488
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00443_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 4,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02600_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.22333002090454102
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04920_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.33541589975357056
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_2700",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.574175238609314
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00623_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.3971702754497528
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_01_frame_31",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.37781184911727905
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04210_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 1,
+   "max_conf": 0.3264451324939728
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00581_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3730",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.2716449201107025
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02426_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5765882730484009
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05569_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5679578185081482
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_14_1_frame_2164",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 1,
+   "max_conf": 0.5634954571723938
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00816_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01371_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.2719610333442688
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_2524",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.4081881642341614
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_6395",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5901600122451782
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00092_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00304_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_4374",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5133193731307983
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05194_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5747123956680298
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3902",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 0,
+   "max_conf": 0.4725915491580963
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00489_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 2,
+   "max_conf": 0.3153190016746521
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_6850",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5491364002227783
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_769",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5324159860610962
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_5764",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4715425372123718
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04552_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5174778699874878
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00453_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04390_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 2,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.3302192687988281
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04275_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.38257724046707153
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00085_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.5233306288719177
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00441_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00190_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.475035160779953
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00681_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05038_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.36463209986686707
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Test__WSDataset__images__smoke_67_smoke_05795_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.3250502049922943
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_1379",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.46655768156051636
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4258",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 0,
+   "max_conf": 0.5222896933555603
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_8232",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4905616343021393
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_762",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.3064303398132324
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05004_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.544524610042572
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3224",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.7394459247589111
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_669",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5317395925521851
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00001_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_3938",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00375_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 2,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_01232_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_02639_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_4708",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 0,
+   "max_conf": 0.3878517150878906
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_7750",
+   "n_gt": 1,
+   "n_det": 3,
+   "gt_matched": 0,
+   "max_conf": 0.3560849130153656
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3148",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.42398256063461304
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00641_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 0,
+   "gt_matched": 0,
+   "max_conf": 0.0
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04519_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.4981688857078552
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_1098",
+   "n_gt": 1,
+   "n_det": 2,
+   "gt_matched": 1,
+   "max_conf": 0.46972814202308655
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_05458_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.6548680067062378
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_04597_camera_16preset_2_08-15-2022-11h19m40s",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.4880465269088745
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_342",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.4095514416694641
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_camera_4_12_07_2022_15_03_00_5808",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.5542724132537842
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00583_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.23607689142227173
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__smoke_00300_vlc-record-2024-01-21-15h05m23s-rtsp___14.241.197.248_1518_profile1_media.smp-.avi",
+   "n_gt": 2,
+   "n_det": 1,
+   "gt_matched": 1,
+   "max_conf": 0.35869190096855164
+  },
+  {
+   "stem": "multinatsmoke__MultiNatSmokeDataset__Train__WSDataset__images__frame_3646",
+   "n_gt": 1,
+   "n_det": 1,
+   "gt_matched": 0,
+   "max_conf": 0.49980077147483826
+  }
+ ],
+ "per_image_neg": [
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0000.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0001.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.36983898282051086
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0002.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3334878087043762
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0003.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0004.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0005.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0006.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3031627833843231
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0007.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0008.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0009.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.35230785608291626
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0010.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0011.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3488466441631317
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0012.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.47011104226112366
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0013.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.42883098125457764
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0014.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.47537657618522644
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0015.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.36077502369880676
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0016.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3825931251049042
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0017.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0018.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3629876673221588
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0019.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.5385890007019043
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0020.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.49649307131767273
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0021.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3199845254421234
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0022.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0023.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.41766372323036194
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0024.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3375413119792938
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0025.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0026.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0027.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0028.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0029.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0030.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0031.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0032.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0033.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0034.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0035.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0036.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0037.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0038.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0039.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0040.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3466997742652893
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0041.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0042.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0043.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3534146845340729
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0044.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.4117906987667084
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0045.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.3123682737350464
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0046.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.45009565353393555
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0047.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.5040889382362366
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0048.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.4067932069301605
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0049.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.5122966170310974
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0050.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.4363063871860504
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0051.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.44870591163635254
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0052.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.4520436227321625
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0053.jpg",
+   "n_det_conf03": 1,
+   "max_conf": 0.30456867814064026
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0054.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0055.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0056.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0057.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0058.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0059.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0060.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0061.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0062.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0063.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0064.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0065.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0066.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0067.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0068.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0069.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0070.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0071.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0072.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0073.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0074.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0075.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0076.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0077.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0078.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0079.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0080.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0081.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0082.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0083.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0084.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0085.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0086.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0087.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0088.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0089.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0090.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0091.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0092.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0093.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0094.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0095.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0096.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0097.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0098.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0099.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0100.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0101.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0102.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0103.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0104.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0105.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0106.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0107.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0108.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0109.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0110.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0111.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0112.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0113.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0114.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0115.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0116.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0117.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0118.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/classification/train/nonsmoke/nonsmoke_00/nonsmoke_0119.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0000.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0001.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0002.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0003.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0004.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  },
+  {
+   "path": "data/v5b/raw/wsdataset_github_demo/dataset/demo/detection/train/images/non_smoke_71_non_smoke_0005.jpg",
+   "n_det_conf03": 0,
+   "max_conf": 0.0
+  }
+ ],
+ "elapsed_s": 187.93412375450134
+}

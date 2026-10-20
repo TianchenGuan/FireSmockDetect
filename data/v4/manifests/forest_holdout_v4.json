@@ -1,0 +1,132 @@
+{
+  "source": "multinatsmoke/AuSmoke",
+  "grouping": "manual burn/date/camera groups \u2014 several units are the SAME burn from different cameras (FB769, FB867, FB746, FB902, 2024-10-21 pairs); aus_000xx unknown provenance kept as ONE conservative group (train); Axis fixed-cam units share a static viewpoint -> one group",
+  "note": "fresh forest new-region (ACT Australia) holdout. g_dji_20230922 = ONE aerial flight/event (3 videos), incl. one staged TEST_RUN \u2014 aerial eval reports it separately. SmokeMachine = train-only synthetic-source smoke, never eval. Independent EVENTS: test = 4 (3 ground burns + 1 aerial flight), val = 3 (but axis group = 2 burns from one fixed camera -> report as 'same-camera').",
+  "groups": {
+    "g_unknown00": [
+      "aus_00012",
+      "aus_00014",
+      "aus_00018"
+    ],
+    "g_20240412": [
+      "aus_1112042024_sony_00004",
+      "aus_12042024_pana_S1060001"
+    ],
+    "g_20240209_cleland": [
+      "aus_17240209_IanTanner_Cleland_Prescribed_Burn_MVI_3592"
+    ],
+    "g_20240209_smokemachine": [
+      "aus_20240209_SVF_Arbo_SmokeMachine"
+    ],
+    "g_20240404_fb389": [
+      "aus_20230404_FB389_1137_20240404104717",
+      "aus_2024_04_03_05_60spf"
+    ],
+    "g_20231010_demo": [
+      "aus_20231010_demo_day"
+    ],
+    "g_20240306_fb746": [
+      "aus_20240306_FBFB746_Goorooyaroo",
+      "aus_2024_03_06_05_1fps_370_630_tp_far_distance"
+    ],
+    "g_20240517_fb884": [
+      "aus_20240517_FB884_Sony4K_1300_MAH00006"
+    ],
+    "g_20241021": [
+      "aus_20241021_S1050004",
+      "aus_2024_10_21_06_1fps"
+    ],
+    "g_20240308_fb902": [
+      "aus_2024_03_08_11_60spf",
+      "aus_FB902_Yarralumla_March_8_Ainslie_00004"
+    ],
+    "g_20240328_fb867": [
+      "aus_2024_03_28_05_1fps_420_840_tp_remote_fire",
+      "aus_FB867_Black_Mountain_March_28_202403281140_Cam2"
+    ],
+    "g_20240903": [
+      "aus_24_09_03_CAM2_12_02_2"
+    ],
+    "g_20240326_fb769": [
+      "aus_27032024_S1020005",
+      "aus_FB769_Bonshaw_March_26_202403251112",
+      "aus_FB769_Bonshaw_March_26_202403261044_Panasonic"
+    ],
+    "g_axis_fixedcam": [
+      "aus_Axis_Q6215LE_2023_06_13_6AM_05_57",
+      "aus_Axis_Q6215LE_2023_06_22_6AM_00_03_trim"
+    ],
+    "g_dji_20230922": [
+      "aus_DJI_20230922112303_0008_D",
+      "aus_DJI_20230922112554_0009_D",
+      "aus_DJI_20230922115131_0004_D_TEST_RUN_SMOKE"
+    ],
+    "g_dji_0792": [
+      "aus_DJI_0792_001"
+    ]
+  },
+  "assignment": {
+    "test": [
+      "g_dji_20230922",
+      "g_20241021",
+      "g_20240326_fb769",
+      "g_20240517_fb884"
+    ],
+    "val": [
+      "g_axis_fixedcam",
+      "g_20240903",
+      "g_dji_0792"
+    ],
+    "train": [
+      "g_unknown00",
+      "g_20240412",
+      "g_20240209_cleland",
+      "g_20240209_smokemachine",
+      "g_20240404_fb389",
+      "g_20231010_demo",
+      "g_20240306_fb746",
+      "g_20240308_fb902",
+      "g_20240328_fb867"
+    ]
+  },
+  "val": [
+    "aus_Axis_Q6215LE_2023_06_13_6AM_05_57",
+    "aus_Axis_Q6215LE_2023_06_22_6AM_00_03_trim",
+    "aus_24_09_03_CAM2_12_02_2",
+    "aus_DJI_0792_001"
+  ],
+  "test": [
+    "aus_DJI_20230922112303_0008_D",
+    "aus_DJI_20230922112554_0009_D",
+    "aus_DJI_20230922115131_0004_D_TEST_RUN_SMOKE",
+    "aus_20241021_S1050004",
+    "aus_2024_10_21_06_1fps",
+    "aus_27032024_S1020005",
+    "aus_FB769_Bonshaw_March_26_202403251112",
+    "aus_FB769_Bonshaw_March_26_202403261044_Panasonic",
+    "aus_20240517_FB884_Sony4K_1300_MAH00006"
+  ],
+  "train": [
+    "aus_00012",
+    "aus_00014",
+    "aus_00018",
+    "aus_1112042024_sony_00004",
+    "aus_12042024_pana_S1060001",
+    "aus_17240209_IanTanner_Cleland_Prescribed_Burn_MVI_3592",
+    "aus_20240209_SVF_Arbo_SmokeMachine",
+    "aus_20230404_FB389_1137_20240404104717",
+    "aus_2024_04_03_05_60spf",
+    "aus_20231010_demo_day",
+    "aus_20240306_FBFB746_Goorooyaroo",
+    "aus_2024_03_06_05_1fps_370_630_tp_far_distance",
+    "aus_2024_03_08_11_60spf",
+    "aus_FB902_Yarralumla_March_8_Ainslie_00004",
+    "aus_2024_03_28_05_1fps_420_840_tp_remote_fire",
+    "aus_FB867_Black_Mountain_March_28_202403281140_Cam2"
+  ],
+  "n_frames": {
+    "train": 10906,
+    "val": 1471,
+    "test": 2871
+  }
+}

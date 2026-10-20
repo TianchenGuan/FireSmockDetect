@@ -1,0 +1,70 @@
+{
+ "source": "firespot",
+ "archive": "data/v5b/raw/firespot/FireSpot-CNX-r1.zip",
+ "archive_bytes": 16614395090,
+ "archive_sha256": "143fefded0860a94f943652dbe8dc70d9f6624794df98038d3655fc616062e67",
+ "new_data_gb_downloaded": 16.6,
+ "n_images": 3996,
+ "n_pos": 2817,
+ "n_explicit_neg": 1179,
+ "n_boxes": 4058,
+ "label_type": "box",
+ "class_vocab": {
+  "0": "Smoke"
+ },
+ "has_fire_label": false,
+ "annotation_origin": {
+  "author": 3996,
+  "human_reviewed": 0,
+  "model_assisted": 0,
+  "unlabeled": 0
+ },
+ "licence": "UNSPECIFIED (no LICENSE in repo/archive; README asks for citation only)",
+ "permission_status": "pending",
+ "training_allowed_this_round": false,
+ "units": {
+  "sites": 5,
+  "sessions": 29
+ },
+ "proposed_split_units": {
+  "train": [
+   "firespot_site_01",
+   "firespot_site_02",
+   "firespot_site_05"
+  ],
+  "val": [
+   "firespot_site_03"
+  ],
+  "holdout": [
+   "firespot_site_04"
+  ]
+ },
+ "proposed_split_images": {
+  "train": 2754,
+  "val": 690,
+  "holdout": 552
+ },
+ "dup_class": {
+  "dup_multinat": 2705,
+  "none": 1079,
+  "dup_multinat_conflict": 141,
+  "internal_exact_dup": 71
+ },
+ "heldout_or_figlib_hits": 0,
+ "mns_overlap": {
+  "mns_rows": 2865,
+  "mns_rows_matched_phash_le6": 2862,
+  "r1_negatives_with_mns_smoke_mask": 142,
+  "r1_rows_seen_by_v4_G": 2867,
+  "r1_rows_unseen_by_v4_G": 1129,
+  "holdout_rows_unseen_by_v4_G": 145
+ },
+ "sanity_diag": {
+  "n": 200,
+  "box_recall_iou0.4_conf0.2": 0.3073,
+  "pos_image_recall_conf0.2": 0.4307,
+  "neg_fp_rate_conf0.3": 0.0,
+  "n_neg": 63
+ },
+ "yolo_export": "not written (permission pending); scripts/v5b/firespot_to_yolo.py guarded"
+}

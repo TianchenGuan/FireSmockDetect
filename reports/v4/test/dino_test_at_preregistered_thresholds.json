@@ -1,0 +1,453 @@
+{
+  "thresholds_source": "reports/v4/test/dino_test_thresholds.json",
+  "match_iou": 0.4,
+  "results": {
+    "v4B6_lora_Hplus": {
+      "sdis_test": {
+        "n_images": 4124,
+        "n_negative_images": 917,
+        "n_positive_images": 3207,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9939,
+            "recall": 0.1426,
+            "tiny_recall": 0.04,
+            "small_recall": 0.2299,
+            "precision": 0.9186,
+            "neg_image_fp_rate": 0.0327
+          },
+          "negfp_10pct": {
+            "conf": 0.9901,
+            "recall": 0.2249,
+            "tiny_recall": 0.0832,
+            "small_recall": 0.3408,
+            "precision": 0.89,
+            "neg_image_fp_rate": 0.0611
+          },
+          "negfp_20pct": {
+            "conf": 0.9801,
+            "recall": 0.3669,
+            "tiny_recall": 0.1916,
+            "small_recall": 0.5052,
+            "precision": 0.8754,
+            "neg_image_fp_rate": 0.1003
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8883,
+            "recall": 0.6513,
+            "tiny_recall": 0.4955,
+            "small_recall": 0.7828,
+            "precision": 0.7804,
+            "neg_image_fp_rate": 0.2933
+          },
+          "negfp_5pct": {
+            "conf": 0.5115,
+            "recall": 0.8085,
+            "tiny_recall": 0.7045,
+            "small_recall": 0.9092,
+            "precision": 0.6243,
+            "neg_image_fp_rate": 0.506
+          }
+        }
+      },
+      "boreal_test": {
+        "n_images": 1764,
+        "n_negative_images": 2,
+        "n_positive_images": 1762,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9939,
+            "recall": 0.9278,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_10pct": {
+            "conf": 0.9901,
+            "recall": 0.9289,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_20pct": {
+            "conf": 0.9801,
+            "recall": 0.931,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8883,
+            "recall": 0.9337,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9983,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_5pct": {
+            "conf": 0.5115,
+            "recall": 0.9342,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9665,
+            "neg_image_fp_rate": 0.0
+          }
+        }
+      },
+      "forest_test": {
+        "n_images": 2871,
+        "n_negative_images": 0,
+        "n_positive_images": 2871,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9939,
+            "recall": 0.145,
+            "tiny_recall": 0.0683,
+            "small_recall": 0.2453,
+            "precision": 0.9405,
+            "neg_image_fp_rate": null
+          },
+          "negfp_10pct": {
+            "conf": 0.9901,
+            "recall": 0.2097,
+            "tiny_recall": 0.1007,
+            "small_recall": 0.3478,
+            "precision": 0.9177,
+            "neg_image_fp_rate": null
+          },
+          "negfp_20pct": {
+            "conf": 0.9801,
+            "recall": 0.2803,
+            "tiny_recall": 0.1313,
+            "small_recall": 0.463,
+            "precision": 0.8798,
+            "neg_image_fp_rate": null
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8883,
+            "recall": 0.4159,
+            "tiny_recall": 0.1805,
+            "small_recall": 0.6681,
+            "precision": 0.7583,
+            "neg_image_fp_rate": null
+          },
+          "negfp_5pct": {
+            "conf": 0.5115,
+            "recall": 0.5081,
+            "tiny_recall": 0.2218,
+            "small_recall": 0.7741,
+            "precision": 0.5715,
+            "neg_image_fp_rate": null
+          }
+        }
+      }
+    },
+    "v4B1_frozen_L": {
+      "sdis_test": {
+        "n_images": 4124,
+        "n_negative_images": 917,
+        "n_positive_images": 3207,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9677,
+            "recall": 0.1698,
+            "tiny_recall": 0.0897,
+            "small_recall": 0.2552,
+            "precision": 0.8618,
+            "neg_image_fp_rate": 0.0349
+          },
+          "negfp_10pct": {
+            "conf": 0.9407,
+            "recall": 0.2802,
+            "tiny_recall": 0.1542,
+            "small_recall": 0.4034,
+            "precision": 0.812,
+            "neg_image_fp_rate": 0.0862
+          },
+          "negfp_20pct": {
+            "conf": 0.868,
+            "recall": 0.4593,
+            "tiny_recall": 0.2865,
+            "small_recall": 0.6069,
+            "precision": 0.7508,
+            "neg_image_fp_rate": 0.1636
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.4983,
+            "recall": 0.6637,
+            "tiny_recall": 0.471,
+            "small_recall": 0.8247,
+            "precision": 0.5394,
+            "neg_image_fp_rate": 0.4035
+          },
+          "negfp_5pct": {
+            "conf": 0.0558,
+            "recall": 0.8223,
+            "tiny_recall": 0.6781,
+            "small_recall": 0.9431,
+            "precision": 0.2228,
+            "neg_image_fp_rate": 0.7001
+          }
+        }
+      },
+      "boreal_test": {
+        "n_images": 1764,
+        "n_negative_images": 2,
+        "n_positive_images": 1762,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9677,
+            "recall": 0.9273,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_10pct": {
+            "conf": 0.9407,
+            "recall": 0.9294,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_20pct": {
+            "conf": 0.868,
+            "recall": 0.9331,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9989,
+            "neg_image_fp_rate": 0.0
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.4983,
+            "recall": 0.9342,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.8661,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_5pct": {
+            "conf": 0.0558,
+            "recall": 0.9374,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.4184,
+            "neg_image_fp_rate": 0.0
+          }
+        }
+      },
+      "forest_test": {
+        "n_images": 2871,
+        "n_negative_images": 0,
+        "n_positive_images": 2871,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9677,
+            "recall": 0.1393,
+            "tiny_recall": 0.0246,
+            "small_recall": 0.2627,
+            "precision": 0.8671,
+            "neg_image_fp_rate": null
+          },
+          "negfp_10pct": {
+            "conf": 0.9407,
+            "recall": 0.2145,
+            "tiny_recall": 0.0659,
+            "small_recall": 0.3764,
+            "precision": 0.8477,
+            "neg_image_fp_rate": null
+          },
+          "negfp_20pct": {
+            "conf": 0.868,
+            "recall": 0.3072,
+            "tiny_recall": 0.1193,
+            "small_recall": 0.4964,
+            "precision": 0.7798,
+            "neg_image_fp_rate": null
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.4983,
+            "recall": 0.4467,
+            "tiny_recall": 0.1853,
+            "small_recall": 0.673,
+            "precision": 0.6037,
+            "neg_image_fp_rate": null
+          },
+          "negfp_5pct": {
+            "conf": 0.0558,
+            "recall": 0.5705,
+            "tiny_recall": 0.2464,
+            "small_recall": 0.8133,
+            "precision": 0.285,
+            "neg_image_fp_rate": null
+          }
+        }
+      }
+    },
+    "v4B4_lora_L": {
+      "sdis_test": {
+        "n_images": 4124,
+        "n_negative_images": 917,
+        "n_positive_images": 3207,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9934,
+            "recall": 0.1451,
+            "tiny_recall": 0.0471,
+            "small_recall": 0.2374,
+            "precision": 0.9199,
+            "neg_image_fp_rate": 0.024
+          },
+          "negfp_10pct": {
+            "conf": 0.9881,
+            "recall": 0.2395,
+            "tiny_recall": 0.1116,
+            "small_recall": 0.3448,
+            "precision": 0.8867,
+            "neg_image_fp_rate": 0.0589
+          },
+          "negfp_20pct": {
+            "conf": 0.973,
+            "recall": 0.3824,
+            "tiny_recall": 0.2284,
+            "small_recall": 0.504,
+            "precision": 0.8523,
+            "neg_image_fp_rate": 0.1221
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8683,
+            "recall": 0.6199,
+            "tiny_recall": 0.4587,
+            "small_recall": 0.7569,
+            "precision": 0.7556,
+            "neg_image_fp_rate": 0.2977
+          },
+          "negfp_5pct": {
+            "conf": 0.1458,
+            "recall": 0.8383,
+            "tiny_recall": 0.729,
+            "small_recall": 0.942,
+            "precision": 0.4578,
+            "neg_image_fp_rate": 0.615
+          }
+        }
+      },
+      "boreal_test": {
+        "n_images": 1764,
+        "n_negative_images": 2,
+        "n_positive_images": 1762,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9934,
+            "recall": 0.9315,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_10pct": {
+            "conf": 0.9881,
+            "recall": 0.9321,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_20pct": {
+            "conf": 0.973,
+            "recall": 0.9331,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8683,
+            "recall": 0.9342,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9994,
+            "neg_image_fp_rate": 0.0
+          },
+          "negfp_5pct": {
+            "conf": 0.1458,
+            "recall": 0.9347,
+            "tiny_recall": null,
+            "small_recall": 0.0,
+            "precision": 0.9671,
+            "neg_image_fp_rate": 0.5
+          }
+        }
+      },
+      "forest_test": {
+        "n_images": 2871,
+        "n_negative_images": 0,
+        "n_positive_images": 2871,
+        "source_only_sdis_val": {
+          "negfp_5pct": {
+            "conf": 0.9934,
+            "recall": 0.1092,
+            "tiny_recall": 0.0378,
+            "small_recall": 0.1872,
+            "precision": 0.9315,
+            "neg_image_fp_rate": null
+          },
+          "negfp_10pct": {
+            "conf": 0.9881,
+            "recall": 0.1796,
+            "tiny_recall": 0.0785,
+            "small_recall": 0.2903,
+            "precision": 0.9321,
+            "neg_image_fp_rate": null
+          },
+          "negfp_20pct": {
+            "conf": 0.973,
+            "recall": 0.2808,
+            "tiny_recall": 0.1385,
+            "small_recall": 0.4422,
+            "precision": 0.9169,
+            "neg_image_fp_rate": null
+          }
+        },
+        "target_adapted_boreal_val": {
+          "negfp_1pct": {
+            "conf": 0.8683,
+            "recall": 0.44,
+            "tiny_recall": 0.2068,
+            "small_recall": 0.6788,
+            "precision": 0.8483,
+            "neg_image_fp_rate": null
+          },
+          "negfp_5pct": {
+            "conf": 0.1458,
+            "recall": 0.5703,
+            "tiny_recall": 0.2518,
+            "small_recall": 0.8239,
+            "precision": 0.4384,
+            "neg_image_fp_rate": null
+          }
+        }
+      }
+    }
+  }
+}

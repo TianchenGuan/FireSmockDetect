@@ -1,0 +1,8 @@
+{
+  "total_params": 27436420336,
+  "trainable_params": 79691776,
+  "trainable_pct": 0.29,
+  "n_lora_targets": 256,
+  "vision_frozen": true,
+  "model_path": "/opt/models/qwen3.5-27b"
+}

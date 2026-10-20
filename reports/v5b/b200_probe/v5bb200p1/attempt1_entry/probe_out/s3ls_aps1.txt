@@ -1,0 +1,2 @@
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:sts::000000000004:assumed-role/ProjectRole-obsidian-pu-leviathan-prod-7-ap-south-1/botocore-session-1790927481 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::smoke-detect-data-000000000001-aps1" because no identity-based policy allows the s3:ListBucket action

@@ -1,0 +1,284 @@
+{
+  "summary": {
+    "sd35_large": {
+      "generated": 48,
+      "accepted": 41,
+      "acceptance": 0.854,
+      "reject_reasons": {
+        "flat_blob": 3,
+        "coverage_high": 3,
+        "colored_object": 1
+      },
+      "median_latency_s": 5.8,
+      "cost_per_generated_usd": 0.08,
+      "cost_per_accepted_usd": 0.094
+    },
+    "stable_image_core": {
+      "generated": 48,
+      "accepted": 8,
+      "acceptance": 0.167,
+      "reject_reasons": {
+        "coverage_high": 38,
+        "colored_object": 2
+      },
+      "median_latency_s": 2.5,
+      "cost_per_generated_usd": 0.04,
+      "cost_per_accepted_usd": 0.24
+    },
+    "stable_image_inpaint": {
+      "generated": 30,
+      "pos": 20,
+      "neg_edits": 10,
+      "pos_localized_ok": 20,
+      "neg_clean": 10,
+      "acceptance_pos": 1.0,
+      "median_outside_change": 0.0,
+      "median_latency_s": 17.6,
+      "cost_per_generated_usd": 0.07,
+      "cost_per_accepted_usd": 0.07,
+      "note": "request mask != ground truth; labels derive from output difference support (automated)"
+    }
+  },
+  "inpaint_rows": [
+    {
+      "hash": "22afb115b7b2e1ec",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_a_small_cloud_shadow",
+      "latency_s": 16.54,
+      "outside_change": 0.0,
+      "inmask_support": 0.3015
+    },
+    {
+      "hash": "9101a98549053691",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_morning_fog",
+      "latency_s": 17.27,
+      "outside_change": 0.0,
+      "inmask_support": 0.4249
+    },
+    {
+      "hash": "8eaf3d7f452edb54",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_heat_shimmer",
+      "latency_s": 16.76,
+      "outside_change": 0.0,
+      "inmask_support": 0.3705
+    },
+    {
+      "hash": "e01a7bda8bb9391c",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_morning_fog",
+      "latency_s": 20.14,
+      "outside_change": 0.0,
+      "inmask_support": 0.331
+    },
+    {
+      "hash": "a4670407a6d67627",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_heat_shimmer",
+      "latency_s": 16.59,
+      "outside_change": 0.0,
+      "inmask_support": 0.5177
+    },
+    {
+      "hash": "a9e8841239fc4eb2",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_dust_haze",
+      "latency_s": 46.64,
+      "outside_change": 0.0,
+      "inmask_support": 0.2056
+    },
+    {
+      "hash": "2a650807a618c3e4",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_a_small_cloud_shadow",
+      "latency_s": 56.52,
+      "outside_change": 0.0,
+      "inmask_support": 0.5002
+    },
+    {
+      "hash": "280ce76ec6de8f17",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_dust_haze",
+      "latency_s": 17.28,
+      "outside_change": 0.0,
+      "inmask_support": 0.3262
+    },
+    {
+      "hash": "8c9a817cf1a959ab",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_a_small_cloud_shadow",
+      "latency_s": 28.2,
+      "outside_change": 0.0,
+      "inmask_support": 0.372
+    },
+    {
+      "hash": "64d1de99c812e641",
+      "kind": "inpaint_neg",
+      "spec_id": "neg_morning_fog",
+      "latency_s": 16.87,
+      "outside_change": 0.0,
+      "inmask_support": 0.4882
+    },
+    {
+      "hash": "8a5d5960e7578e54",
+      "kind": "inpaint_pos",
+      "spec_id": "as20",
+      "latency_s": 29.57,
+      "outside_change": 0.0,
+      "inmask_support": 0.4936
+    },
+    {
+      "hash": "a8ca26ceb48a651a",
+      "kind": "inpaint_pos",
+      "spec_id": "as18",
+      "latency_s": 16.75,
+      "outside_change": 0.0,
+      "inmask_support": 0.4187
+    },
+    {
+      "hash": "2672bc15b2d7bb67",
+      "kind": "inpaint_pos",
+      "spec_id": "as19",
+      "latency_s": 38.26,
+      "outside_change": 0.0001,
+      "inmask_support": 0.5983
+    },
+    {
+      "hash": "70777a468940657b",
+      "kind": "inpaint_pos",
+      "spec_id": "as16",
+      "latency_s": 32.95,
+      "outside_change": 0.0,
+      "inmask_support": 0.491
+    },
+    {
+      "hash": "2784071a3f0dc203",
+      "kind": "inpaint_pos",
+      "spec_id": "as15",
+      "latency_s": 16.65,
+      "outside_change": 0.0,
+      "inmask_support": 0.3592
+    },
+    {
+      "hash": "7dc8da69437fc5e5",
+      "kind": "inpaint_pos",
+      "spec_id": "as17",
+      "latency_s": 46.29,
+      "outside_change": 0.0,
+      "inmask_support": 0.5023
+    },
+    {
+      "hash": "9bc4012dec87ca2f",
+      "kind": "inpaint_pos",
+      "spec_id": "as14",
+      "latency_s": 16.79,
+      "outside_change": 0.0,
+      "inmask_support": 0.2502
+    },
+    {
+      "hash": "7b80f6896c28f4a9",
+      "kind": "inpaint_pos",
+      "spec_id": "as12",
+      "latency_s": 16.98,
+      "outside_change": 0.0,
+      "inmask_support": 0.4834
+    },
+    {
+      "hash": "df678ac677553299",
+      "kind": "inpaint_pos",
+      "spec_id": "as13",
+      "latency_s": 28.86,
+      "outside_change": 0.0,
+      "inmask_support": 0.4452
+    },
+    {
+      "hash": "6a7b6260360fac22",
+      "kind": "inpaint_pos",
+      "spec_id": "as11",
+      "latency_s": 17.84,
+      "outside_change": 0.0,
+      "inmask_support": 0.3048
+    },
+    {
+      "hash": "f8fb7a6ed0108379",
+      "kind": "inpaint_pos",
+      "spec_id": "as10",
+      "latency_s": 24.11,
+      "outside_change": 0.0,
+      "inmask_support": 0.3667
+    },
+    {
+      "hash": "035e37eb5a8bf024",
+      "kind": "inpaint_pos",
+      "spec_id": "as08",
+      "latency_s": 16.97,
+      "outside_change": 0.0,
+      "inmask_support": 0.3743
+    },
+    {
+      "hash": "49f84d13b7e63dba",
+      "kind": "inpaint_pos",
+      "spec_id": "as09",
+      "latency_s": 23.85,
+      "outside_change": 0.0,
+      "inmask_support": 0.3981
+    },
+    {
+      "hash": "e1d0565ef852b1dd",
+      "kind": "inpaint_pos",
+      "spec_id": "as05",
+      "latency_s": 16.81,
+      "outside_change": 0.0,
+      "inmask_support": 0.5588
+    },
+    {
+      "hash": "6f28efae4d2fd97b",
+      "kind": "inpaint_pos",
+      "spec_id": "as07",
+      "latency_s": 25.25,
+      "outside_change": 0.0,
+      "inmask_support": 0.1263
+    },
+    {
+      "hash": "2a3d7d83194b2485",
+      "kind": "inpaint_pos",
+      "spec_id": "as06",
+      "latency_s": 36.54,
+      "outside_change": 0.0,
+      "inmask_support": 0.3077
+    },
+    {
+      "hash": "9b02147d93374890",
+      "kind": "inpaint_pos",
+      "spec_id": "as04",
+      "latency_s": 16.82,
+      "outside_change": 0.0,
+      "inmask_support": 0.4246
+    },
+    {
+      "hash": "5a0ffb11636a0347",
+      "kind": "inpaint_pos",
+      "spec_id": "as03",
+      "latency_s": 27.11,
+      "outside_change": 0.0,
+      "inmask_support": 0.4467
+    },
+    {
+      "hash": "dce18efd27d46f9d",
+      "kind": "inpaint_pos",
+      "spec_id": "as02",
+      "latency_s": 16.87,
+      "outside_change": 0.0,
+      "inmask_support": 0.2152
+    },
+    {
+      "hash": "65b5b1ad2a6038f9",
+      "kind": "inpaint_pos",
+      "spec_id": "as01",
+      "latency_s": 17.43,
+      "outside_change": 0.0,
+      "inmask_support": 0.3033
+    }
+  ]
+}

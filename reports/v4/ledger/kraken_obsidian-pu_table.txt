@@ -1,0 +1,2 @@
+Job Name           Status    Requester    Start Time        Completion Time    Duration      Replicas  Node Pool                                   Queue                                       Priority
+tianrgua-sv4-dgnx  STOPPED   tianrgua     9/11 12:16AM PDT  9/14 11:32AM PDT   3 days               1  obsidian_pu_g6.2xlarge_ap-south-1b_agentic  obsidian-pu-g6.2xlarge-ap-south-1b-agentic  LOW

@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v5bfb1/S1_A__borealtest.jsonl",
+  "data_yaml": "data/v4/eval/yamls/boreal_test.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1764,
+  "n_positive_images": 1762,
+  "n_negative_images": 2,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.7983,
+      "recall": 0.9326,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9799
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.8453,
+      "recall": 0.931,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9782
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.8661,
+      "recall": 0.9305,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9777
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.8826,
+      "recall": 0.9294,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9766
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.8961,
+      "recall": 0.9289,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.976
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.909,
+      "recall": 0.9278,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9749
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.9302,
+      "recall": 0.9273,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9743
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.9462,
+      "recall": 0.9241,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.971
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.9579,
+      "recall": 0.9183,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9649
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9789,
+      "recall": 0.8864,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.9314
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 39,
+        "medium": 52,
+        "large": 1793
+      }
+    }
+  ]
+}

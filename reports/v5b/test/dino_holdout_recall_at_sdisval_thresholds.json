@@ -1,0 +1,176 @@
+{
+ "_doc": "box recall (IoU>=0.4) and image-level recall at the sdis-VAL neg-image-FP confs frozen in reports/v4/test/dino_test_thresholds.json (fixed-camera regime). Both holdouts have 0 negatives -> recall only (PREREGISTRATION amendment 09:35). No aerial-regime (FireMan-VAL) confs exist for the DINO components.",
+ "runs": {
+  "v4B4_lora_L": {
+   "confs_sdis_val": {
+    "negfp_5pct": 0.9934,
+    "negfp_10pct": 0.9881,
+    "negfp_20pct": 0.973
+   },
+   "firemanholdout": {
+    "n_images": 1949,
+    "n_pos": 1949,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9934,
+      "box_recall": 0.98,
+      "tiny_recall": null,
+      "image_recall": 0.9944
+     },
+     "negfp_10pct": {
+      "conf": 0.9881,
+      "box_recall": 0.9826,
+      "tiny_recall": null,
+      "image_recall": 0.9969
+     },
+     "negfp_20pct": {
+      "conf": 0.973,
+      "box_recall": 0.9856,
+      "tiny_recall": null,
+      "image_recall": 1.0
+     }
+    }
+   },
+   "sheffieldholdout": {
+    "n_images": 327,
+    "n_pos": 327,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9934,
+      "box_recall": 0.1852,
+      "tiny_recall": null,
+      "image_recall": 0.8685
+     },
+     "negfp_10pct": {
+      "conf": 0.9881,
+      "box_recall": 0.1992,
+      "tiny_recall": null,
+      "image_recall": 0.9297
+     },
+     "negfp_20pct": {
+      "conf": 0.973,
+      "box_recall": 0.2095,
+      "tiny_recall": null,
+      "image_recall": 0.9694
+     }
+    }
+   }
+  },
+  "v4B6_lora_Hplus": {
+   "confs_sdis_val": {
+    "negfp_5pct": 0.9939,
+    "negfp_10pct": 0.9901,
+    "negfp_20pct": 0.9801
+   },
+   "firemanholdout": {
+    "n_images": 1949,
+    "n_pos": 1949,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9939,
+      "box_recall": 0.9918,
+      "tiny_recall": null,
+      "image_recall": 0.9995
+     },
+     "negfp_10pct": {
+      "conf": 0.9901,
+      "box_recall": 0.9923,
+      "tiny_recall": null,
+      "image_recall": 1.0
+     },
+     "negfp_20pct": {
+      "conf": 0.9801,
+      "box_recall": 0.9923,
+      "tiny_recall": null,
+      "image_recall": 1.0
+     }
+    }
+   },
+   "sheffieldholdout": {
+    "n_images": 327,
+    "n_pos": 327,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9939,
+      "box_recall": 0.1877,
+      "tiny_recall": null,
+      "image_recall": 0.8685
+     },
+     "negfp_10pct": {
+      "conf": 0.9901,
+      "box_recall": 0.2043,
+      "tiny_recall": null,
+      "image_recall": 0.9572
+     },
+     "negfp_20pct": {
+      "conf": 0.9801,
+      "box_recall": 0.2082,
+      "tiny_recall": null,
+      "image_recall": 0.9939
+     }
+    }
+   }
+  },
+  "v4B1_frozen_L": {
+   "confs_sdis_val": {
+    "negfp_5pct": 0.9677,
+    "negfp_10pct": 0.9407,
+    "negfp_20pct": 0.868
+   },
+   "firemanholdout": {
+    "n_images": 1949,
+    "n_pos": 1949,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9677,
+      "box_recall": 0.9856,
+      "tiny_recall": null,
+      "image_recall": 0.9867
+     },
+     "negfp_10pct": {
+      "conf": 0.9407,
+      "box_recall": 0.9933,
+      "tiny_recall": null,
+      "image_recall": 0.9944
+     },
+     "negfp_20pct": {
+      "conf": 0.868,
+      "box_recall": 0.9938,
+      "tiny_recall": null,
+      "image_recall": 0.9959
+     }
+    }
+   },
+   "sheffieldholdout": {
+    "n_images": 327,
+    "n_pos": 327,
+    "n_neg": 0,
+    "at": {
+     "negfp_5pct": {
+      "conf": 0.9677,
+      "box_recall": 0.092,
+      "tiny_recall": null,
+      "image_recall": 0.5443
+     },
+     "negfp_10pct": {
+      "conf": 0.9407,
+      "box_recall": 0.1724,
+      "tiny_recall": null,
+      "image_recall": 0.8471
+     },
+     "negfp_20pct": {
+      "conf": 0.868,
+      "box_recall": 0.2248,
+      "tiny_recall": null,
+      "image_recall": 0.9817
+     }
+    }
+   }
+  }
+ }
+}

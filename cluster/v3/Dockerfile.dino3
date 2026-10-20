@@ -1,0 +1,37 @@
+# smoke-dino3:v1 — Track B/C DINOv3 detection stack (green g6e, 8x L40S,
+# us-east-1). Pods have NO internet: everything import-time lives here;
+# entry/code/data manifests are fetched per-job via presigned GET
+# (cluster/v3/orchestrate_dino.py) and backbone weights are staged to
+# /scratch (NOT baked; gated DINOv3 arrives via scripts/v3/stage_dinov3.sh).
+# Train/val images come from the existing /scratch mirror smoke_data_v2.
+#
+# Base pinned same as iteration-1/2 images (verified digest, Python 3.11.13,
+# torch 2.8.0+cu128, torchvision 0.23.0+cu128 — torchvision supplies the
+# Faster R-CNN head, so the detection stack needs NO compiled extensions).
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+# curl: presigned S3 PUT/GET (pytorch bases ship NO curl -> silent upload
+# no-ops burned a day in iteration 1). git: utility.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      curl ca-certificates git \
+ && rm -rf /var/lib/apt/lists/*
+
+# transformers 5.17.0 = the project-pinned version (same as smoke-detect-vlm);
+# provides DINOv3ViTModel/DINOv3ViTConfig (dinov3 support landed in 4.56) and
+# Dinov2Model for the ungated stand-in. pycocotools for val mAP.
+RUN pip install --no-cache-dir \
+      transformers==5.17.0 \
+      pycocotools==2.0.10 \
+      pillow==12.3.0
+
+# Pods have no internet: hard-fail accidental hub calls instead of hanging.
+# uid 1001 has no passwd entry (iteration-2 lesson): pin HOME/caches to /tmp
+# here too (entry script re-exports them; belt and braces).
+ENV HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1 \
+    HOME=/tmp \
+    HF_HOME=/tmp/hf \
+    TORCHINDUCTOR_CACHE_DIR=/tmp/inductor_cache \
+    TRITON_CACHE_DIR=/tmp/triton_cache
+
+WORKDIR /opt

@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v5b/evals/v5bval2/S4c_D3__firemanval.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/fireman_val_s5.yaml",
+  "split": "val",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1706,
+  "n_positive_images": 1475,
+  "n_negative_images": 231,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.5196,
+      "recall": 0.9986,
+      "neg_image_fp_rate": 0.1775,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9986
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.5539,
+      "recall": 0.9966,
+      "neg_image_fp_rate": 0.1169,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9966
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.5699,
+      "recall": 0.9953,
+      "neg_image_fp_rate": 0.1126,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9953
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.5873,
+      "recall": 0.9939,
+      "neg_image_fp_rate": 0.0996,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9939
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.5997,
+      "recall": 0.9932,
+      "neg_image_fp_rate": 0.0736,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9932
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.6157,
+      "recall": 0.9905,
+      "neg_image_fp_rate": 0.0173,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9905
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.645,
+      "recall": 0.9831,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9831
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.6755,
+      "recall": 0.9553,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9553
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.7928,
+      "recall": 0.9159,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9159
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9769,
+      "recall": 0.7444,
+      "neg_image_fp_rate": 0.0,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.7444
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1475
+      }
+    }
+  ]
+}

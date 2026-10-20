@@ -1,0 +1,230 @@
+{
+  "verdicts_file": "data/v5/review/verdicts.csv",
+  "generated_utc": "2026-10-02T00:59:00Z",
+  "scenarios": {
+    "aerial": {
+      "units": 17,
+      "no_smoke": 0,
+      "smoke": 0,
+      "uncertain": 0,
+      "unreviewed": 17,
+      "candidate_h": 0.1947,
+      "verified_no_smoke_h": 0.0,
+      "contaminated_verified_h": 0.0,
+      "independent_units_verified": 0,
+      "independent_units_all": 1,
+      "sources": [
+        "boreal"
+      ],
+      "acceptance": "NOT MET"
+    },
+    "fixed_camera_like": {
+      "units": 2,
+      "no_smoke": 0,
+      "smoke": 0,
+      "uncertain": 0,
+      "unreviewed": 2,
+      "candidate_h": 0.0444,
+      "verified_no_smoke_h": 0.0,
+      "contaminated_verified_h": 0.0,
+      "independent_units_verified": 0,
+      "independent_units_all": 2,
+      "sources": [
+        "firesense"
+      ],
+      "acceptance": "NOT MET"
+    }
+  },
+  "units": [
+    {
+      "unit": "boreal_heinola_13",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_21",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 30.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_32",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 30.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_37",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 30.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_43",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 31.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_49",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_53",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_62",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_74",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_76",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_103",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 30.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_104",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_116",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_heinola_124",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 32.0,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_subsetA_empty_heinola_DJI_0024",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 78.72,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_subsetA_empty_heinola_DJI_0028",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 138.24,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "boreal_subsetA_empty_heinola_DJI_0048",
+      "scenario": "aerial",
+      "source": "boreal",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 45.12,
+      "counted_h": 0.0,
+      "contamination": ""
+    },
+    {
+      "unit": "firesense_testneg02.808",
+      "scenario": "fixed_camera_like",
+      "source": "firesense",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 46.0,
+      "counted_h": 0.0,
+      "contamination": "1-fps frames of this video are background negatives inside v4 YOLO train corpora (CORPUS_B_G_v1 et al.) -> replay FP optimistic for v4-trained models"
+    },
+    {
+      "unit": "firesense_testneg04.810",
+      "scenario": "fixed_camera_like",
+      "source": "firesense",
+      "verdict": "(blank)",
+      "reviewer": "",
+      "valid_observed_s": 114.0,
+      "counted_h": 0.0,
+      "contamination": "1-fps frames of this video are background negatives inside v4 YOLO train corpora (CORPUS_B_G_v1 et al.) -> replay FP optimistic for v4-trained models"
+    }
+  ]
+}

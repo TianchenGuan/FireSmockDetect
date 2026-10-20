@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>User: arn:aws:sts::000000000001:assumed-role/INTERNAL-ADMIN-ROLE/tianrgua@MIDWAY.AMAZON.COM is not authorized to perform: s3:GetObject on resource: "arn:aws:s3:::smoke-detect-data-000000000001-aps1/probes/v5b/v5bb200p1/hello_get.txt" with an explicit deny in a VPC endpoint policy</Message><RequestId>7N1DRYVDJQFRRPE8</RequestId><HostId>idzvfkz3/F7ZbZyttOt+EaR6zZo/eqSwGXCiloXH9IQi6sJh6stcMyqJerIxu8R5U2li6rvc/c8=</HostId></Error>

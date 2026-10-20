@@ -1,0 +1,6 @@
+Job Name                  Status     Requester    Start Time        Completion Time    Duration      Replicas  Node Pool                                             Queue                                                 Priority
+tianrgua-v5bqwensmk-2g5n  SUCCEEDED  tianrgua     10/2  6:46AM PDT  10/2  7:35AM PDT   49 minutes           1  obsidian_pu_hyperpod_p6-b200.48xlarge_ap-south-1_tas  obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas  LOW
+tianrgua-v5bdinoctl-57zb  SUCCEEDED  tianrgua     10/2  5:28AM PDT  10/2  6:43AM PDT   an hour              1  obsidian_pu_hyperpod_p6-b200.48xlarge_ap-south-1_tas  obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas  LOW
+tianrgua-v5bdinohr-mssz   STOPPED    tianrgua     10/2  2:12AM PDT  10/2  5:27AM PDT   3 hours              1  obsidian_pu_hyperpod_p6-b200.48xlarge_ap-south-1_tas  obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas  LOW
+tianrgua-v5bb200p1-gfi3   STOPPED    tianrgua     10/2 12:48AM PDT  10/2  1:27AM PDT   39 minutes           1  obsidian_pu_hyperpod_p6-b200.48xlarge_ap-south-1_tas  obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas  LOW
+tianrgua-sv4-dgnx         STOPPED    tianrgua     9/11 12:16AM PDT  9/14 11:32AM PDT   3 days               1  obsidian_pu_g6.2xlarge_ap-south-1b_agentic            obsidian-pu-g6.2xlarge-ap-south-1b-agentic            LOW

@@ -1,0 +1,137 @@
+{
+ "system": "S5 ACCURATE ensemble",
+ "set": "borealtest",
+ "role": "H4 historical (opened at v4 close)",
+ "data_yaml": "data/v4/eval/yamls/boreal_test.yaml",
+ "split": "test",
+ "recipe": {
+  "path": "models/v5b/fusion/accurate_recipe.json",
+  "name": "accurate_v5b",
+  "created_utc": "2026-10-02T07:50:11Z",
+  "fusion": {
+   "method": "wbf",
+   "conf_type": "max",
+   "iou_thr": 0.3,
+   "skip_box_thr": 0.0,
+   "weights": {
+    "yolo_A": 1.0,
+    "dino_B4": 1.0,
+    "dino_B6": 1.0,
+    "dino_B1": 1.0
+   }
+  },
+  "score_scale": "calibrated: per-model raw score -> neg-image-FP quantile on pyro-sdis VAL negatives (1-c = single-model neg-image FP); fused score = wbf on that scale",
+  "image_level_method": "max_calibrated"
+ },
+ "components": {
+  "yolo_A": {
+   "parquet": "reports/v4/test/eval_S1_A_ctrl_borealtest.raw.parquet",
+   "sha256": "5ff527c3480abd705b83b84c9970c140374d6ee0d1c1cd74dbd356a43fd5aca2",
+   "checkpoint_in_recipe": "models/trained/expV4A_ctrl_s2/seg05/best.pt"
+  },
+  "dino_B4": {
+   "parquet": "reports/v4/test/eval_v4B4_lora_L_boreal_test.raw.parquet",
+   "sha256": "0157c147e349c9da5977c124f3645a9a49e9faea2765a2fbc77b7cb1be510788",
+   "checkpoint_in_recipe": "models/v3/runs/v4B4_lora_L/seg05/best.pt"
+  },
+  "dino_B6": {
+   "parquet": "reports/v4/test/eval_v4B6_lora_Hplus_boreal_test.raw.parquet",
+   "sha256": "a7ea241a90867c9a1ffaff79c20846edf1341b2daca6717f5796250a4d34aca0",
+   "checkpoint_in_recipe": "models/v3/runs/v4B6_lora_Hplus/seg10/best.pt"
+  },
+  "dino_B1": {
+   "parquet": "reports/v4/test/eval_v4B1_frozen_L_boreal_test.raw.parquet",
+   "sha256": "72757f10b6f374c27fc57c076ae1063ac42320951c78db263859e73164a9ab29",
+   "checkpoint_in_recipe": "models/v3/runs/v4B1_frozen_L/seg03/best.pt"
+  }
+ },
+ "yolo_alias": "v4a_s2",
+ "yolo_component_matches_recipe": true,
+ "recipe_yolo_checkpoint": "models/trained/expV4A_ctrl_s2/seg05/best.pt",
+ "n_images": 1764,
+ "n_positive_images": 1762,
+ "n_negative_images": 2,
+ "n_gt_boxes": 1884,
+ "n_fused_boxes": 4584,
+ "at_recipe_thresholds": {
+  "box_level": {
+   "fp0.01": {
+    "thr": 0.9994,
+    "recall": 0.9273,
+    "tiny": null,
+    "small": 0.0,
+    "precision": 0.9994,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.02": {
+    "thr": 0.9993,
+    "recall": 0.9273,
+    "tiny": null,
+    "small": 0.0,
+    "precision": 0.9994,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.05": {
+    "thr": 0.999,
+    "recall": 0.9278,
+    "tiny": null,
+    "small": 0.0,
+    "precision": 0.9994,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.10": {
+    "thr": 0.9918,
+    "recall": 0.9283,
+    "tiny": null,
+    "small": 0.0,
+    "precision": 0.9994,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.20": {
+    "thr": 0.9657,
+    "recall": 0.9299,
+    "tiny": null,
+    "small": 0.0,
+    "precision": 0.9989,
+    "neg_image_fp_rate": 0.0
+   }
+  },
+  "image_level": {
+   "fp0.01": {
+    "thr": 0.9994,
+    "pos_image_recall": 0.9921,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.02": {
+    "thr": 0.9993,
+    "pos_image_recall": 0.9921,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.05": {
+    "thr": 0.999,
+    "pos_image_recall": 0.9926,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.10": {
+    "thr": 0.9929,
+    "pos_image_recall": 0.9932,
+    "neg_image_fp_rate": 0.0
+   },
+   "fp0.20": {
+    "thr": 0.968,
+    "pos_image_recall": 0.9955,
+    "neg_image_fp_rate": 0.0
+   }
+  },
+  "n_images": 1764,
+  "n_positive_images": 1762,
+  "n_negative_images": 2,
+  "note": "calibrated-scale thresholds from the recipe (thresholds_oof = pooled OOF sdis-VAL neg-image-FP quantiles; fixed-camera regime). Sets with 0 negatives are recall-only."
+ },
+ "outputs": {
+  "raw_parquet": "/local/home/tianrgua/cvproject/reports/v5b/test/eval_S5_ensemble_v4a_s2_borealtest.raw.parquet",
+  "preds_jsonl": "/local/home/tianrgua/cvproject/reports/v5b/test/eval_S5_ensemble_v4a_s2_borealtest.jsonl"
+ },
+ "created_utc": "2026-10-03T03:23:32Z",
+ "note": "no image opened; no fitting; fused scores are on the calibrated scale (1-c = single-model sdis-VAL neg-image FP)"
+}

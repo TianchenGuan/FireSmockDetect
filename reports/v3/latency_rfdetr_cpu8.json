@@ -1,0 +1,17 @@
+{
+  "weights": "models/v3/fetched/rfdetrL_1280_e48/checkpoint_best_ema.pth",
+  "device": "cpu",
+  "imgsz": 1280,
+  "images": [],
+  "latency": {
+    "n": 12,
+    "device": "cpu",
+    "threads": 8,
+    "batch1_ms_mean": 1016.2,
+    "batch1_ms_median": 1016.1,
+    "batch1_ms_min": 963.1,
+    "batch1_ms_max": 1118.6,
+    "preprocess_ms_median": 7.0,
+    "infer_ms_median": 1006.2
+  }
+}

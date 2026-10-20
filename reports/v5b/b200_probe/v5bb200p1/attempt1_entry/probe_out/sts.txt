@@ -1,0 +1,5 @@
+{
+    "UserId": "AROA4VDBMDI3UU2ZWF6WS:botocore-session-1790927481",
+    "Account": "000000000004",
+    "Arn": "arn:aws:sts::000000000004:assumed-role/ProjectRole-obsidian-pu-leviathan-prod-7-ap-south-1/botocore-session-1790927481"
+}

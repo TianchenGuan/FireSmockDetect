@@ -1,0 +1,3280 @@
+{
+ "results": [
+  {
+   "jobId": "amzn1.agi.jobs.3c12adf5-b096-11f1-b2d8-3e880b4a8fac",
+   "jobName": "probe-bindle-qvnw",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-forge-on-customer-science-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-forge-on-customer-science-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:32.463Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:45:57.756Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.38f61b44-b096-11f1-b6fc-628d1c740125",
+   "jobName": "probe-bindle-ier4",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-fai-rai-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-fai-rai-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:27.243Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:46:22.285Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.360cb6eb-b096-11f1-b6fc-628d1c740125",
+   "jobName": "probe-bindle-5kvh",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-autoforge-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-autoforge-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:22.358Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:45:41.858Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.332a40b5-b096-11f1-b2d8-3e880b4a8fac",
+   "jobName": "probe-bindle-dixc",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-ermis-p6-b200.48xlarge-ap-south-1-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-ermis-p6-b200.48xlarge-ap-south-1-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:17.518Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:46:28.403Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.2ffef2cd-b096-11f1-a8da-5ab5f12b7d3f",
+   "jobName": "probe-bindle-5j75",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-infofm-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-infofm-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:12.201Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:46:20.836Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.2d1aa211-b096-11f1-bb02-8a715d57ac04",
+   "jobName": "probe-bindle-db78",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-info-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-info-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:07.349Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:46:21.056Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.29dfd68e-b096-11f1-8587-d61957f858ca",
+   "jobName": "probe-bindle-mw4k",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-pulsar-p6-bom110-latest",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-pulsar-p6-bom110-latest",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:44:01.931Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:45:55.618Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.26f65364-b096-11f1-a8da-5ab5f12b7d3f",
+   "jobName": "probe-bindle-3mn9",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-pulsar-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-pulsar-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:43:57.045Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:45:50.111Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.23e685f4-b096-11f1-bb02-8a715d57ac04",
+   "jobName": "probe-bindle-yng9",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-forge-recipe-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-forge-recipe-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:43:51.908Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:57:16.409Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.fdc681eb-b095-11f1-90d8-da6b724e5c42",
+   "jobName": "probe-bindle-k8me",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+     "command": "bash",
+     "args": [
+      "-lc",
+      "echo bindle-probe-ok; sleep 60"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "o2-fai-skills-p6-bom-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/agi-training-toolkit-images-gpu-nv4-p6:latest",
+      "command": "bash",
+      "args": [
+       "-lc",
+       "echo bindle-probe-ok; sleep 60"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "o2-fai-skills-p6-bom-tas",
+   "nodePool": "obsidian_2_p6-b200.48xlarge_ap-south-1_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "sleeper",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-14T23:42:47.945Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T23:44:09.378Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.9a6c2cdd-adb1-11f1-a6bd-e2a6f8e2ea7c",
+   "jobName": "tianrgua-sv6-p5uu",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.us-east-2.amazonaws.com/smoke-detect:v6",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-g6.48xlarge-us-east-2-tas",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.us-east-2.amazonaws.com/smoke-detect:v6",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-g6.48xlarge-us-east-2-tas",
+   "nodePool": "obsidian_2_hyperpod_g6.48xlarge_us-east-2_tas",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-11T07:22:53.679Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-11T07:25:29.372Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.be6cf92e-adb0-11f1-8181-e22b206fec16",
+   "jobName": "tianrgua-sv3-k7qe",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v4",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-g6.2xlarge-ap-south-1b",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v4",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-g6.2xlarge-ap-south-1b",
+   "nodePool": "obsidian_2_hyperpod_g6.2xlarge_ap-south-1b",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-11T07:16:44.585Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-11T07:23:05.643Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.bc5eb297-adb0-11f1-8181-e22b206fec16",
+   "jobName": "tianrgua-sv2-xiju",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect:v6",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-g6.48xlarge-us-east-1c",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect:v6",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-g6.48xlarge-us-east-1c",
+   "nodePool": "obsidian_2_hyperpod_g6.48xlarge_us-east-1c",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-11T07:16:41.136Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-11T07:22:21.507Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.b9fd69f9-adb0-11f1-8181-e22b206fec16",
+   "jobName": "tianrgua-sv1-7zmw",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect:v6",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-iad-210-p5en.48xlarge-us-east-1d",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect:v6",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-iad-210-p5en.48xlarge-us-east-1d",
+   "nodePool": "obsidian_2_hyperpod_iad_210_p5en.48xlarge_us-east-1d",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-11T07:16:37.143Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-11T07:19:55.526Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.024c82fe-ad46-11f1-ba01-8a16672a230c",
+   "jobName": "tianrgua-p12b-4647",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T18:32:42.318Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T18:35:19.355Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.ff9688b3-ad45-11f1-9a84-8ef82183cf7b",
+   "jobName": "tianrgua-p12a-xrs2",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T18:32:37.761Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T18:33:52.688Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.97ddcea3-ad45-11f1-af5b-5eadecf570e9",
+   "jobName": "tianrgua-p11-yot9",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T18:29:43.744Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T18:30:59.274Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.f9f702ef-ad44-11f1-8603-068195fa24eb",
+   "jobName": "tianrgua-p10-byed",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; which curl || exit 66; X=$(curl -s -o /tmp/err.txt -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo X=$X; cat /tmp/err.txt; N=$((10#$X)); [ \"$N\" -eq 0 ] && N=99; exit $((N & 255))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; which curl || exit 66; X=$(curl -s -o /tmp/err.txt -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo X=$X; cat /tmp/err.txt; N=$((10#$X)); [ \"$N\" -eq 0 ] && N=99; exit $((N & 255))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T18:25:18.829Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T18:27:55.798Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.f9545139-ad3c-11f1-a2dc-7a84f5a06eed",
+   "jobName": "tianrgua-gpt2s1-8kga",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "bash /opt/train_entry.sh"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v3",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "bash /opt/train_entry.sh"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "training",
+    "subtype": "general",
+    "role": "trainer",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-10T17:28:01.789Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T18:22:24.225Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.1fbb2432-ad39-11f1-819f-22fae5405e5d",
+   "jobName": "tianrgua-p9c-3bqb",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T17:00:28.230Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T17:03:03.214Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.1cd912d5-ad39-11f1-819f-22fae5405e5d",
+   "jobName": "tianrgua-p9b-gqmw",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T17:00:23.392Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T17:03:03.553Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.1a212e60-ad39-11f1-9e5a-f24c69269b11",
+   "jobName": "tianrgua-p9a-cru2",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; X=$(curl -s -o /dev/null -w %{http_code} --max-time 25 -T /etc/hostname \"$PURL\"); echo X=$X; N=$((10#$X)); [ \"$N\" -eq 0 ] && N=99; exit $((N & 255))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; X=$(curl -s -o /dev/null -w %{http_code} --max-time 25 -T /etc/hostname \"$PURL\"); echo X=$X; N=$((10#$X)); [ \"$N\" -eq 0 ] && N=99; exit $((N & 255))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T17:00:18.831Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T17:00:42.094Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.9b1301d2-ad38-11f1-ae3c-b2c485f01745",
+   "jobName": "tianrgua-probe8-ngpi",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T16:56:45.668Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T16:59:22.676Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.23bc2625-ad35-11f1-819f-22fae5405e5d",
+   "jobName": "tianrgua-puttest-3h5u",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; BITS=0; R=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$URLR\"); G=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$URLG\"); SHM=$(df -m /dev/shm | tail -1 | awk \"{print \\$2}\"); [ \"$R\" = \"200\" ] && BITS=$((BITS|1)); [ \"$G\" = \"200\" ] && BITS=$((BITS|2)); [ \"$SHM\" -gt 1000 ] && BITS=$((BITS|4)); echo R=$R G=$G SHM=$SHM; exit $((100+BITS))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; BITS=0; R=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$URLR\"); G=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$URLG\"); SHM=$(df -m /dev/shm | tail -1 | awk \"{print \\$2}\"); [ \"$R\" = \"200\" ] && BITS=$((BITS|1)); [ \"$G\" = \"200\" ] && BITS=$((BITS|2)); [ \"$SHM\" -gt 1000 ] && BITS=$((BITS|4)); echo R=$R G=$G SHM=$SHM; exit $((100+BITS))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T16:31:56.960Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T16:34:34.489Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.22a8cdf2-ad21-11f1-ae81-56c2b132a1f5",
+   "jobName": "tianrgua-gputests1-j47f",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "bash /opt/train_entry.sh"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v2",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "bash /opt/train_entry.sh"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "training",
+    "subtype": "general",
+    "role": "trainer",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T14:08:45.222Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T15:03:09.644Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.7725ac8d-ad10-11f1-9e0c-3ef79fc20478",
+   "jobName": "tianrgua-probe7-cfji",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'assumed-role/ProjectRole-Obsidian-Leviathan-prod-11-ap-south-1/' /tmp/sts.log && E=$((E+1)); grep -qi 'ProjectRole-Obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'Obsidian-Leviathan-prod-11-ap-south-1' /tmp/sts.log && E=$((E+4)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe7_sts.log 2>&1; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'assumed-role/ProjectRole-Obsidian-Leviathan-prod-11-ap-south-1/' /tmp/sts.log && E=$((E+1)); grep -qi 'ProjectRole-Obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'Obsidian-Leviathan-prod-11-ap-south-1' /tmp/sts.log && E=$((E+4)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe7_sts.log 2>&1; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T12:09:25.523Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T12:09:52.311Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.4a929c81-ad10-11f1-b104-c2557a79c21c",
+   "jobName": "tianrgua-probe6-meuh",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-prod-11' /tmp/sts.log && E=$((E+1)); grep -qi 'project-obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'obsidian-project' /tmp/sts.log && E=$((E+4)); grep -qi 'role/leviathan-' /tmp/sts.log && E=$((E+8)); grep -qi 'projectrole' /tmp/sts.log && E=$((E+16)); grep -qi 'obsidian/' /tmp/sts.log && E=$((E+32)); test $(grep -o 'arn:[^\"]*' /tmp/sts.log | head -1 | wc -c) -gt 110 && E=$((E+64)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe6_sts.log 2>&1; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-prod-11' /tmp/sts.log && E=$((E+1)); grep -qi 'project-obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'obsidian-project' /tmp/sts.log && E=$((E+4)); grep -qi 'role/leviathan-' /tmp/sts.log && E=$((E+8)); grep -qi 'projectrole' /tmp/sts.log && E=$((E+16)); grep -qi 'obsidian/' /tmp/sts.log && E=$((E+32)); test $(grep -o 'arn:[^\"]*' /tmp/sts.log | head -1 | wc -c) -gt 110 && E=$((E+64)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe6_sts.log 2>&1; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T12:08:10.740Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T12:08:36.868Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.8727c410-ad0b-11f1-bc04-da793dc9ad2c",
+   "jobName": "tianrgua-probe6-ohcv",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-prod-11' /tmp/sts.log && E=$((E+1)); grep -qi 'project-obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'obsidian-project' /tmp/sts.log && E=$((E+4)); grep -qi 'role/leviathan-' /tmp/sts.log && E=$((E+8)); grep -qi 'projectrole' /tmp/sts.log && E=$((E+16)); grep -qi 'obsidian/' /tmp/sts.log && E=$((E+32)); test $(grep -o 'arn:[^\"]*' /tmp/sts.log | head -1 | wc -c) -gt 110 && E=$((E+64)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe6_sts.log 2>&1; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-prod-11' /tmp/sts.log && E=$((E+1)); grep -qi 'project-obsidian' /tmp/sts.log && E=$((E+2)); grep -qi 'obsidian-project' /tmp/sts.log && E=$((E+4)); grep -qi 'role/leviathan-' /tmp/sts.log && E=$((E+8)); grep -qi 'projectrole' /tmp/sts.log && E=$((E+16)); grep -qi 'obsidian/' /tmp/sts.log && E=$((E+32)); test $(grep -o 'arn:[^\"]*' /tmp/sts.log | head -1 | wc -c) -gt 110 && E=$((E+64)); cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe6_sts.log 2>&1; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:34:04.897Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T12:02:11.057Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.5b6de3df-ad0b-11f1-845f-0eec2d691409",
+   "jobName": "tianrgua-probe5-t5ds",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; python -c \"import torch;print(torch.cuda.get_device_name(0), torch.cuda.get_device_capability(0), torch.__version__, torch.version.cuda, torch.cuda.device_count())\" > /tmp/dev.log 2>&1; grep -qi 'B200' /tmp/dev.log && E=$((E+1)); grep -q '(10, 0)' /tmp/dev.log && E=$((E+2)); grep -qE ' 8$' /tmp/dev.log && E=$((E+4)); grep -q '2.8.0' /tmp/dev.log && E=$((E+8)); grep -q '12.8' /tmp/dev.log && E=$((E+16)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke && touch /scratch/scratch/tianrgua-sandbox/smoke/wtest && E=$((E+32)); touch /mnt/local/wtest_tianrgua && E=$((E+64)); cp /tmp/dev.log /scratch/scratch/tianrgua-sandbox/smoke/probe5_dev.log 2>&1; nvidia-smi > /scratch/scratch/tianrgua-sandbox/smoke/probe5_nvsmi.log 2>&1; df -h > /scratch/scratch/tianrgua-sandbox/smoke/probe5_df.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe5_dev.log; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; python -c \"import torch;print(torch.cuda.get_device_name(0), torch.cuda.get_device_capability(0), torch.__version__, torch.version.cuda, torch.cuda.device_count())\" > /tmp/dev.log 2>&1; grep -qi 'B200' /tmp/dev.log && E=$((E+1)); grep -q '(10, 0)' /tmp/dev.log && E=$((E+2)); grep -qE ' 8$' /tmp/dev.log && E=$((E+4)); grep -q '2.8.0' /tmp/dev.log && E=$((E+8)); grep -q '12.8' /tmp/dev.log && E=$((E+16)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke && touch /scratch/scratch/tianrgua-sandbox/smoke/wtest && E=$((E+32)); touch /mnt/local/wtest_tianrgua && E=$((E+64)); cp /tmp/dev.log /scratch/scratch/tianrgua-sandbox/smoke/probe5_dev.log 2>&1; nvidia-smi > /scratch/scratch/tianrgua-sandbox/smoke/probe5_nvsmi.log 2>&1; df -h > /scratch/scratch/tianrgua-sandbox/smoke/probe5_df.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe5_dev.log; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:32:51.536Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:33:29.849Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.25fcbadf-ad0b-11f1-8912-46744be46cb7",
+   "jobName": "tianrgua-probe4-jn4p",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-obsidian' /tmp/sts.log && E=$((E+1)); grep -qi 'obsidian-2' /tmp/sts.log && E=$((E+2)); grep -qi 'prod-11' /tmp/sts.log && E=$((E+4)); grep -qi 'ap-south-1' /tmp/sts.log && E=$((E+8)); grep -qi 'irsa' /tmp/sts.log && E=$((E+16)); grep -qi 'scientist' /tmp/sts.log && E=$((E+32)); grep -qi 'project' /tmp/sts.log && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe4_sts.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe4_sts.log; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; grep -qi 'leviathan-obsidian' /tmp/sts.log && E=$((E+1)); grep -qi 'obsidian-2' /tmp/sts.log && E=$((E+2)); grep -qi 'prod-11' /tmp/sts.log && E=$((E+4)); grep -qi 'ap-south-1' /tmp/sts.log && E=$((E+8)); grep -qi 'irsa' /tmp/sts.log && E=$((E+16)); grep -qi 'scientist' /tmp/sts.log && E=$((E+32)); grep -qi 'project' /tmp/sts.log && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cp /tmp/sts.log /scratch/scratch/tianrgua-sandbox/smoke/probe4_sts.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe4_sts.log; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:31:21.876Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:31:51.101Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.faa8b843-ad0a-11f1-ac6f-8a84c09faa3c",
+   "jobName": "tianrgua-probe3-94ci",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; timeout 60 aws s3 ls --region $S3_REGION > /tmp/lsall.log 2>&1 && E=$((E+1)); grep -qi 'leviathan' /tmp/sts.log && E=$((E+2)); grep -qi 'workload' /tmp/sts.log && E=$((E+4)); grep -qi 'hyperpod' /tmp/sts.log && E=$((E+8)); grep -qi 'queue' /tmp/sts.log && E=$((E+16)); timeout 60 aws s3api head-bucket --bucket $S3_BUCKET --region $S3_REGION >/tmp/hb.log 2>&1 && E=$((E+32)); timeout 60 aws s3 cp s3://$S3_BUCKET/test/hello.txt /tmp/h.txt --region $S3_REGION >/tmp/cp.log 2>&1 && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cat /tmp/sts.log /tmp/lsall.log /tmp/hb.log /tmp/cp.log > /scratch/scratch/tianrgua-sandbox/smoke/probe3.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe3.log; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; timeout 60 aws s3 ls --region $S3_REGION > /tmp/lsall.log 2>&1 && E=$((E+1)); grep -qi 'leviathan' /tmp/sts.log && E=$((E+2)); grep -qi 'workload' /tmp/sts.log && E=$((E+4)); grep -qi 'hyperpod' /tmp/sts.log && E=$((E+8)); grep -qi 'queue' /tmp/sts.log && E=$((E+16)); timeout 60 aws s3api head-bucket --bucket $S3_BUCKET --region $S3_REGION >/tmp/hb.log 2>&1 && E=$((E+32)); timeout 60 aws s3 cp s3://$S3_BUCKET/test/hello.txt /tmp/h.txt --region $S3_REGION >/tmp/cp.log 2>&1 && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cat /tmp/sts.log /tmp/lsall.log /tmp/hb.log /tmp/cp.log > /scratch/scratch/tianrgua-sandbox/smoke/probe3.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe3.log; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:30:09.183Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:30:37.021Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.c895964f-ad0a-11f1-bddb-36858c55caae",
+   "jobName": "tianrgua-probe2-upsy",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; timeout 90 aws s3 ls s3://$S3_BUCKET/ --region $S3_REGION > /tmp/ls.log 2>&1; grep -qiE 'AccessDenied|403|not authorized' /tmp/ls.log && E=$((E+1)); grep -qiE 'EndpointConnectionError|Could not connect|Connect timeout|timed out|Read timeout' /tmp/ls.log && E=$((E+2)); grep -qiE 'InvalidAccessKeyId|ExpiredToken|Unable to locate credentials|NoCredential' /tmp/ls.log && E=$((E+4)); grep -q '000000000005' /tmp/sts.log && E=$((E+8)); grep -q '000000000001' /tmp/sts.log && E=$((E+16)); grep -qi 'assumed-role' /tmp/sts.log && E=$((E+32)); grep -qi 'obsidian' /tmp/sts.log && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cat /tmp/sts.log /tmp/ls.log > /scratch/scratch/tianrgua-sandbox/smoke/probe2.log 2>&1; df -h >> /scratch/scratch/tianrgua-sandbox/smoke/probe2.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe2.log; exit $E"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; E=100; timeout 40 aws sts get-caller-identity --region $S3_REGION > /tmp/sts.log 2>&1; timeout 90 aws s3 ls s3://$S3_BUCKET/ --region $S3_REGION > /tmp/ls.log 2>&1; grep -qiE 'AccessDenied|403|not authorized' /tmp/ls.log && E=$((E+1)); grep -qiE 'EndpointConnectionError|Could not connect|Connect timeout|timed out|Read timeout' /tmp/ls.log && E=$((E+2)); grep -qiE 'InvalidAccessKeyId|ExpiredToken|Unable to locate credentials|NoCredential' /tmp/ls.log && E=$((E+4)); grep -q '000000000005' /tmp/sts.log && E=$((E+8)); grep -q '000000000001' /tmp/sts.log && E=$((E+16)); grep -qi 'assumed-role' /tmp/sts.log && E=$((E+32)); grep -qi 'obsidian' /tmp/sts.log && E=$((E+64)); mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; cat /tmp/sts.log /tmp/ls.log > /scratch/scratch/tianrgua-sandbox/smoke/probe2.log 2>&1; df -h >> /scratch/scratch/tianrgua-sandbox/smoke/probe2.log 2>&1; echo EXIT=$E >> /scratch/scratch/tianrgua-sandbox/smoke/probe2.log; exit $E"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:28:45.172Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:29:14.090Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.797257d9-ad0a-11f1-8912-46744be46cb7",
+   "jobName": "tianrgua-probe-fh5k",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:26:32.401Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:27:18.540Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.d67612f0-ad09-11f1-a236-5abcc98a57e9",
+   "jobName": "tianrgua-smoke5-tahs",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "<scrubbed-url>"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "<scrubbed-url>"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T11:21:58.956Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:24:21.291Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.badfd8d8-ad07-11f1-9398-a68ebfbdf368",
+   "jobName": "tianrgua-smoke4-hvt4",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 900; echo ===EXIT==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 900; echo ===EXIT==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-10T11:06:53.680Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:24:35.757Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.e9df8311-ad06-11f1-93ae-2e6f8be20759",
+   "jobName": "tianrgua-smoke3-3k4k",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 120; echo ===EXIT==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 120; echo ===EXIT==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-10T11:01:03.034Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:05:14.195Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.e06a3d71-ad00-11f1-a4d5-6eb5ab2f304d",
+   "jobName": "tianrgua-smoke2-i3o2",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 1800; echo ===EXIT==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set -x; mkdir -p /scratch/scratch/tianrgua-sandbox/smoke; { echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /scratch/scratch; ls -la /mnt/local; df -h; echo ===DONE===; } 2>&1 | tee /tmp/smoke_out.log; cp /tmp/smoke_out.log /scratch/scratch/tianrgua-sandbox/smoke/smoke_out.log; aws s3 cp /tmp/smoke_out.log s3://smoke-detect-data-000000000001-aps1/logs/smoke_out_$(date +%s).log --region ap-south-1 && echo LOG_UPLOAD_PASS || echo LOG_UPLOAD_FAIL; echo ===SLEEPING_FOR_CONNECT===; sleep 1800; echo ===EXIT==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-10T10:17:50.186Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T11:43:01.273Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.412c868d-acff-11f1-a236-5abcc98a57e9",
+   "jobName": "tianrgua-smoke-vviy",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "SUCCEEDED",
+    "creationTime": "2026-09-10T10:06:13.527Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T10:06:44.784Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.c61b1457-acfe-11f1-845f-0eec2d691409",
+   "jobName": "tianrgua-smoke-wc83",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "['/bin/bash', '-c']",
+     "args": [
+      "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "['/bin/bash', '-c']",
+      "args": [
+       "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T10:02:47.053Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T10:04:50.137Z",
+    "runs": null,
+    "restartCount": null
+   }
+  },
+  {
+   "jobId": "amzn1.agi.jobs.87a26db4-acfe-11f1-8c6f-0e59887ab099",
+   "jobName": "tianrgua-smoke-6ft3",
+   "jobPriority": "LOW",
+   "projectName": "Obsidian",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+     "command": "['/bin/bash', '-c']",
+     "args": [
+      "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v1",
+      "command": "['/bin/bash', '-c']",
+      "args": [
+       "set -x; echo ===NVIDIA_SMI===; nvidia-smi; echo ===GPU_TEST===; python /opt/gpu_test.py; echo ===S3_TEST===; bash /opt/s3_test.sh; echo ===STORAGE===; ls -la /scratch; ls -la /mnt/local; df -h; echo ===DONE==="
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-2-hyperpod-bom-110-p6-b200.48xlarge-ap-south-1a",
+   "nodePool": "obsidian_2_hyperpod_bom_110_p6-b200.48xlarge_ap-south-1a",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "FAILED",
+    "creationTime": "2026-09-10T10:01:02.243Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-10T10:01:38.496Z",
+    "runs": null,
+    "restartCount": null
+   }
+  }
+ ]
+}

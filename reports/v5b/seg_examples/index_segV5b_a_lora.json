@@ -1,0 +1,82 @@
+[
+ {
+  "file": "segV5b_a_lora_01_good_heinola_DJI_0029_frame179.png",
+  "tag": "good",
+  "id": "heinola_DJI_0029_frame179",
+  "iou": 0.947,
+  "fp": 216,
+  "fn": 293,
+  "provenance": "sam_model_assisted",
+  "n_comp": 1
+ },
+ {
+  "file": "segV5b_a_lora_02_good_heinola_DJI_0030_frame250.png",
+  "tag": "good",
+  "id": "heinola_DJI_0030_frame250",
+  "iou": 0.945,
+  "fp": 32,
+  "fn": 161,
+  "provenance": "sam_model_assisted",
+  "n_comp": 1
+ },
+ {
+  "file": "segV5b_a_lora_03_median_heinola_DJI_0033_frame43.png",
+  "tag": "median",
+  "id": "heinola_DJI_0033_frame43",
+  "iou": 0.636,
+  "fp": 244,
+  "fn": 3304,
+  "provenance": "sam_model_assisted",
+  "n_comp": 1
+ },
+ {
+  "file": "segV5b_a_lora_04_median_heinola_DJI_0030_frame241.png",
+  "tag": "median",
+  "id": "heinola_DJI_0030_frame241",
+  "iou": 0.624,
+  "fp": 811,
+  "fn": 2382,
+  "provenance": "sam_model_assisted",
+  "n_comp": 4
+ },
+ {
+  "file": "segV5b_a_lora_05_manual_gt_heinola_DJI_0028_frame182.png",
+  "tag": "manual_gt",
+  "id": "heinola_DJI_0028_frame182",
+  "iou": 0.43,
+  "fp": 36,
+  "fn": 5663,
+  "provenance": "manual_human",
+  "n_comp": 2
+ },
+ {
+  "file": "segV5b_a_lora_06_negative_ok_heinola_DJI_0028_frame95.png",
+  "tag": "negative_ok",
+  "id": "heinola_DJI_0028_frame95",
+  "iou": 1.0,
+  "fp": 0,
+  "fn": 0,
+  "provenance": "author_negative_empty",
+  "n_comp": 0
+ },
+ {
+  "file": "segV5b_a_lora_07_FAIL_missed_heinola_DJI_0036_frame235.png",
+  "tag": "FAIL_missed",
+  "id": "heinola_DJI_0036_frame235",
+  "iou": 0.06,
+  "fp": 2052,
+  "fn": 12518,
+  "provenance": "sam_model_assisted",
+  "n_comp": 2
+ },
+ {
+  "file": "segV5b_a_lora_08_FAIL_false_alarm_heinola_DJI_0024_frame56.png",
+  "tag": "FAIL_false_alarm",
+  "id": "heinola_DJI_0024_frame56",
+  "iou": 0.0,
+  "fp": 700,
+  "fn": 0,
+  "provenance": "author_negative_empty",
+  "n_comp": 2
+ }
+]

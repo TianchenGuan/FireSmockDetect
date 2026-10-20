@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-09-14T12:05:25+00:00",
+  "sources": {
+    "firesense": {
+      "rows": 1801,
+      "keep": 1801,
+      "ban": 0,
+      "ban_reasons": {}
+    },
+    "mmodalfire": {
+      "rows": 23599,
+      "keep": 23599,
+      "ban": 0,
+      "ban_reasons": {}
+    },
+    "boreal": {
+      "rows": 6714,
+      "keep": 6714,
+      "ban": 0,
+      "ban_reasons": {}
+    },
+    "multinatsmoke": {
+      "rows": 70816,
+      "keep": 29855,
+      "ban": 40961,
+      "ban_reasons": {
+        "origin_class": 40959,
+        "neardup_v4": 2
+      }
+    }
+  },
+  "notes": [
+    "FIgLib frames checked: subset=3056, lockbox=1978"
+  ],
+  "eval_frames_checked": 16493,
+  "train_material_hashed": 43704,
+  "group_banned_rows": 0,
+  "evalhit_units": {
+    "multinatsmoke/figlib_20180806_Holy_sp-s-mobo-c": "exact_dup_eval:figlib_subset:1533587670_+01920.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180806_Holy_sp-s-mobo-c__1533587670_+01920.jpg",
+    "multinatsmoke/figlib_20190717_FIRE_pi-w-mobo-c": "exact_dup_eval:figlib_subset:1563405669_+01920.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20190717_FIRE_pi-w-mobo-c__1563405669_+01920.jpg",
+    "multinatsmoke/figlib_20230809.111619-BunnieFire-bm-s-mobo-c": "exact_dup_eval:figlib_subset:1691607079_+02100.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20230809.111619-BunnieFire-bm-s-mobo-c__1691607079_+02100.jpg",
+    "multinatsmoke/figlib_20180827_Holyflareup_sp-e-mobo-c": "exact_dup_eval:figlib_subset:1535383648_+00180.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180827_Holyflareup_sp-e-mobo-c__1535383648_+00180.jpg",
+    "multinatsmoke/figlib_20190813_Topanga_69bravo-n-mobo": "exact_dup_eval:figlib_lockbox:1565731782_+00540.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20190813_Topanga_69bravo-n-mobo__1565731782_+00540.jpg",
+    "multinatsmoke/figlib_20231027.145511-FIRE-bh-s-mobo-c": "exact_dup_eval:figlib_lockbox:1698444911_+01200.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20231027.145511-FIRE-bh-s-mobo-c__1698444911_+01200.jpg",
+    "multinatsmoke/figlib_20200206_FIRE_ml-s-mobo-c": "exact_dup_eval:figlib_lockbox:1581012915_+01800.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20200206_FIRE_ml-s-mobo-c__1581012915_+01800.jpg",
+    "multinatsmoke/figlib_20170708_Whittier_syp-n-mobo-m": "exact_dup_eval:figlib_subset:1499547524_+01261.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20170708_Whittier_syp-n-mobo-m__1499547524_+01261.jpg",
+    "multinatsmoke/figlib_20241006_SaddlebackFire_stgo-w-mobo-c": "exact_dup_eval:figlib_lockbox:1728246877_+02161.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20241006_SaddlebackFire_stgo-w-mobo-c__1728246877_+02161.jpg",
+    "multinatsmoke/figlib_20160722_FIRE_mw-e-mobo-c": "exact_dup_eval:figlib_lockbox:1469223481_+00360.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20160722_FIRE_mw-e-mobo-c__1469223481_+00360.jpg",
+    "multinatsmoke/figlib_20190826_FIRE_pi-s-mobo-c": "exact_dup_eval:figlib_subset:1566839887_+00120.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20190826_FIRE_pi-s-mobo-c__1566839887_+00120.jpg",
+    "multinatsmoke/figlib_20170722_FIRE_mg-n-iqeye": "exact_dup_eval:figlib_lockbox:1500761960_+00600.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20170722_FIRE_mg-n-iqeye__1500761960_+00600.jpg",
+    "multinatsmoke/figlib_20240130.091751-FIRE-wilson-e-mobo-c": "exact_dup_eval:figlib_subset:1706636813_+01742.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20240130.091751-FIRE-wilson-e-mobo-c__1706636813_+01742.jpg",
+    "multinatsmoke/figlib_20190924_FIRE_lo-w-mobo-c": "exact_dup_eval:figlib_lockbox:1569364585_+02397.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20190924_FIRE_lo-w-mobo-c__1569364585_+02397.jpg",
+    "multinatsmoke/figlib_20240909_BridgeFire_marconi-n-mobo-c": "exact_dup_eval:figlib_lockbox:1725914618_+01260.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20240909_BridgeFire_marconi-n-mobo-c__1725914618_+01260.jpg",
+    "multinatsmoke/figlib_20180813_FIRE_mg-w-mobo-c": "exact_dup_eval:figlib_lockbox:1534197400_+00000.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180813_FIRE_mg-w-mobo-c__1534197400_+00000.jpg",
+    "multinatsmoke/figlib_20241007_Posta3Fire_ws-w-mobo-c": "exact_dup_eval:figlib_subset:1728337022_+00361.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20241007_Posta3Fire_ws-w-mobo-c__1728337022_+00361.jpg",
+    "multinatsmoke/figlib_20200614_DrumCanyon_syp-w-mobo-c": "exact_dup_eval:figlib_subset:1592164549_+00300.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20200614_DrumCanyon_syp-w-mobo-c__1592164549_+00300.jpg",
+    "multinatsmoke/figlib_20160604_FIRE_smer-tcs3-mobo-c": "exact_dup_eval:figlib_lockbox:1465066748_+01080.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20160604_FIRE_smer-tcs3-mobo-c__1465066748_+01080.jpg",
+    "multinatsmoke/figlib_20170807_FIRE_bh-n-mobo-c": "exact_dup_eval:figlib_subset:1502142490_+01560.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20170807_FIRE_bh-n-mobo-c__1502142490_+01560.jpg",
+    "multinatsmoke/figlib_20180602_Alison_sp-w-mobo-c": "exact_dup_eval:figlib_lockbox:1527970652_+00660.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180602_Alison_sp-w-mobo-c__1527970652_+00660.jpg",
+    "multinatsmoke/figlib_20160604_FIRE_rm-n-mobo-c": "exact_dup_eval:figlib_subset:1465067640_+02040.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20160604_FIRE_rm-n-mobo-c__1465067640_+02040.jpg",
+    "multinatsmoke/figlib_20180910_FIRE_smer-tcs8-mobo-c": "exact_dup_eval:figlib_subset:1536611155_+01080.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180910_FIRE_smer-tcs8-mobo-c__1536611155_+01080.jpg",
+    "multinatsmoke/figlib_20231026.103933-prescribed-cp-w-mobo-c": "exact_dup_eval:figlib_lockbox:1698343113_+01140.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20231026.103933-prescribed-cp-w-mobo-c__1698343113_+01140.jpg",
+    "multinatsmoke/figlib_20190924_FIRE_ml-w-mobo-c": "exact_dup_eval:figlib_subset:1569363377_+01020.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20190924_FIRE_ml-w-mobo-c__1569363377_+01020.jpg",
+    "multinatsmoke/figlib_20250123_GilmanFire_tdlln-s-mobo-c": "exact_dup_eval:figlib_subset:1737670425_+00061.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20250123_GilmanFire_tdlln-s-mobo-c__1737670425_+00061.jpg",
+    "multinatsmoke/figlib_20231027.095514-prescribed-bi-s-mobo-c": "exact_dup_eval:figlib_subset:1698426733_+01019.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20231027.095514-prescribed-bi-s-mobo-c__1698426733_+01019.jpg",
+    "multinatsmoke/figlib_20210107_Miguelfire_om-w-mobo-c": "exact_dup_eval:figlib_subset:1610046581_+02280.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20210107_Miguelfire_om-w-mobo-c__1610046581_+02280.jpg",
+    "multinatsmoke/figlib_20231123.134319-SageFire-sm-e-mobo-c": "exact_dup_eval:figlib_subset:1700776998_+01199.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20231123.134319-SageFire-sm-e-mobo-c__1700776998_+01199.jpg",
+    "multinatsmoke/figlib_20161113_FIRE_bl-n-mobo-c": "exact_dup_eval:figlib_subset:1479066289_+01920.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20161113_FIRE_bl-n-mobo-c__1479066289_+01920.jpg",
+    "multinatsmoke/figlib_20160722_FIRE_mg-s-iqeye": "exact_dup_eval:figlib_subset:1469228298_+01800.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20160722_FIRE_mg-s-iqeye__1469228298_+01800.jpg",
+    "multinatsmoke/figlib_20170711_FIRE_bl-s-mobo-c": "exact_dup_eval:figlib_lockbox:1499806553_+00360.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20170711_FIRE_bl-s-mobo-c__1499806553_+00360.jpg",
+    "multinatsmoke/figlib_20240201.064352-FIRE-mlo-n-mobo-c": "exact_dup_eval:figlib_subset:1706800612_+01980.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20240201.064352-FIRE-mlo-n-mobo-c__1706800612_+01980.jpg",
+    "multinatsmoke/figlib_20180726_FIRE_so-w-mobo-c": "exact_dup_eval:figlib_lockbox:1532625083_+01680.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180726_FIRE_so-w-mobo-c__1532625083_+01680.jpg",
+    "multinatsmoke/figlib_20180517_FIRE_smer-tcs10-mobo-c": "exact_dup_eval:figlib_subset:1526596139_+02340.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20180517_FIRE_smer-tcs10-mobo-c__1526596139_+02340.jpg",
+    "multinatsmoke/figlib_20201205_typical-range-fire_sclm-e-mobo-c": "exact_dup_eval:figlib_lockbox:1607194108_+01976.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20201205_typical-range-fire_sclm-e-mobo-c__1607194108_+01976.jpg",
+    "multinatsmoke/figlib_20250107_PalisadesFire_dwpgm-s-mobo-c": "exact_dup_eval:figlib_lockbox:1736275412_+01080.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20250107_PalisadesFire_dwpgm-s-mobo-c__1736275412_+01080.jpg",
+    "multinatsmoke/figlib_20220831-Border32fire-pi-s-mobo-m": "exact_dup_eval:figlib_subset:1661981277_+00418.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20220831-Border32fire-pi-s-mobo-m__1661981277_+00418.jpg",
+    "multinatsmoke/figlib_20210711_FIRE_wc-e-mobo-c": "exact_dup_eval:figlib_subset:1626026934_+00780.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20210711_FIRE_wc-e-mobo-c__1626026934_+00780.jpg",
+    "multinatsmoke/figlib_20210115_Bonitafire_tp-w-mobo-c": "exact_dup_eval:figlib_lockbox:1610702655_+01019.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20210115_Bonitafire_tp-w-mobo-c__1610702655_+01019.jpg",
+    "multinatsmoke/figlib_20191005_FIRE_vo-n-mobo-c": "exact_dup_eval:figlib_lockbox:1570310623_+00722.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20191005_FIRE_vo-n-mobo-c__1570310623_+00722.jpg",
+    "multinatsmoke/figlib_20191007_FIRE_sm-s-mobo-c": "exact_dup_eval:figlib_subset:1570476571_+00360.jpg via MultiNatSmokeDataset/Test/FIgLib/images/20191007_FIRE_sm-s-mobo-c__1570476571_+00360.jpg",
+    "multinatsmoke/figlib_firecam_69bravo-n-mobo-c_2019-08-13": "exact_dup_eval:figlib_lockbox:1565732142_+00900.jpg via MultiNatSmokeDataset/Test/firecam/images/69bravo-n-mobo-c__2019-08-13T14;35;42.jpg",
+    "multinatsmoke/smoke5k_real_1565733582_+02340": "exact_dup_eval:figlib_lockbox:1565733582_+02340.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1565733582_+02340.jpg",
+    "multinatsmoke/smoke5k_real_1565732862_+01620": "exact_dup_eval:figlib_lockbox:1565732862_+01620.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1565732862_+01620.jpg",
+    "multinatsmoke/smoke5k_real_1498418793_+02400": "exact_dup_eval:figlib_subset:1498418793_+02400.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1498418793_+02400.jpg",
+    "multinatsmoke/smoke5k_real_1498418013_+01620": "exact_dup_eval:figlib_subset:1498418013_+01620.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1498418013_+01620.jpg",
+    "multinatsmoke/smoke5k_real_1498417653_+01260": "exact_dup_eval:figlib_subset:1498417653_+01260.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1498417653_+01260.jpg",
+    "multinatsmoke/smoke5k_real_1565733222_+01980": "exact_dup_eval:figlib_lockbox:1565733222_+01980.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1565733222_+01980.jpg",
+    "multinatsmoke/smoke5k_real_1565731242_+00000": "exact_dup_eval:figlib_lockbox:1565731242_+00000.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1565731242_+00000.jpg",
+    "multinatsmoke/smoke5k_real_1498417233_+00840": "exact_dup_eval:figlib_subset:1498417233_+00840.jpg via MultiNatSmokeDataset/Test/SMOKE5K_real/images/1498417233_+00840.jpg",
+    "multinatsmoke/figlib_20170625_BBM_bm-n-mobo": "exact_dup_eval:figlib_subset:1498418553_+02160.jpg via MultiNatSmokeDataset/Train/FIgLib/images/20170625_BBM_bm-n-mobo__1498418553_+02160.jpg",
+    "multinatsmoke/figlib_20210209_FIRE_hp-e-mobo-c": "exact_dup_eval:figlib_lockbox:1612894647_+01680.jpg via MultiNatSmokeDataset/Train/FIgLib/images/20210209_FIRE_hp-e-mobo-c__1612894647_+01680.jpg"
+  },
+  "phash_policy": "phash restricted to train-eligible keep rows; exact sha256 checked for ALL rows"
+}

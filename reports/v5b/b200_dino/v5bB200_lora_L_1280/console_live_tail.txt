@@ -1,0 +1,4 @@
+step 11920/12660 loss 0.0471 lr 9.13e-07 0.32s/it mem 6.6G
+step 11940/12660 loss 0.0446 lr 8.65e-07 0.30s/it mem 6.6G
+step 11960/12660 loss 0.0625 lr 8.18e-07 0.31s/it mem 6.6G
+step 11980/12660 loss 0.0541 lr 7.72e-07 0.32s/it mem 6.6G

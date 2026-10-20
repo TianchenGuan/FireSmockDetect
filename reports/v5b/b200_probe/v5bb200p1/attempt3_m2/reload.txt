@@ -1,0 +1,3 @@
+final ckpt epoch: -1 | optimizer stripped: True
+predict ok, boxes: (300, 4) dt=3.089s
+RELOAD_OK

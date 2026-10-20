@@ -1,0 +1,8 @@
+== GRPO-9B x YOLO11m fusion (val 2000) ==
+YOLO11m alone @0.30                          P=0.940 R=0.771 negFP=0.292
+YOLO11m alone @0.15                          P=0.930 R=0.873 negFP=0.389
+GRPO-9B alone                                P=0.924 R=0.846 negFP=0.413
+AND: YOLO@0.30 AND GRPO                      P=0.948 R=0.699 negFP=0.226
+OR: YOLO@0.30 OR GRPO                        P=0.919 R=0.919 negFP=0.479
+hybrid: YOLO@0.45 OR (YOLO@0.12 AND GRPO)    P=0.938 R=0.832 negFP=0.326
+hybrid: YOLO@0.30 OR (YOLO@0.10 AND GRPO)    P=0.934 R=0.862 negFP=0.365

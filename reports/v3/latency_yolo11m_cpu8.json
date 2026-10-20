@@ -1,0 +1,12 @@
+{
+  "model": "yolo/SmokeDetector",
+  "weights": "models/trained/expE_mix_y11m_1280_v2/seg05/best.pt",
+  "device": "cpu",
+  "imgsz": 1280,
+  "n": 12,
+  "batch1_ms_mean": 323.43,
+  "batch1_ms_median": 324.32,
+  "batch1_ms_p90": 330.05,
+  "batch1_ms_min": 297.8,
+  "batch1_ms_max": 335.48
+}

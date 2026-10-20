@@ -1,0 +1,215 @@
+{
+  "weights": "models/v3/runs/v4B6_lora_Hplus/seg10/best.pt",
+  "preds": "models/v4/evals/v4B6_lora_Hplus/sdis_val_preds.jsonl",
+  "device": "cpu",
+  "torch_threads": 96,
+  "conf_floor": 0.02,
+  "match_iou": 0.5,
+  "backend_info": {
+    "backbone_dir": "/local/home/tianrgua/cvproject/models/v3/hf/dinov3-vith16plus",
+    "letterbox": [
+      1280,
+      736
+    ],
+    "lora_r": 16,
+    "lora_alpha": 32.0,
+    "lora_modules": 128,
+    "lora_params": 5242880,
+    "lora_merged_linears": 0,
+    "ckpt_step": 11714,
+    "ckpt_best_map": 0.4165564069738131,
+    "ckpt_tensors": 302,
+    "conf_floor": 0.02,
+    "device": "cpu"
+  },
+  "load_s": 2.2,
+  "images": [
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-244_2024-04-10T10-57-53.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 1,
+      "n_cluster": 1,
+      "n_matched": 1,
+      "max_abs_score_delta": 1e-06,
+      "min_iou": 0.9999,
+      "max_abs_box_delta_norm": 4e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.997
+      ],
+      "top_cluster": [
+        0.997
+      ],
+      "timing": {
+        "latency_ms": 4234.6,
+        "preprocess_ms": 6.7,
+        "infer_ms": 4227.6,
+        "postprocess_ms": 0.3,
+        "full_pass_ms": 4234.4,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-125_2024-04-07T10-06-16.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 2,
+      "n_cluster": 2,
+      "n_matched": 2,
+      "max_abs_score_delta": 2.7e-05,
+      "min_iou": 0.9996,
+      "max_abs_box_delta_norm": 7e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9964,
+        0.0515
+      ],
+      "top_cluster": [
+        0.9964,
+        0.0515
+      ],
+      "timing": {
+        "latency_ms": 3844.4,
+        "preprocess_ms": 4.2,
+        "infer_ms": 3840.1,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 3844.3,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-125_2024-04-10T08-55-35.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 5.8e-05,
+      "min_iou": 0.9998,
+      "max_abs_box_delta_norm": 4e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9977,
+        0.0208,
+        0.0207
+      ],
+      "top_cluster": [
+        0.9977,
+        0.0207,
+        0.0207
+      ],
+      "timing": {
+        "latency_ms": 4030.3,
+        "preprocess_ms": 4.1,
+        "infer_ms": 4026.1,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 4030.2,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_marguerite-339_2024-02-06T16-02-50.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 0.000295,
+      "min_iou": 0.9999,
+      "max_abs_box_delta_norm": 4e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9652,
+        0.6429,
+        0.0251
+      ],
+      "top_cluster": [
+        0.9652,
+        0.6426,
+        0.0251
+      ],
+      "timing": {
+        "latency_ms": 4013.9,
+        "preprocess_ms": 4.1,
+        "infer_ms": 4009.7,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 4013.8,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-125_2024-02-21T07-59-21.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 0,
+      "n_cluster": 0,
+      "n_matched": 0,
+      "max_abs_score_delta": null,
+      "min_iou": null,
+      "max_abs_box_delta_norm": null,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [],
+      "top_cluster": [],
+      "timing": {
+        "latency_ms": 3983.0,
+        "preprocess_ms": 4.2,
+        "infer_ms": 3978.7,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 3982.9,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    }
+  ],
+  "summary": {
+    "n_images": 5,
+    "n_matched_pairs": 9,
+    "max_abs_score_delta": 0.000295,
+    "median_abs_score_delta": 2.2e-05,
+    "min_iou": 0.9996,
+    "mean_iou": 0.99983,
+    "max_abs_box_delta_norm": 7e-06,
+    "n_unmatched_ours": 0,
+    "unmatched_ours_scores": [],
+    "n_unmatched_cluster": 0,
+    "unmatched_cluster_scores": [],
+    "images_with_identical_counts": 5
+  },
+  "latency": {
+    "n": 5,
+    "device": "cpu",
+    "torch_threads": 96,
+    "letterbox": [
+      1280,
+      736
+    ],
+    "lora_merged": false,
+    "batch1_ms_mean": 4066.5,
+    "batch1_ms_median": 4108.9,
+    "batch1_ms_p90": 4189.8,
+    "batch1_ms_min": 3873.7,
+    "batch1_ms_max": 4264.7,
+    "preprocess_ms_median": 4.3,
+    "infer_ms_median": 4104.9
+  }
+}

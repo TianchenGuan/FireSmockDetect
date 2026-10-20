@@ -1,0 +1,17 @@
+{
+  "weights": "/local/home/tianrgua/cvproject/models/v3/fetched/rfdetrL_1280_e48/checkpoint_best_ema.pth",
+  "device": "cpu",
+  "imgsz": 1280,
+  "images": [],
+  "latency": {
+    "n": 8,
+    "device": "cpu",
+    "threads": 32,
+    "batch1_ms_mean": 417.7,
+    "batch1_ms_median": 416.3,
+    "batch1_ms_min": 411.4,
+    "batch1_ms_max": 426.1,
+    "preprocess_ms_median": 6.5,
+    "infer_ms_median": 404.8
+  }
+}

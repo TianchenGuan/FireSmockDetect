@@ -1,0 +1,90 @@
+{
+  "arm": "B_G",
+  "version": "v1",
+  "corpus": "B_G_v1",
+  "created_utc": "2026-09-14T10:40:38+00:00",
+  "seed": 0,
+  "composition": [
+    "G"
+  ],
+  "composition_note": "components parsed from arm name; D_pre = stage-1 pretrain corpus (G), D_adapt = stage-2 adapt corpus (E+T; same content family as E_ET, differs by init)",
+  "verified_empty_negatives": false,
+  "target_subsources": [
+    "AuSmoke",
+    "Boreal",
+    "Forest_Fire"
+  ],
+  "counts": {
+    "per_component": {
+      "G": 14901
+    },
+    "per_source": {
+      "firesense": 292,
+      "multinatsmoke": 14609
+    },
+    "per_label_origin": {
+      "background_neg": 292,
+      "mask-derived": 14609
+    },
+    "n_smoke_boxes_v4": 16794,
+    "n_train_lines": 14901
+  },
+  "excluded": {
+    "policy:non_image_file": 77,
+    "policy:no_usable_label": 5360,
+    "policy:fire_only": 19671,
+    "dedup:origin_class": 40959,
+    "component_T_not_in_arm": 15248
+  },
+  "multiplicities": {
+    "G": {
+      "n_raw": 14901,
+      "multiplicity": 1,
+      "n_effective": 14901
+    }
+  },
+  "lists": {
+    "lists/local/train.txt": {
+      "n": 14901,
+      "sha256": "d3e28471a77695f099cc38bdecaff1459e8771dc46b9a42d39e518f6b4e85f60"
+    },
+    "lists/pod/train.txt": {
+      "n": 14901,
+      "sha256": "c5f2d6e45ffa25e91e2f8b1a53cb6b5d9d7970af5d275ca63e438411629cff1a"
+    },
+    "lists/local/train_G.txt": {
+      "n": 14901,
+      "sha256": "f1461ada6d7c55a47e56d11b72e0d04edbe674f6f2d8c6b787a22fd5983cf472"
+    },
+    "lists/pod/train_G.txt": {
+      "n": 14901,
+      "sha256": "be681da5e6a18614ec5cf20c12c68de75fec8d56493e814c055af8b99bd806b6"
+    }
+  },
+  "yamls": {
+    "local": "/local/home/tianrgua/cvproject/data/v4/yolo/B_G_v1/yamls/local.yaml",
+    "pod": "/local/home/tianrgua/cvproject/data/v4/yolo/B_G_v1/yamls/pod.yaml"
+  },
+  "val": {
+    "local": "/local/home/tianrgua/cvproject/data/yolo/lists/local/sdis_val.txt",
+    "pod": "/mnt/local/smoke_data/lists/pod/sdis_val.txt"
+  },
+  "tar": {
+    "path": "/local/home/tianrgua/cvproject/data/v4/stage/B_G_v1.tar",
+    "bytes": 3373783040,
+    "sha256": "65adf8ca528976ac4a99da07fdc1e67e040f7a508889df2839e589ff2400b694"
+  },
+  "missing_sources": [
+    "dfs"
+  ],
+  "box_count_mismatches": {
+    "n": 0,
+    "examples": []
+  },
+  "dedup": {
+    "parquet": "/local/home/tianrgua/cvproject/data/v4/manifests/dedup_v4.parquet",
+    "sha256": "82ad19145cb3f040dbd3c366b9489c47b0b844639be7d3d6c6d2d2f3cdedeb36"
+  },
+  "aerial_split": null,
+  "pod_root": "/scratch/scratch/tianrgua-sandbox/smoke/v4data/B_G_v1"
+}

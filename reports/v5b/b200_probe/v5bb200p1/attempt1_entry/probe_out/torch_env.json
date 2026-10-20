@@ -1,0 +1,5 @@
+WARNING ⚠️ user config directory '/tmp/.config/Ultralytics' is not writeable, using '/tmp/Ultralytics'. Set YOLO_CONFIG_DIR to override.
+Creating new Ultralytics Settings v0.0.6 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/tmp/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+{"torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "n_gpu": 8, "arch_list": ["sm_70", "sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120"], "names": ["NVIDIA B200"], "cap0": [10, 0], "mem_total_gib": [178.4, 178.4, 178.4, 178.4, 178.4, 178.4, 178.4, 178.4], "ultralytics": "8.3.202"}

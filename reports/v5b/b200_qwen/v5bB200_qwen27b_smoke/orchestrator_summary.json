@@ -1,0 +1,193 @@
+{
+ "run": "v5bB200_qwen27b_smoke",
+ "image": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect-vlm-b200:v1",
+ "queue": "obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas",
+ "states": [
+  [
+   3,
+   "PENDING:",
+   "2026-10-02T13:46:43.815039+00:00"
+  ],
+  [
+   636,
+   "RUNNING",
+   "2026-10-02T13:57:16.767174+00:00"
+  ],
+  [
+   2954,
+   "SUCCEEDED",
+   "2026-10-02T14:35:55.093900+00:00"
+  ]
+ ],
+ "pulls": [
+  {
+   "file": "entry.log",
+   "bytes": 1616,
+   "s": 7.9,
+   "ok": true
+  },
+  {
+   "file": "load_check.json",
+   "bytes": 56,
+   "s": 6.8,
+   "ok": true
+  },
+  {
+   "file": "params.json",
+   "bytes": 183,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "trainer_state.json",
+   "bytes": 8072,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "gpu_samples.csv",
+   "bytes": 9315,
+   "s": 6.8,
+   "ok": true
+  },
+  {
+   "file": "console_errors.txt",
+   "bytes": 0,
+   "s": 6.7,
+   "ok": true
+  },
+  {
+   "file": "console_tail.txt",
+   "bytes": 30000,
+   "s": 6.8,
+   "ok": true
+  },
+  {
+   "file": "eval_preds.jsonl.gz",
+   "bytes": 23671,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "final_adapter.tgz",
+   "bytes": 293902946,
+   "s": 51.7,
+   "ok": true
+  }
+ ],
+ "status_samples": [
+  [
+   643,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"load_check\", \"t\": 13, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:07Z\"}"
+  ],
+  [
+   743,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   849,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   949,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1056,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1156,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1263,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1364,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1471,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1571,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1679,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1779,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1886,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   1986,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   2093,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   2193,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"train\", \"t\": 33, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T13:57:27Z\"}"
+  ],
+  [
+   2300,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"eval\", \"t\": 1632, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:24:06Z\"}"
+  ],
+  [
+   2400,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"eval\", \"t\": 1632, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:24:06Z\"}"
+  ],
+  [
+   2500,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"eval\", \"t\": 1632, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:24:06Z\"}"
+  ],
+  [
+   2600,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"eval\", \"t\": 1632, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:24:06Z\"}"
+  ],
+  [
+   2699,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"eval\", \"t\": 1632, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:24:06Z\"}"
+  ],
+  [
+   2799,
+   "{\"run\": \"v5bB200_qwen27b_smoke\", \"phase\": \"retain\", \"t\": 2103, \"gpus\": 8, \"step\": \"200\", \"loss\": \"0.3918\", \"root\": \"/mnt/local/v5b_qwen\", \"host\": \"tianrgua-v5bqwensmk-2g5n-worker-0\", \"ts\": \"2026-10-02T14:31:57Z\"}"
+  ]
+ ],
+ "submitted_utc": "2026-10-02T13:46:33.518921+00:00",
+ "config": {
+  "run": "v5bB200_qwen27b_smoke",
+  "tag": "v5bqwensmk",
+  "image_uri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect-vlm-b200:v1",
+  "max_steps": 200,
+  "bs": 2,
+  "ga": 4,
+  "max_pixels": 1048576,
+  "eval_n": 200,
+  "train_timeout": 3600,
+  "retain_s": 3600,
+  "poll_s": 90,
+  "max_wall_s": 14400,
+  "pending_abort_s": 3600,
+  "attach_job": null,
+  "dry_run": false
+ },
+ "job": "tianrgua-v5bqwensmk-2g5n",
+ "running_after_s": 636,
+ "running_utc": "2026-10-02T13:57:16.767187+00:00",
+ "acked_utc": "2026-10-02T14:35:21.530180+00:00",
+ "final_state": "SUCCEEDED",
+ "ended_utc": "2026-10-02T14:35:56.426998+00:00",
+ "node_seconds_running_est": 2320
+}

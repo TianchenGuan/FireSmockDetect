@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v4/evals/v4B6_lora_Hplus_test/sdis_test_preds.jsonl",
+  "data_yaml": "data/yolo/yamls/local/expB.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 4124,
+  "n_positive_images": 3207,
+  "n_negative_images": 917,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.3473,
+      "recall": 0.9065,
+      "neg_image_fp_rate": 0.6892,
+      "recall_by_size": {
+        "tiny": 0.8477,
+        "small": 0.9713,
+        "medium": 0.9726,
+        "large": 0.2264
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.4156,
+      "recall": 0.8863,
+      "neg_image_fp_rate": 0.6445,
+      "recall_by_size": {
+        "tiny": 0.8181,
+        "small": 0.9563,
+        "medium": 0.9726,
+        "large": 0.2264
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.4607,
+      "recall": 0.8748,
+      "neg_image_fp_rate": 0.6205,
+      "recall_by_size": {
+        "tiny": 0.8006,
+        "small": 0.9506,
+        "medium": 0.9589,
+        "large": 0.2075
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.4957,
+      "recall": 0.8644,
+      "neg_image_fp_rate": 0.602,
+      "recall_by_size": {
+        "tiny": 0.7839,
+        "small": 0.9454,
+        "medium": 0.9589,
+        "large": 0.1698
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.5231,
+      "recall": 0.8554,
+      "neg_image_fp_rate": 0.5867,
+      "recall_by_size": {
+        "tiny": 0.7697,
+        "small": 0.9397,
+        "medium": 0.9589,
+        "large": 0.1698
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.5457,
+      "recall": 0.847,
+      "neg_image_fp_rate": 0.5747,
+      "recall_by_size": {
+        "tiny": 0.76,
+        "small": 0.9316,
+        "medium": 0.9543,
+        "large": 0.1698
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.5869,
+      "recall": 0.8282,
+      "neg_image_fp_rate": 0.5463,
+      "recall_by_size": {
+        "tiny": 0.7329,
+        "small": 0.9201,
+        "medium": 0.9361,
+        "large": 0.1509
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.6196,
+      "recall": 0.8108,
+      "neg_image_fp_rate": 0.5093,
+      "recall_by_size": {
+        "tiny": 0.7058,
+        "small": 0.9103,
+        "medium": 0.9315,
+        "large": 0.1132
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.6521,
+      "recall": 0.7897,
+      "neg_image_fp_rate": 0.4798,
+      "recall_by_size": {
+        "tiny": 0.6774,
+        "small": 0.8954,
+        "medium": 0.9087,
+        "large": 0.1132
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.6953,
+      "recall": 0.7642,
+      "neg_image_fp_rate": 0.4351,
+      "recall_by_size": {
+        "tiny": 0.6413,
+        "small": 0.877,
+        "medium": 0.8995,
+        "large": 0.0943
+      },
+      "gt_by_size": {
+        "tiny": 1550,
+        "small": 1740,
+        "medium": 219,
+        "large": 53
+      }
+    }
+  ]
+}

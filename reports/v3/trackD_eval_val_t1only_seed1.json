@@ -1,0 +1,318 @@
+{
+  "n_frames": 7335,
+  "n_pos": 6177,
+  "n_neg": 1158,
+  "n_clean_neg": 560,
+  "n_tiny_pos_frames": 5881,
+  "fpr_targets": [
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "systems": {
+    "s1_single_frame": {
+      "pr_auc": 0.9351,
+      "roc_auc": 0.7685,
+      "matched_fpr": {
+        "all_neg@0.005": {
+          "threshold": 0.81426,
+          "achieved_fpr": 0.00432,
+          "recall_pos_frames": 0.0353,
+          "recall_tiny_frames": 0.0364,
+          "episodes": 469,
+          "episode_detection_rate": 0.1322,
+          "median_onset_latency_frames": 5.5
+        },
+        "all_neg@0.01": {
+          "threshold": 0.79967,
+          "achieved_fpr": 0.0095,
+          "recall_pos_frames": 0.0622,
+          "recall_tiny_frames": 0.0644,
+          "episodes": 469,
+          "episode_detection_rate": 0.1748,
+          "median_onset_latency_frames": 4.0
+        },
+        "all_neg@0.02": {
+          "threshold": 0.7749,
+          "achieved_fpr": 0.01986,
+          "recall_pos_frames": 0.1004,
+          "recall_tiny_frames": 0.1037,
+          "episodes": 469,
+          "episode_detection_rate": 0.2814,
+          "median_onset_latency_frames": 2.0
+        },
+        "all_neg@0.05": {
+          "threshold": 0.72248,
+          "achieved_fpr": 0.04922,
+          "recall_pos_frames": 0.2053,
+          "recall_tiny_frames": 0.2095,
+          "episodes": 469,
+          "episode_detection_rate": 0.4606,
+          "median_onset_latency_frames": 1.5
+        },
+        "all_neg@0.1": {
+          "threshold": 0.65536,
+          "achieved_fpr": 0.09931,
+          "recall_pos_frames": 0.34,
+          "recall_tiny_frames": 0.3443,
+          "episodes": 469,
+          "episode_detection_rate": 0.6141,
+          "median_onset_latency_frames": 1.0
+        },
+        "clean_neg@0.005": {
+          "threshold": 0.7681,
+          "achieved_fpr": 0.00357,
+          "recall_pos_frames": 0.1109,
+          "recall_tiny_frames": 0.1143,
+          "episodes": 469,
+          "episode_detection_rate": 0.2985,
+          "median_onset_latency_frames": 2.0
+        },
+        "clean_neg@0.01": {
+          "threshold": 0.75254,
+          "achieved_fpr": 0.00893,
+          "recall_pos_frames": 0.1412,
+          "recall_tiny_frames": 0.1447,
+          "episodes": 469,
+          "episode_detection_rate": 0.3603,
+          "median_onset_latency_frames": 2.0
+        },
+        "clean_neg@0.02": {
+          "threshold": 0.72504,
+          "achieved_fpr": 0.01964,
+          "recall_pos_frames": 0.2004,
+          "recall_tiny_frames": 0.2046,
+          "episodes": 469,
+          "episode_detection_rate": 0.4478,
+          "median_onset_latency_frames": 2.0
+        },
+        "clean_neg@0.05": {
+          "threshold": 0.6793,
+          "achieved_fpr": 0.05,
+          "recall_pos_frames": 0.2895,
+          "recall_tiny_frames": 0.2935,
+          "episodes": 469,
+          "episode_detection_rate": 0.58,
+          "median_onset_latency_frames": 1.0
+        },
+        "clean_neg@0.1": {
+          "threshold": 0.61672,
+          "achieved_fpr": 0.1,
+          "recall_pos_frames": 0.4081,
+          "recall_tiny_frames": 0.4147,
+          "episodes": 469,
+          "episode_detection_rate": 0.6652,
+          "median_onset_latency_frames": 1.0
+        }
+      }
+    },
+    "s2_persistence_3of5": {
+      "pr_auc": 0.9169,
+      "roc_auc": 0.7056,
+      "matched_fpr": {
+        "all_neg@0.005": {
+          "threshold": 0.82292,
+          "achieved_fpr": 0.00432,
+          "recall_pos_frames": 0.0123,
+          "recall_tiny_frames": 0.0126,
+          "episodes": 469,
+          "episode_detection_rate": 0.0341,
+          "median_onset_latency_frames": 7.5
+        },
+        "all_neg@0.01": {
+          "threshold": 0.78741,
+          "achieved_fpr": 0.0095,
+          "recall_pos_frames": 0.0515,
+          "recall_tiny_frames": 0.0529,
+          "episodes": 469,
+          "episode_detection_rate": 0.1173,
+          "median_onset_latency_frames": 6.0
+        },
+        "all_neg@0.02": {
+          "threshold": 0.76438,
+          "achieved_fpr": 0.019,
+          "recall_pos_frames": 0.0826,
+          "recall_tiny_frames": 0.0843,
+          "episodes": 469,
+          "episode_detection_rate": 0.162,
+          "median_onset_latency_frames": 5.0
+        },
+        "all_neg@0.05": {
+          "threshold": 0.72418,
+          "achieved_fpr": 0.04922,
+          "recall_pos_frames": 0.1632,
+          "recall_tiny_frames": 0.1632,
+          "episodes": 469,
+          "episode_detection_rate": 0.2665,
+          "median_onset_latency_frames": 3.0
+        },
+        "all_neg@0.1": {
+          "threshold": 0.66786,
+          "achieved_fpr": 0.09758,
+          "recall_pos_frames": 0.2752,
+          "recall_tiny_frames": 0.2756,
+          "episodes": 469,
+          "episode_detection_rate": 0.3838,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.005": {
+          "threshold": 0.70201,
+          "achieved_fpr": 0.00179,
+          "recall_pos_frames": 0.2056,
+          "recall_tiny_frames": 0.2061,
+          "episodes": 469,
+          "episode_detection_rate": 0.2985,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.01": {
+          "threshold": 0.69462,
+          "achieved_fpr": 0.00536,
+          "recall_pos_frames": 0.2192,
+          "recall_tiny_frames": 0.2195,
+          "episodes": 469,
+          "episode_detection_rate": 0.3177,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.02": {
+          "threshold": 0.68418,
+          "achieved_fpr": 0.01964,
+          "recall_pos_frames": 0.2368,
+          "recall_tiny_frames": 0.2365,
+          "episodes": 469,
+          "episode_detection_rate": 0.3369,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.05": {
+          "threshold": 0.63913,
+          "achieved_fpr": 0.04821,
+          "recall_pos_frames": 0.333,
+          "recall_tiny_frames": 0.334,
+          "episodes": 469,
+          "episode_detection_rate": 0.452,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.1": {
+          "threshold": 0.58267,
+          "achieved_fpr": 0.1,
+          "recall_pos_frames": 0.4277,
+          "recall_tiny_frames": 0.43,
+          "episodes": 469,
+          "episode_detection_rate": 0.5352,
+          "median_onset_latency_frames": 2.0
+        }
+      }
+    },
+    "s3_learned_head_t1only": {
+      "pr_auc": 0.9399,
+      "roc_auc": 0.7761,
+      "matched_fpr": {
+        "all_neg@0.005": {
+          "threshold": 0.96536,
+          "achieved_fpr": 0.00432,
+          "recall_pos_frames": 0.0401,
+          "recall_tiny_frames": 0.0403,
+          "episodes": 469,
+          "episode_detection_rate": 0.1279,
+          "median_onset_latency_frames": 4.0
+        },
+        "all_neg@0.01": {
+          "threshold": 0.96007,
+          "achieved_fpr": 0.0095,
+          "recall_pos_frames": 0.0541,
+          "recall_tiny_frames": 0.0542,
+          "episodes": 469,
+          "episode_detection_rate": 0.1429,
+          "median_onset_latency_frames": 4.0
+        },
+        "all_neg@0.02": {
+          "threshold": 0.9354,
+          "achieved_fpr": 0.01986,
+          "recall_pos_frames": 0.113,
+          "recall_tiny_frames": 0.1117,
+          "episodes": 469,
+          "episode_detection_rate": 0.2388,
+          "median_onset_latency_frames": 3.0
+        },
+        "all_neg@0.05": {
+          "threshold": 0.86322,
+          "achieved_fpr": 0.04922,
+          "recall_pos_frames": 0.2449,
+          "recall_tiny_frames": 0.245,
+          "episodes": 469,
+          "episode_detection_rate": 0.4136,
+          "median_onset_latency_frames": 1.0
+        },
+        "all_neg@0.1": {
+          "threshold": 0.7054,
+          "achieved_fpr": 0.09931,
+          "recall_pos_frames": 0.3987,
+          "recall_tiny_frames": 0.4011,
+          "episodes": 469,
+          "episode_detection_rate": 0.548,
+          "median_onset_latency_frames": 1.0
+        },
+        "clean_neg@0.005": {
+          "threshold": 0.95545,
+          "achieved_fpr": 0.00179,
+          "recall_pos_frames": 0.0652,
+          "recall_tiny_frames": 0.0653,
+          "episodes": 469,
+          "episode_detection_rate": 0.1642,
+          "median_onset_latency_frames": 4.0
+        },
+        "clean_neg@0.01": {
+          "threshold": 0.92658,
+          "achieved_fpr": 0.00893,
+          "recall_pos_frames": 0.134,
+          "recall_tiny_frames": 0.1323,
+          "episodes": 469,
+          "episode_detection_rate": 0.2708,
+          "median_onset_latency_frames": 3.0
+        },
+        "clean_neg@0.02": {
+          "threshold": 0.90163,
+          "achieved_fpr": 0.01964,
+          "recall_pos_frames": 0.1829,
+          "recall_tiny_frames": 0.1821,
+          "episodes": 469,
+          "episode_detection_rate": 0.3262,
+          "median_onset_latency_frames": 2.0
+        },
+        "clean_neg@0.05": {
+          "threshold": 0.80574,
+          "achieved_fpr": 0.05,
+          "recall_pos_frames": 0.3144,
+          "recall_tiny_frames": 0.3151,
+          "episodes": 469,
+          "episode_detection_rate": 0.4733,
+          "median_onset_latency_frames": 1.0
+        },
+        "clean_neg@0.1": {
+          "threshold": 0.64308,
+          "achieved_fpr": 0.1,
+          "recall_pos_frames": 0.4442,
+          "recall_tiny_frames": 0.4464,
+          "episodes": 469,
+          "episode_detection_rate": 0.597,
+          "median_onset_latency_frames": 1.0
+        }
+      }
+    }
+  },
+  "deployed_points": {
+    "deployed_confirmed_only(s2>=0.15)": {
+      "fpr_all_neg": 0.53454,
+      "fpr_clean_neg": 0.27679,
+      "recall_pos_frames": 0.8342,
+      "recall_tiny_frames": 0.8383
+    },
+    "deployed_confirmed_or_provisional(s2>=0.15|s1>=0.30)": {
+      "fpr_all_neg": 0.58722,
+      "fpr_clean_neg": 0.35893,
+      "recall_pos_frames": 0.8982,
+      "recall_tiny_frames": 0.9043
+    }
+  }
+}

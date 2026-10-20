@@ -1,0 +1,21 @@
+{
+ "Version": "2012-10-17",
+ "Statement": [
+  {
+   "Sid": "AllowLeviathanClusterAccountRW",
+   "Effect": "Allow",
+   "Principal": {
+    "AWS": "arn:aws:iam::000000000005:root"
+   },
+   "Action": [
+    "s3:GetObject",
+    "s3:PutObject",
+    "s3:ListBucket"
+   ],
+   "Resource": [
+    "arn:aws:s3:::smoke-detect-data-000000000001-aps1",
+    "arn:aws:s3:::smoke-detect-data-000000000001-aps1/*"
+   ]
+  }
+ ]
+}

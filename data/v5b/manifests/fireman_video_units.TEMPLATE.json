@@ -1,0 +1,398 @@
+{
+ "rgb/test/video_001": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/test/video_002": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/test/video_003": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/test/video_004": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/test/video_005": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_001": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_002": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_003": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_004": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_005": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_006": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_007": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_008": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_009": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_010": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_011": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_012": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_013": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_014": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_015": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_016": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_017": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_018": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_019": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_020": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_021": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_022": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_023": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/train/video_024": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/val/video_001": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/val/video_002": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/val/video_003": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/val/video_004": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "rgb/val/video_005": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/test/video_t_01": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/test/video_t_02": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_01": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_02": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_03": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_04": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_05": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/train/video_t_06": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/val/video_t_01": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ },
+ "thermal/val/video_t_02": {
+  "burn": null,
+  "date": null,
+  "location": null,
+  "gps": null,
+  "paired_video": null,
+  "evidence": null,
+  "proposed_split": null
+ }
+}

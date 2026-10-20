@@ -1,0 +1,24 @@
+{
+  "arm": "B",
+  "name": "synthB",
+  "real": 38454,
+  "real_mult": 1,
+  "synth": 38454,
+  "synth_mult": 1,
+  "epoch_images": 76908,
+  "tar_gb": 11.14,
+  "corpus_stats": {
+    "jobs": 32826,
+    "written": 38454,
+    "errors": 0,
+    "positives": 27197,
+    "invisible_kept_neg": 0,
+    "unique_backgrounds": 11912,
+    "unique_assets": 3000,
+    "n_ctrl": 5628,
+    "n_conf": 3377,
+    "n_plain": 2252,
+    "faint_frac": 0.45,
+    "seed": 60
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "Version": "2012-10-17",
+ "Statement": [
+  {
+   "Sid": "AllowLeviathanClusterPull",
+   "Effect": "Allow",
+   "Principal": {
+    "AWS": [
+     "arn:aws:iam::000000000005:root",
+     "arn:aws:iam::000000000006:root"
+    ]
+   },
+   "Action": [
+    "ecr:GetDownloadUrlForLayer",
+    "ecr:BatchGetImage",
+    "ecr:BatchCheckLayerAvailability"
+   ]
+  }
+ ]
+}

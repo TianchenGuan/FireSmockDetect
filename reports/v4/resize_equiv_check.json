@@ -1,0 +1,139 @@
+{
+  "weights": "/local/home/tianrgua/cvproject/models/trained/expE_mix_y11m_1280_v2/seg05/best.pt",
+  "imgsz": 1280,
+  "n_checked": 7,
+  "max_score_abs_diff": 0.0,
+  "max_feat_rel_mean_abs_diff": 0.0,
+  "note": "identical shapes + tiny diffs => the pre-resize is the same single INTER_LINEAR op the pod letterbox would have done; residual is JPEG q95 recompression only (passthrough frames are byte-identical and must show 0.0).",
+  "rows": [
+    {
+      "source": "ausmoke",
+      "frame": "00012_000054-+000016.jpg",
+      "native_shape": [
+        1080,
+        1920
+      ],
+      "staged_shape": [
+        1080,
+        1920
+      ],
+      "score_native": 0.113091,
+      "score_prescaled": 0.113091,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "ausmoke",
+      "frame": "20230404_FB389_1137_20240404104717_003115-+000051.jpg",
+      "native_shape": [
+        2160,
+        3840
+      ],
+      "staged_shape": [
+        2160,
+        3840
+      ],
+      "score_native": 0.511985,
+      "score_prescaled": 0.511985,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "ausmoke",
+      "frame": "2024_03_08_11_60spf_000319-+000240.jpg",
+      "native_shape": [
+        2160,
+        3840
+      ],
+      "staged_shape": [
+        2160,
+        3840
+      ],
+      "score_native": 0.761014,
+      "score_prescaled": 0.761014,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "boreal",
+      "frame": "evo_1_t0000.jpg",
+      "status": "staged_missing"
+    },
+    {
+      "source": "boreal",
+      "frame": "heinola_27_t0013.jpg",
+      "native_shape": [
+        2160,
+        4096
+      ],
+      "staged_shape": [
+        2160,
+        4096
+      ],
+      "score_native": 0.231833,
+      "score_prescaled": 0.231833,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "boreal",
+      "frame": "heinola_98_t0007.jpg",
+      "native_shape": [
+        2160,
+        4096
+      ],
+      "staged_shape": [
+        2160,
+        4096
+      ],
+      "score_native": 0.776461,
+      "score_prescaled": 0.776461,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "firesense",
+      "frame": "testneg01.807_t0000.jpg",
+      "native_shape": [
+        288,
+        352
+      ],
+      "staged_shape": [
+        288,
+        352
+      ],
+      "score_native": 0.0,
+      "score_prescaled": 0.0,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "firesense",
+      "frame": "testneg09.815_t0011.jpg",
+      "native_shape": [
+        288,
+        352
+      ],
+      "staged_shape": [
+        288,
+        352
+      ],
+      "score_native": 0.289154,
+      "score_prescaled": 0.289154,
+      "score_abs_diff": 0.0,
+      "feat_max_abs_diff": 0.0,
+      "feat_rel_mean_abs_diff": 0.0
+    },
+    {
+      "source": "firesense",
+      "frame": "testpos05.821_t0085.jpg",
+      "status": "staged_missing"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+ "note": "per-system confidence at matched neg-image FP on VAL (PREREGISTRATION_V5B.md 'Thresholds per system'): sdis-VAL 5/10/20% (fixed camera), FireMan-VAL 5/10% (aerial). Computed from reports/v5b/val/*.raw.parquet by make_report_tables_v5b.py; VAL-only.",
+ "systems": {
+  "S0_expE": {
+   "sdisval": {
+    "fp0.05": 0.721,
+    "fp0.10": 0.6546,
+    "fp0.20": 0.5354
+   },
+   "firemanval": {
+    "fp0.05": 0.1772,
+    "fp0.10": 0.0698
+   }
+  },
+  "S0b_expB": {
+   "sdisval": {
+    "fp0.05": 0.7228,
+    "fp0.10": 0.6503,
+    "fp0.20": 0.5323
+   },
+   "firemanval": {
+    "fp0.05": 0.1444,
+    "fp0.10": 0.0632
+   }
+  },
+  "S1_A": {
+   "sdisval": {
+    "fp0.05": 0.729,
+    "fp0.10": 0.6732,
+    "fp0.20": 0.534
+   },
+   "firemanval": {
+    "fp0.05": 0.0915,
+    "fp0.10": 0.0298
+   }
+  },
+  "S1_A_s1": {
+   "sdisval": {
+    "fp0.05": 0.7269,
+    "fp0.10": 0.6659,
+    "fp0.20": 0.542
+   },
+   "firemanval": {
+    "fp0.05": 0.2358,
+    "fp0.10": 0.1645
+   }
+  },
+  "S1_A_s2": {
+   "sdisval": {
+    "fp0.05": 0.7168,
+    "fp0.10": 0.6464,
+    "fp0.20": 0.4996
+   },
+   "firemanval": {
+    "fp0.05": 0.2822,
+    "fp0.10": 0.1791
+   }
+  },
+  "S2_B": {
+   "sdisval": {
+    "fp0.05": 0.7401,
+    "fp0.10": 0.6717,
+    "fp0.20": 0.5567
+   },
+   "firemanval": {
+    "fp0.05": 0.1315,
+    "fp0.10": 0.0756
+   }
+  },
+  "S2_B_s1": {
+   "sdisval": {
+    "fp0.05": 0.7277,
+    "fp0.10": 0.6593,
+    "fp0.20": 0.5277
+   },
+   "firemanval": {
+    "fp0.05": null,
+    "fp0.10": null
+   }
+  },
+  "S2_B_s2": {
+   "sdisval": {
+    "fp0.05": 0.7277,
+    "fp0.10": 0.6558,
+    "fp0.20": 0.559
+   },
+   "firemanval": {
+    "fp0.05": 0.1944,
+    "fp0.10": 0.0445
+   }
+  },
+  "S3_C": {
+   "sdisval": {
+    "fp0.05": 0.7451,
+    "fp0.10": 0.691,
+    "fp0.20": 0.5853
+   },
+   "firemanval": {
+    "fp0.05": 0.0722,
+    "fp0.10": 0.0449
+   }
+  },
+  "S4_D": {
+   "sdisval": {
+    "fp0.05": 0.7576,
+    "fp0.10": 0.6947,
+    "fp0.20": 0.5777
+   },
+   "firemanval": {
+    "fp0.05": 0.0815,
+    "fp0.10": 0.0361
+   }
+  },
+  "S4b_D2": {
+   "sdisval": {
+    "fp0.05": 0.7651,
+    "fp0.10": 0.7032,
+    "fp0.20": 0.5723
+   },
+   "firemanval": {
+    "fp0.05": 0.0509,
+    "fp0.10": 0.0242
+   }
+  },
+  "S4c_D3": {
+   "sdisval": {
+    "fp0.05": 0.7231,
+    "fp0.10": 0.6789,
+    "fp0.20": 0.5642
+   },
+   "firemanval": {
+    "fp0.05": 0.2615,
+    "fp0.10": 0.1991
+   }
+  },
+  "S5_ensemble_S1_A": {
+   "sdisval": {
+    "fp0.05": 0.9821,
+    "fp0.10": 0.9616,
+    "fp0.20": 0.9044
+   }
+  },
+  "S5_ensemble_v4a_s2": {
+   "sdisval": {
+    "fp0.05": 0.9824,
+    "fp0.10": 0.9615,
+    "fp0.20": 0.9047
+   }
+  }
+ }
+}

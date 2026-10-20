@@ -1,0 +1,31 @@
+# smoke-detect-vlm-b200:v1 — Qwen3.5-27B bf16 LoRA SFT smoke-test image for the obsidian-pu
+# B200 node (ap-south-1). Pods have no internet/S3 and run as uid 1001, so the base weights
+# (55.6 GB, pinned HF rev fc05daec, sha-verified in v2), the SFT jsonl + its pyro-sdis/D-Fire
+# images and the v2 training/eval scripts are baked under /opt (world-readable by default;
+# NO `RUN chmod -R` — that duplicates the layer). Weights are split in two COPY layers because
+# the ECR per-layer cap is 52,000 MiB (55.59 GB in one layer would be rejected).
+# Base = the v2 Track-B stack (transformers 5.17.0, peft 0.20.0, trl 1.13.0, bitsandbytes 0.50.2,
+# torch 2.8.0+cu128 = same build as the B200-verified smoke-detect:v4). Local copy only exists
+# under its us-east-1 tag; the pushed tag is ap-south-1 (kraken region rule).
+FROM 000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect-vlm:v3
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/tmp/hf HOME=/tmp \
+    TORCHINDUCTOR_CACHE_DIR=/tmp/inductor_cache TRITON_CACHE_DIR=/tmp/triton_cache PYTHONUNBUFFERED=1
+COPY data /opt/smoke_data
+COPY code /opt/smoke_vlm
+COPY weights_a /opt/models/qwen3.5-27b
+COPY weights_b /opt/models/qwen3.5-27b
+RUN python - <<'PY'
+import json, os
+d = "/opt/models/qwen3.5-27b"
+idx = json.load(open(f"{d}/model.safetensors.index.json"))
+shards = sorted(set(idx["weight_map"].values()))
+sizes = {s: os.path.getsize(f"{d}/{s}") for s in shards}
+print(len(shards), "shards", sum(sizes.values()), "bytes; total dir", sum(os.path.getsize(f"{d}/{f}") for f in os.listdir(d)))
+assert len(shards) == 11 and all(v > 1e9 for v in sizes.values())
+n = sum(1 for _ in open("/opt/smoke_data/sft/train.jsonl"))
+first = json.loads(open("/opt/smoke_data/sft/train.jsonl").readline())
+p = first["image_path"].replace("/local/home/tianrgua/cvproject/data/yolo", "/opt/smoke_data")
+print("sft rows", n, "first image present", os.path.exists(p))
+assert n == 59999 and os.path.exists(p)
+PY
+WORKDIR /opt/smoke_vlm

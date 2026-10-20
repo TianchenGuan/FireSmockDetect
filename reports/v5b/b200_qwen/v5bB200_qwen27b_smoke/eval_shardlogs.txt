@@ -1,0 +1,47 @@
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard0.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 19, "n_neg": 6, "img_recall": 0.3158, "img_fp_rate_neg": 0.1667, "box_precision": 0.5, "box_recall": 0.1905, "tiny_recall": 0.3333, "tiny_n": 6, "parse_fail": 18, "mean_latency_s": 14.564, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 364.8}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard1.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 21, "n_neg": 4, "img_recall": 0.1429, "img_fp_rate_neg": 0.0, "box_precision": 0.6667, "box_recall": 0.087, "tiny_recall": 0.3333, "tiny_n": 6, "parse_fail": 22, "mean_latency_s": 16.264, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 407.2}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard2.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 21, "n_neg": 4, "img_recall": 0.381, "img_fp_rate_neg": 0.5, "box_precision": 0.4, "box_recall": 0.1667, "tiny_recall": 0.125, "tiny_n": 8, "parse_fail": 15, "mean_latency_s": 15.985, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 400.1}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard3.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 19, "n_neg": 6, "img_recall": 0.2105, "img_fp_rate_neg": 0.1667, "box_precision": 0.5, "box_recall": 0.1429, "tiny_recall": 0.0, "tiny_n": 3, "parse_fail": 20, "mean_latency_s": 16.047, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 401.7}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard4.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 20, "n_neg": 5, "img_recall": 0.15, "img_fp_rate_neg": 0.0, "box_precision": 0.6667, "box_recall": 0.0952, "tiny_recall": 0.5, "tiny_n": 4, "parse_fail": 22, "mean_latency_s": 16.495, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 412.8}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard5.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 20, "n_neg": 5, "img_recall": 0.2, "img_fp_rate_neg": 0.4, "box_precision": 0.5, "box_recall": 0.1429, "tiny_recall": 0.3333, "tiny_n": 3, "parse_fail": 19, "mean_latency_s": 16.087, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 403.0}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard6.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 18, "n_neg": 7, "img_recall": 0.2778, "img_fp_rate_neg": 0.2857, "box_precision": 0.5556, "box_recall": 0.2778, "tiny_recall": 0.25, "tiny_n": 4, "parse_fail": 18, "mean_latency_s": 16.493, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 412.9}
+VLM_EVAL_DONE
+
+==> /mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/eval/shard7.log <==
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+SUMMARY {"n_images": 25, "n_pos": 21, "n_neg": 4, "img_recall": 0.0952, "img_fp_rate_neg": 0.25, "box_precision": 0.3333, "box_recall": 0.0476, "tiny_recall": 0.0, "tiny_n": 5, "parse_fail": 22, "mean_latency_s": 15.461, "adapter": "/mnt/local/v5b_qwen/v5bB200_qwen27b_smoke/train/final_adapter", "model": "/opt/models/qwen3.5-27b", "elapsed_s": 387.0}
+VLM_EVAL_DONE

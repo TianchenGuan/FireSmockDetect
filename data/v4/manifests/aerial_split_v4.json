@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-14T12:05:28+00:00",
+  "seed": 0,
+  "ratio": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "policy": "split by ENTIRE parent_unit, greedy on unit count (not frames)",
+  "sources": {
+    "boreal": {
+      "tiny_n_warning": "boreal: TINY-N LIMITATION \u2014 only 4 independent parent_units; 60/20/20 by unit count is statistically weak. >=1 unit forced into val and test where possible. Treat aerial val/test numbers as anecdotal.",
+      "n_units": 4,
+      "train": [
+        "burn_evo",
+        "burn_karkkila"
+      ],
+      "val": [
+        "burn_heinola"
+      ],
+      "test": [
+        "burn_ruokolahti"
+      ],
+      "frames_per_unit": {
+        "burn_evo": 1276,
+        "burn_heinola": 1630,
+        "burn_karkkila": 1526,
+        "burn_ruokolahti": 2282
+      }
+    }
+  }
+}

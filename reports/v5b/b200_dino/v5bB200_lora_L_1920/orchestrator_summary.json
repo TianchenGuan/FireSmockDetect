@@ -1,0 +1,435 @@
+{
+ "run": "v5bB200_lora_L_1920",
+ "image": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-dino3-b200:v1",
+ "queue": "obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas",
+ "states": [
+  [
+   3,
+   "RUNNING",
+   "2026-10-02T09:44:26.770631+00:00"
+  ]
+ ],
+ "pulls": [
+  {
+   "file": "best_model.pt",
+   "evals": 1,
+   "bytes": 101884095,
+   "s": 19.1,
+   "ok": true,
+   "meta": "1266 0.3118830550548439"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 2,
+   "bytes": 101884095,
+   "s": 21.5,
+   "ok": true,
+   "meta": "2532 0.3715291997212232"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 3,
+   "bytes": 101884095,
+   "s": 17.9,
+   "ok": true,
+   "meta": "3798 0.3843931637504791"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 4,
+   "bytes": 101884095,
+   "s": 19.3,
+   "ok": true,
+   "meta": "5064 0.40053658214113796"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 5,
+   "bytes": 101884095,
+   "s": 21.4,
+   "ok": true,
+   "meta": "6330 0.4034143454648538"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 6,
+   "bytes": 101884095,
+   "s": 24.4,
+   "ok": true,
+   "meta": "7596 0.4050298360550128"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 7,
+   "bytes": 101884095,
+   "s": 18.9,
+   "ok": true,
+   "meta": "8862 0.4162263765515944"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 8,
+   "bytes": 101884095,
+   "s": 22.9,
+   "ok": true,
+   "meta": "8862 0.4162263765515944"
+  },
+  {
+   "file": "best_model.pt",
+   "evals": 9,
+   "bytes": 101884095,
+   "s": 18.2,
+   "ok": true,
+   "meta": "8862 0.4162263765515944"
+  },
+  {
+   "file": "metrics.jsonl",
+   "bytes": 98016,
+   "s": 7.1,
+   "ok": true
+  },
+  {
+   "file": "memprobe.jsonl",
+   "bytes": 285,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "entry.log",
+   "bytes": 1371,
+   "s": 6.7,
+   "ok": true
+  },
+  {
+   "file": "console_errors.txt",
+   "bytes": 0,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "preds/latency_b200.json",
+   "bytes": 271,
+   "s": 7.2,
+   "ok": true
+  },
+  {
+   "file": "sdis_val_preds.jsonl.gz",
+   "bytes": 600218,
+   "s": 7.9,
+   "ok": true
+  },
+  {
+   "file": "best_model.pt",
+   "bytes": 101884095,
+   "s": 19.1,
+   "ok": true
+  },
+  {
+   "file": "last_model.pt",
+   "bytes": 101884095,
+   "s": 18.2,
+   "ok": true
+  },
+  {
+   "file": "best.pt",
+   "bytes": 305693391,
+   "s": 37.6,
+   "ok": true
+  }
+ ],
+ "status_samples": [
+  [
+   9,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   179,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   322,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   452,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   581,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   711,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   911,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1054,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1184,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1313,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1443,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1586,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1716,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1846,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   1975,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2144,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2286,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2416,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2546,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2675,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2845,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   2988,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3118,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3247,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3376,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3519,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3648,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3778,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   3908,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4081,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4223,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4353,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4483,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4613,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4755,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   4885,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5015,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5144,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5319,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5462,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5592,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5721,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   5851,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6021,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6164,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6294,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6424,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6554,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6697,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6829,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   6958,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7088,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7263,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7406,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7536,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7666,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7795,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   7966,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8111,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8241,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8370,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8500,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8643,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"train\", \"t\": 239, \"gpus\": 8, \"step\": \"none\", \"loss\": \"none\", \"evals\": 0, \"best\": \"0 0\", \"last\": \"0 0\", \"root\": \"/mnt/local/v5b_dino\", \"host\": \"tianrgua-v5bdinohr-mssz-worker-0\", \"ts\": \"2026"
+  ],
+  [
+   8772,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"infer\", \"t\": 10426, \"gpus\": 8, \"step\": \"12660\", \"loss\": \"0.05473153246566653\", \"evals\": 10, \"best\": \"305693391 1790939919\", \"last\": \"305693391 1790942971\", \"root\": \"/mnt/local/v5b_dino\", \"h"
+  ],
+  [
+   8902,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"infer\", \"t\": 10426, \"gpus\": 8, \"step\": \"12660\", \"loss\": \"0.05473153246566653\", \"evals\": 10, \"best\": \"305693391 1790939919\", \"last\": \"305693391 1790942971\", \"root\": \"/mnt/local/v5b_dino\", \"h"
+  ],
+  [
+   9031,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"infer\", \"t\": 10426, \"gpus\": 8, \"step\": \"12660\", \"loss\": \"0.05473153246566653\", \"evals\": 10, \"best\": \"305693391 1790939919\", \"last\": \"305693391 1790942971\", \"root\": \"/mnt/local/v5b_dino\", \"h"
+  ],
+  [
+   9161,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"infer\", \"t\": 10426, \"gpus\": 8, \"step\": \"12660\", \"loss\": \"0.05473153246566653\", \"evals\": 10, \"best\": \"305693391 1790939919\", \"last\": \"305693391 1790942971\", \"root\": \"/mnt/local/v5b_dino\", \"h"
+  ],
+  [
+   9291,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"infer\", \"t\": 10426, \"gpus\": 8, \"step\": \"12660\", \"loss\": \"0.05473153246566653\", \"evals\": 10, \"best\": \"305693391 1790939919\", \"last\": \"305693391 1790942971\", \"root\": \"/mnt/local/v5b_dino\", \"h"
+  ],
+  [
+   9421,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"retain\", \"manual\": true, \"root\": \"/mnt/local/v5b_dino\", \"preds_rows\": 7335}"
+  ],
+  [
+   9600,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"retain\", \"manual\": true, \"root\": \"/mnt/local/v5b_dino\", \"preds_rows\": 7335}"
+  ],
+  [
+   9639,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"retain\", \"manual\": true, \"root\": \"/mnt/local/v5b_dino\", \"preds_rows\": 7335}"
+  ],
+  [
+   9679,
+   "{\"run\": \"v5bB200_lora_L_1920\", \"phase\": \"retain\", \"manual\": true, \"root\": \"/mnt/local/v5b_dino\", \"preds_rows\": 7335}"
+  ]
+ ],
+ "submitted_utc": "2026-10-02T09:44:23.837293+00:00",
+ "job": "tianrgua-v5bdinohr-mssz",
+ "running_after_s": 3,
+ "running_utc": "2026-10-02T09:44:26.770643+00:00",
+ "acked_utc": "2026-10-02T12:23:43.746352+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "iteration": "5b",
+  "window_start_utc": "2026-10-02T07:26:24Z",
+  "window_deadline_utc": "2026-10-03T07:26:24Z",
+  "max_concurrent_gpus": 128,
+  "max_concurrent_nodes": 16,
+  "max_nodes_by_type": {"L40S": 15, "B200": 1},
+  "node_gpu_count": 8,
+  "gpu_type": "L40S",
+  "max_allocation_gpu_hours": 3072,
+  "max_allocation_node_hours": 384,
+  "notes": "V5b: global ceiling 128 GPUs = at most 120 L40S (15 g6e nodes) + 8 B200 (1 p6 node). Start ~32 L40S + B200 probe, scale useful independent jobs. B200 and L40S hours tracked separately (gpu_type on every reservation). Never reset window_start_utc."
+}

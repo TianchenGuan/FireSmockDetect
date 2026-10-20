@@ -1,0 +1,165 @@
+{
+ "method": "paired bootstrap over the 194 timed negative runs (2000 resamples) and over the 8 cameras (cluster); episodes/h = sum episodes / sum valid hours",
+ "systems": {
+  "expB": {
+   "ref_point": [
+    0.3,
+    0.15
+   ],
+   "chosen": [
+    0.3,
+    0.23
+   ],
+   "n_timed_runs": 194,
+   "ref_eps_h": 31.07,
+   "chosen_eps_h": 29.39,
+   "ref_eps_h_CI95": [
+    23.0,
+    42.8
+   ],
+   "chosen_eps_h_CI95": [
+    21.6,
+    40.4
+   ],
+   "ratio_chosen_over_ref": 0.946,
+   "ratio_CI95_run_bootstrap": [
+    0.906,
+    0.979
+   ],
+   "ratio_CI95_camera_cluster_bootstrap": [
+    0.92,
+    0.968
+   ],
+   "runs_with_any_episode_ref": 111,
+   "runs_with_any_episode_chosen": 109
+  },
+  "expE": {
+   "ref_point": [
+    0.3,
+    0.15
+   ],
+   "chosen": [
+    0.32,
+    0.2
+   ],
+   "n_timed_runs": 194,
+   "ref_eps_h": 31.8,
+   "chosen_eps_h": 30.59,
+   "ref_eps_h_CI95": [
+    23.2,
+    43.8
+   ],
+   "chosen_eps_h_CI95": [
+    22.2,
+    42.2
+   ],
+   "ratio_chosen_over_ref": 0.962,
+   "ratio_CI95_run_bootstrap": [
+    0.921,
+    1.007
+   ],
+   "ratio_CI95_camera_cluster_bootstrap": [
+    0.923,
+    1.0
+   ],
+   "runs_with_any_episode_ref": 114,
+   "runs_with_any_episode_chosen": 111
+  },
+  "v4a_s2": {
+   "ref_point": [
+    0.3,
+    0.15
+   ],
+   "chosen": [
+    0.33,
+    0.28
+   ],
+   "n_timed_runs": 194,
+   "ref_eps_h": 31.31,
+   "chosen_eps_h": 29.39,
+   "ref_eps_h_CI95": [
+    22.9,
+    43.1
+   ],
+   "chosen_eps_h_CI95": [
+    21.7,
+    40.3
+   ],
+   "ratio_chosen_over_ref": 0.938,
+   "ratio_CI95_run_bootstrap": [
+    0.888,
+    0.991
+   ],
+   "ratio_CI95_camera_cluster_bootstrap": [
+    0.879,
+    0.984
+   ],
+   "runs_with_any_episode_ref": 111,
+   "runs_with_any_episode_chosen": 107
+  },
+  "v4B4_lora_L": {
+   "ref_point": [
+    0.93,
+    0.82
+   ],
+   "chosen": [
+    0.91,
+    0.89
+   ],
+   "n_timed_runs": 194,
+   "ref_eps_h": 29.15,
+   "chosen_eps_h": 30.35,
+   "ref_eps_h_CI95": [
+    21.2,
+    40.8
+   ],
+   "chosen_eps_h_CI95": [
+    22.2,
+    41.7
+   ],
+   "ratio_chosen_over_ref": 1.041,
+   "ratio_CI95_run_bootstrap": [
+    1.007,
+    1.087
+   ],
+   "ratio_CI95_camera_cluster_bootstrap": [
+    1.0,
+    1.132
+   ],
+   "runs_with_any_episode_ref": 101,
+   "runs_with_any_episode_chosen": 105
+  },
+  "v4B6_lora_Hplus": {
+   "ref_point": [
+    0.95,
+    0.88
+   ],
+   "chosen": [
+    0.94,
+    0.88
+   ],
+   "n_timed_runs": 194,
+   "ref_eps_h": 29.39,
+   "chosen_eps_h": 30.35,
+   "ref_eps_h_CI95": [
+    21.2,
+    41.5
+   ],
+   "chosen_eps_h_CI95": [
+    21.9,
+    42.8
+   ],
+   "ratio_chosen_over_ref": 1.033,
+   "ratio_CI95_run_bootstrap": [
+    0.992,
+    1.089
+   ],
+   "ratio_CI95_camera_cluster_bootstrap": [
+    1.005,
+    1.108
+   ],
+   "runs_with_any_episode_ref": 107,
+   "runs_with_any_episode_chosen": 111
+  }
+ }
+}

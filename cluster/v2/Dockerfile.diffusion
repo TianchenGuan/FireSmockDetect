@@ -1,0 +1,48 @@
+# smoke-diffusion:v1 — Qwen-Image-Edit-2511 synthetic-data generation stack
+# for green g6e (8x L40S 48GB, us-east-1) Leviathan pods. Pods have NO
+# internet: everything needed at import time is baked here; entry/code/spec/
+# backgrounds are fetched per-job via presigned GET (cluster/v2/
+# submit_synth_gen.py) and model weights are staged separately to /scratch
+# (57.7 GB — NOT baked).
+#
+# Model card facts (Qwen/Qwen-Image-Edit-2511 @ 6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9,
+# verified 2026-09-11): pipeline class QwenImageEditPlusPipeline (diffusers),
+# model_index _diffusers_version 0.36.0.dev0 (card says "latest diffusers";
+# first RELEASE containing the class for this checkpoint lineage is 0.36.0)
+# -> pin latest stable 0.40.0. Components: QwenImageTransformer2DModel
+# (40.9 GB bf16), Qwen2_5_VLForConditionalGeneration text encoder (16.6 GB),
+# AutoencoderKLQwenImage (0.25 GB), Qwen2Tokenizer + Qwen2VLProcessor
+# (transformers). bf16 total ~57.7 GB > 48 GB L40S -> inference uses
+# enable_model_cpu_offload() per GPU worker (peak VRAM ~= transformer ~41 GB
+# + activations, fits 48 GB; g6e.48xlarge has 1.5 TB RAM for 8 offloaded copies).
+#
+# Base verified on Docker Hub 2026-09-10 (same as cluster/Dockerfile and
+# cluster/v2/Dockerfile.vlm):
+# digest sha256:417bd75df6365104c283ea4c1651fb3530d9eb5a4c2fafa51943cff2a94e6385
+# Python 3.11.13, torch 2.8.0+cu128 (cxx11abi TRUE), torchvision 0.23.0+cu128.
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+# curl: presigned S3 PUT/GET (base pytorch images ship NO curl/wget; silent
+# upload no-ops burned a full debug day in iteration 1).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      curl ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+# Pinned per the model card requirements (see header):
+# diffusers 0.40.0 (>=0.36 for QwenImageEditPlusPipeline; latest stable),
+# transformers 5.17.0 (Qwen2_5_VLForConditionalGeneration + Qwen2VLProcessor;
+# same pin as smoke-detect-vlm:v1/v2 -> known-good in these pods),
+# accelerate 1.15.0 (required for enable_model_cpu_offload),
+# safetensors 0.8.0 (diffusers 0.40.0 requires >=0.8.0), pillow 12.3.0.
+RUN pip install --no-cache-dir \
+      diffusers==0.40.0 \
+      transformers==5.17.0 \
+      accelerate==1.15.0 \
+      safetensors==0.8.0 \
+      pillow==12.3.0
+
+# Pods have no internet: hard-fail any accidental hub call instead of hanging.
+ENV HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1
+
+WORKDIR /opt

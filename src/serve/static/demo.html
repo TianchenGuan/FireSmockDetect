@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>smoke-detect — FAST / ACCURATE demo (V5b)</title>
+<style>
+:root{--surface:#1a1a19;--surface-2:#242423;--border:#3a3a38;--text:#ffffff;--text-2:#c3c2b7;--muted:#8d8c84;
+ --fast:#c98500;--fused:#ffffff;--good:#0ca30c;--warning:#fab219;--serious:#ec835a;--critical:#d03b3b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--surface);color:var(--text);font-size:14px;line-height:1.35}
+header{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;padding:.7rem 1.2rem;border-bottom:1px solid var(--border)}
+h1{font-size:1.05rem;margin:0;font-weight:600}
+h2{font-size:.78rem;margin:0 0 .5rem;color:var(--text-2);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+main{display:grid;grid-template-columns:minmax(0,3fr) minmax(300px,1.3fr);gap:1rem;padding:1rem 1.2rem}
+section.full{grid-column:1/-1}
+.card{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:.75rem .9rem;margin-bottom:1rem}
+.row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+button,select,input[type=file]{font:inherit;color:var(--text);background:#2e2e2c;border:1px solid var(--border);border-radius:6px;padding:.35rem .7rem;cursor:pointer}
+button:hover{border-color:#777}button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:#2f5aa8;border-color:#2f5aa8}
+.badge{display:inline-block;padding:.15rem .6rem;border-radius:999px;font-weight:600;color:#111;background:#555}
+.badge.none{background:var(--good)}.badge.watch{background:var(--warning)}.badge.provisional{background:var(--serious)}.badge.confirmed{background:var(--critical);color:#fff}.badge.error{background:#777;color:#fff}
+.modesel label{margin-right:.8rem;cursor:pointer}
+#drop{border:2px dashed #555;border-radius:8px;padding:1rem;text-align:center;color:var(--text-2);cursor:pointer}
+#drop.hover{border-color:#ccc;color:#fff}
+canvas#cv{max-width:100%;border-radius:4px;background:#000;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin:.4rem 0;font-size:.82rem;color:var(--text-2)}
+.chip{display:inline-flex;align-items:center;gap:.35rem}
+.sw{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid #0006}
+.sw.dash{background:transparent!important;border:2px dashed var(--fused)}
+table{border-collapse:collapse;width:100%;font-size:.82rem}
+th,td{text-align:left;padding:.25rem .4rem;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--text-2);font-weight:600}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem}
+.muted{color:var(--muted)}
+#tlwrap{position:relative}
+canvas#tl{width:100%;height:270px;display:block;cursor:crosshair}
+#tip{position:absolute;pointer-events:none;background:#111c;border:1px solid var(--border);border-radius:6px;padding:.35rem .5rem;font-size:.78rem;display:none;max-width:320px;color:var(--text)}
+#errors .err{border-left:3px solid var(--critical);padding:.3rem .6rem;margin:.3rem 0;background:#2a1f1f;border-radius:4px;font-size:.82rem}
+#errors .ok{border-left:3px solid var(--good);padding:.3rem .6rem;margin:.3rem 0;background:#1f2a1f;border-radius:4px;font-size:.82rem}
+pre{background:#141413;padding:.6rem;border-radius:6px;overflow:auto;max-height:420px;font-size:.75rem}
+details summary{cursor:pointer;color:var(--text-2)}
+.note{font-size:.78rem;color:var(--muted)}
+progress{width:100%;height:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Wildfire smoke detection — FAST / ACCURATE demo</h1>
+  <span id="alert" class="badge">—</span>
+  <span class="modesel"><label><input type="radio" name="mode" value="fast" checked> FAST (single model)</label><label><input type="radio" name="mode" value="accurate" id="modeAcc"> ACCURATE (parallel models + fusion)</label></span>
+  <span id="status" class="muted">loading…</span>
+</header>
+<main>
+<div>
+  <div class="card">
+    <h2>Input</h2>
+    <div class="row" style="align-items:stretch">
+      <div style="flex:1;min-width:240px">
+        <div id="drop">Drop an image here or click to choose — sent to <span class="mono">POST /detect</span> with <span class="mono">source=live_upload</span></div>
+        <input type="file" id="file" accept="image/*" hidden>
+      </div>
+      <div style="flex:1.4;min-width:300px">
+        <div class="row">
+          <select id="seq" style="max-width:420px"></select>
+          <button class="primary" id="runBtn">Replay sequence</button>
+          <button id="stopBtn" disabled>Stop</button>
+        </div>
+        <div class="note" id="seqNote">historical frames replayed through <span class="mono">/detect</span> with <span class="mono">source=historical_replay</span> — never a field run</div>
+        <div class="row" style="margin-top:.4rem">
+          <select id="runs" style="max-width:420px"><option value="">— saved replay runs —</option></select>
+          <button id="loadRunBtn">Load saved run</button>
+          <button id="exportBtn">Download timeline JSON</button>
+        </div>
+        <progress id="prog" value="0" max="1" hidden></progress>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Frame <span id="frameTitle" class="mono muted"></span></h2>
+    <div class="chips" id="legend"></div>
+    <canvas id="cv" width="16" height="9"></canvas>
+    <div class="row" style="margin-top:.4rem">
+      <label><input type="checkbox" id="gtToggle" checked> show dataset author boxes (pyro-sdis labels; thin grey)</label>
+      <label><input type="checkbox" id="maskToggle" disabled> segmentation mask overlay</label>
+      <span id="maskStatus" class="note">probing /segment…</span>
+    </div>
+  </div>
+  <section class="card">
+    <h2>Timeline — per-frame max score and alert state</h2>
+    <div class="chips" id="tlLegend"></div>
+    <div id="tlwrap"><canvas id="tl"></canvas><div id="tip"></div></div>
+    <details><summary>Table view</summary><div id="tlTable"></div></details>
+  </section>
+</div>
+<div>
+  <div class="card"><h2>Server</h2><div id="server" class="mono" style="font-size:.78rem"></div></div>
+  <div class="card"><h2>Models — selected frame</h2><div id="models"></div></div>
+  <div class="card"><h2>Invalid-input probes</h2>
+    <div class="row">
+      <button id="pUnreadable">unreadable bytes → expect 422</button>
+      <button id="pOversize">oversized upload → expect 413</button>
+      <button id="pSource">bad source tag → expect 422</button>
+      <button id="pMode">bad mode → expect 422</button>
+    </div>
+    <div id="errors"></div>
+  </div>
+  <div class="card"><details id="jsonDet"><summary>Raw response JSON (selected frame)</summary><pre id="out"></pre></details></div>
+</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const MODEL_COLORS=['#3987e5','#d95926','#199e70','#c98500'];
+const STATUS={none:'#0ca30c',watch:'#fab219',provisional:'#ec835a',confirmed:'#d03b3b'};
+const GLYPH={none:'○',watch:'◔',provisional:'◑',confirmed:'●'};
+let health=null,seqs=[],modelOrder=[];
+let run={frames:[],results:[],seq:null,mode:null,kind:null,meta:null};
+let selected=-1,running=false,aborted=false;
+const q=new URLSearchParams(location.search);
+
+function mode(){return document.querySelector('input[name=mode]:checked').value}
+function modelColor(name){const i=modelOrder.indexOf(name);return i<0?'#999':MODEL_COLORS[i%MODEL_COLORS.length]}
+function fmt(x,d=3){return (x==null||isNaN(x))?'—':Number(x).toFixed(d)}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function setStatus(t){$('status').textContent=t}
+
+async function loadHealth(){
+  health=await (await fetch('/healthz')).json();
+  const acc=health.modes.accurate;
+  modelOrder=(acc.models||[]).map(m=>m.name);
+  $('modeAcc').disabled=!acc.enabled;
+  if(!acc.enabled&&mode()==='accurate')document.querySelector('input[value=fast]').checked=true;
+  const f=health.modes.fast;
+  let h=`default mode: <b>${esc(health.modes.default)}</b> · device ${esc(f.device)} · uptime ${health.uptime_s}s<br>`;
+  h+=`<span class="sw" style="background:var(--fast)"></span> FAST: ${esc(f.backend)} <b>${esc(f.model_version)}</b> conf ${f.conf_single}/${f.conf_seq} floor ${f.conf_floor} imgsz ${f.imgsz}<br>`;
+  if(acc.enabled){
+    h+=`ACCURATE (${esc(acc.label||'')}): fusion <b>${esc(acc.fusion.method)}</b>${acc.fusion.recipe_path?' recipe '+esc(acc.fusion.recipe_path):' (no recipe file)'}${acc.fusion.fallback_reason?' — <span style="color:var(--warning)">'+esc(acc.fusion.fallback_reason)+'</span>':''}<br>`;
+    for(const m of acc.models){
+      const bi=m.backend_info?` lora_r=${m.backend_info.lora_r} step=${m.backend_info.ckpt_step}`:'';
+      h+=`&nbsp;<span class="sw" style="background:${modelColor(m.name)}"></span> ${esc(m.name)}: ${esc(m.backend)} <b>${esc(m.model_version)}</b> conf ${m.conf_single}/${m.conf_seq} floor ${m.conf_floor}${m.loaded?'':' <span style="color:var(--critical)">NOT LOADED</span>'}${esc(bi)}<br>`;
+    }
+    h+=`accurate requests ${acc.requests} · mean ${acc.latency_ms_mean??'—'} ms · max ${acc.latency_ms_max??'—'} ms<br>`;
+  }else h+=`ACCURATE: not configured on this server (SMOKE_ACCURATE_MODELS empty)<br>`;
+  h+=`requests by mode ${esc(JSON.stringify(health.modes.requests_by_mode))} · by source ${esc(JSON.stringify(health.requests_by_source))} · shadow ${health.shadow.enabled?'ON ('+esc(health.shadow.model_version)+')':'off'}`;
+  $('server').innerHTML=h;
+}
+async function loadSequences(){
+  const j=await (await fetch('/demo/sequences')).json();seqs=j.sequences;
+  $('seq').innerHTML=seqs.map(s=>`<option value="${esc(s.id)}">${esc(s.kind)} · ${esc(s.id)} · ${s.n_frames} fr · ${esc(s.label_pattern)}</option>`).join('');
+  updateSeqNote();
+}
+function updateSeqNote(){
+  const s=seqs.find(x=>x.id===$('seq').value);if(!s)return;
+  $('seqNote').innerHTML=`${esc(s.role)}<br>${esc(s.cadence)} · labels: ${esc(s.gt_source)}<br>frames replayed through <span class="mono">/detect</span> with <span class="mono">source=historical_replay</span> — never a field run`;
+}
+async function loadRuns(){
+  try{const j=await (await fetch('/demo/runs')).json();
+    $('runs').innerHTML='<option value="">— saved replay runs —</option>'+j.runs.map(r=>`<option value="${esc(r.run_id)}">${esc(r.run_id)} · ${esc(r.mode)} · ${esc(r.seq_id)} · ${r.n_frames} fr</option>`).join('');
+  }catch(e){}
+}
+async function probeSegment(){
+  try{const r=await fetch('/segment');
+    if(r.status===404)$('maskStatus').textContent='/segment not available on this server (seg branch may add it later) — no masks are drawn until the endpoint returns real masks';
+    else $('maskStatus').textContent=`/segment responded HTTP ${r.status} — overlay contract not wired in this UI yet; nothing is drawn`;
+  }catch(e){$('maskStatus').textContent='/segment probe failed: '+e}
+}
+
+async function postDetect(blob,filename,fields){
+  const fd=new FormData();fd.append('image',blob,filename);
+  for(const [k,v] of Object.entries(fields))if(v!=null)fd.append(k,v);
+  const t=performance.now();let r;
+  try{r=await fetch('/detect',{method:'POST',body:fd})}catch(e){return{status:0,text:String(e),json:null,wall:performance.now()-t}}
+  const wall=performance.now()-t;const text=await r.text();let json=null;try{json=JSON.parse(text)}catch(e){}
+  return{status:r.status,json,text,wall:Math.round(wall)};
+}
+function newRun(kind,seq,m){run={frames:[],results:[],seq,mode:m,kind,meta:null};selected=-1;$('errors').innerHTML='';}
+function pushResult(frame,res){
+  run.frames.push(frame);run.results.push(res);selected=run.frames.length-1;
+  if(res.status!==200)addError(`${frame.name}: HTTP ${res.status} — ${res.json&&res.json.detail?esc(JSON.stringify(res.json.detail)):esc((res.text||'').slice(0,200))}`);
+  renderAll();
+}
+function addError(html,ok=false){const d=document.createElement('div');d.className=ok?'ok':'err';d.innerHTML=html;$('errors').prepend(d)}
+
+async function sendUpload(file){
+  if(!file)return;newRun('upload',null,mode());setStatus('running /detect on upload…');
+  const ts=Date.now()/1000;
+  const res=await postDetect(file,file.name,{device_id:'web-demo',capture_ts:ts,source:'live_upload',mode:mode(),
+    metadata:JSON.stringify({ui:'demo_v5b',note:'browser upload of a user-chosen file; a stored frame uploaded this way is still not a field observation'})});
+  pushResult({idx:0,name:file.name,ts,offset_s:0,url:URL.createObjectURL(file),gt_smoke:null,gt_boxes:[]},res);
+  setStatus(res.status===200?`upload done in ${res.wall} ms (client wall)`:`upload failed: HTTP ${res.status}`);
+  loadHealth();
+}
+async function runReplay(){
+  if(running)return;const sid=$('seq').value;const seq=seqs.find(s=>s.id===sid);if(!seq)return;
+  const m=mode();newRun('replay',seq,m);running=true;aborted=false;$('runBtn').disabled=true;$('stopBtn').disabled=false;
+  $('prog').hidden=false;$('prog').max=seq.frames.length;$('prog').value=0;
+  const run_tag=`demo-ui-${new Date().toISOString().replace(/[-:.]/g,'').slice(0,15)}-${sid}`;
+  const t0=seq.frames[0].ts;
+  for(const f of seq.frames){
+    if(aborted)break;setStatus(`replay ${f.idx+1}/${seq.frames.length} (${m}) — ${f.name}`);
+    let blob;try{blob=await (await fetch(f.url)).blob()}catch(e){pushResult({...f,offset_s:f.ts-t0,gt_boxes:f.gt_boxes_xywhn},{status:0,text:'frame fetch failed: '+e,json:null,wall:0});continue}
+    const res=await postDetect(blob,f.name,{device_id:`demo-replay-${sid}-${m}`,capture_ts:f.ts,source:'historical_replay',mode:m,
+      metadata:JSON.stringify({run_tag,frame:f.name,seq_id:sid,ui:'demo_v5b'})});
+    pushResult({idx:f.idx,name:f.name,ts:f.ts,offset_s:Math.round((f.ts-t0)*10)/10,url:f.url,gt_smoke:f.gt_smoke,gt_boxes:f.gt_boxes_xywhn},res);
+    $('prog').value=run.frames.length;
+  }
+  running=false;$('runBtn').disabled=false;$('stopBtn').disabled=true;$('prog').hidden=true;
+  setStatus(aborted?'replay stopped':`replay done: ${run.frames.length} frames (${m})`);loadHealth();
+}
+async function loadRun(id){
+  if(!id)return;const r=await fetch('/demo/runs/'+encodeURIComponent(id));
+  if(r.status!==200){addError(`load run ${esc(id)}: HTTP ${r.status}`);return}
+  const j=await r.json();const seq=seqs.find(s=>s.id===j.seq_id)||null;
+  newRun('saved',seq,j.mode);run.meta=j;
+  const radio=document.querySelector(`input[name=mode][value=${j.mode}]`);if(radio&&!radio.disabled)radio.checked=true;
+  if(seq){$('seq').value=seq.id;updateSeqNote()}
+  for(const fr of j.frames){const sf=seq?seq.frames[fr.idx]:null;
+    run.frames.push({idx:fr.idx,name:fr.name,ts:fr.ts,offset_s:fr.offset_s,url:sf?sf.url:null,gt_smoke:fr.gt_smoke,gt_boxes:fr.gt_boxes_xywhn||[]});
+    run.results.push(fr.response?{status:200,json:fr.response,wall:fr.client_wall_ms}:{status:fr.status,text:fr.error||'',json:null,wall:fr.client_wall_ms});
+  }
+  const want=q.get('frame');selected=want!=null?Math.min(Math.max(0,+want),run.frames.length-1):run.frames.length-1;
+  renderAll();setStatus(`loaded saved run ${j.run_id} (${j.mode}, ${j.frames.length} frames, ${j.created_utc})`);
+}
+
+// ----------------------------------------------------------- rendering
+function renderAll(){renderSelected();drawTimeline();renderModels();renderTable();renderLegend()}
+function renderLegend(){
+  const r=run.results[selected];const j=r&&r.json;let h='';
+  if(j&&j.mode==='accurate'){for(const n of Object.keys(j.models))h+=`<span class="chip"><span class="sw" style="background:${modelColor(n)}"></span>${esc(n)} raw boxes</span>`;
+    h+=`<span class="chip"><span class="sw dash"></span>fused (${esc(j.fusion.method)}) boxes</span>`;}
+  else if(j)h+=`<span class="chip"><span class="sw" style="background:var(--fast)"></span>FAST ${esc(j.model_version)} boxes</span>`;
+  if(run.frames[selected]&&run.frames[selected].gt_boxes&&run.frames[selected].gt_boxes.length)h+=`<span class="chip"><span class="sw" style="border:1px dotted #aaa"></span>dataset author boxes</span>`;
+  $('legend').innerHTML=h;
+}
+function renderSelected(){
+  const f=run.frames[selected],r=run.results[selected];const cv=$('cv');
+  if(!f){$('alert').textContent='—';$('alert').className='badge';return}
+  const st=r.status===200?r.json.alert.state:'error';
+  $('alert').textContent=r.status===200?`${st}${r.json.mode==='accurate'?' (accurate)':' (fast)'}`:`HTTP ${r.status}`;
+  $('alert').className='badge '+st;
+  $('frameTitle').textContent=`${f.name} · offset ${fmt(f.offset_s,1)} s · ${run.kind||''}`+(f.gt_smoke!=null?` · dataset label: ${f.gt_smoke?'smoke':'no smoke'}`:'');
+  $('out').textContent=r.json?JSON.stringify(r.json,null,1):(r.text||'');
+  if(!f.url){cv.width=16;cv.height=9;return}
+  const img=new Image();
+  img.onload=()=>{cv.width=img.naturalWidth;cv.height=img.naturalHeight;const c=cv.getContext('2d');c.drawImage(img,0,0);drawBoxes(c,cv.width,cv.height,f,r);document.body.dataset.ready='1'};
+  img.onerror=()=>{cv.width=640;cv.height=360;const c=cv.getContext('2d');c.fillStyle='#222';c.fillRect(0,0,640,360);c.fillStyle='#ccc';c.font='20px sans-serif';c.fillText('frame image unavailable',20,180)};
+  img.src=f.url;
+}
+function box(c,x1,y1,x2,y2,color,lw,label,dash){
+  c.save();c.lineWidth=lw;c.strokeStyle=color;c.setLineDash(dash||[]);c.strokeRect(x1,y1,x2-x1,y2-y1);c.setLineDash([]);
+  if(label){c.font=`${Math.max(13,lw*5)}px sans-serif`;const w=c.measureText(label).width+8,h=Math.max(16,lw*6);
+    const ly=y1-h-2<0?y2+2:y1-h-2;c.fillStyle='#000a';c.fillRect(x1,ly,w,h);c.fillStyle=color;c.fillText(label,x1+4,ly+h-4)}
+  c.restore();
+}
+function drawBoxes(c,W,H,f,r){
+  const lw=Math.max(2,W/500);
+  if($('gtToggle').checked&&f.gt_boxes)for(const b of f.gt_boxes){const [cx,cy,w,h]=b;box(c,(cx-w/2)*W,(cy-h/2)*H,(cx+w/2)*W,(cy+h/2)*H,'#bbb',Math.max(1,lw/2),'',[6,6])}
+  if(r.status!==200)return;const j=r.json;
+  if(j.mode==='accurate'){
+    for(const [n,m] of Object.entries(j.models))for(const d of m.detections){const [x1,y1,x2,y2]=d.bbox_xyxy;box(c,x1,y1,x2,y2,modelColor(n),lw,`${n} ${d.score.toFixed(2)}`)}
+    for(const d of j.detections){const [x1,y1,x2,y2]=d.bbox_xyxy;box(c,x1-lw,y1-lw,x2+lw,y2+lw,'#fff',lw*1.4,`fused ${d.score.toFixed(2)} [${d.models.join('+')}]`,[lw*4,lw*3])}
+  }else for(const d of j.detections){const [x1,y1,x2,y2]=d.bbox_xyxy;box(c,x1,y1,x2,y2,'#c98500',lw,`${d.cls_name} ${d.score.toFixed(2)}`)}
+}
+function renderModels(){
+  const r=run.results[selected];if(!r){$('models').innerHTML='<span class="muted">no frame selected</span>';return}
+  if(r.status!==200){$('models').innerHTML=`<div class="err">HTTP ${r.status}: ${esc((r.json&&r.json.detail)?JSON.stringify(r.json.detail):(r.text||'').slice(0,300))}</div>`;return}
+  const j=r.json;let rows='';
+  if(j.mode==='accurate'){
+    for(const [n,m] of Object.entries(j.models)){const a=m.alert||{};
+      rows+=`<tr><td><span class="sw" style="background:${modelColor(n)}"></span> ${esc(n)}<br><span class="muted">${esc(m.backend)} ${esc(m.model_version)}</span></td><td class="num">${m.thresholds?m.thresholds.conf_single+'/'+m.thresholds.conf_seq:''}</td><td class="num">${fmt(m.max_smoke_score)}<br><span class="muted">eq ${fmt(m.max_alert_equivalent)}</span></td><td>${m.error?'<span style="color:var(--critical)">error</span>':`<span class="badge ${a.state}">${esc(a.state)}</span>`}</td><td class="num">${m.latency_ms??'—'}</td></tr>`}
+    rows+=`<tr><td><span class="sw dash"></span> fused (${esc(j.fusion.method)})<br><span class="muted">${esc(j.alert.decided_by||'')}</span></td><td class="num">${health?health.modes.fast.conf_single+'/'+health.modes.fast.conf_seq:''}</td><td class="num">${fmt(j.max_smoke_score)}</td><td><span class="badge ${j.alert.state}">${esc(j.alert.state)}</span></td><td class="num">${j.latency_ms} <span class="muted">(parallel wall)</span></td></tr>`;
+  }else rows+=`<tr><td><span class="sw" style="background:var(--fast)"></span> FAST<br><span class="muted">${esc(j.model_version)}</span></td><td class="num">${health?health.modes.fast.conf_single+'/'+health.modes.fast.conf_seq:''}</td><td class="num">${fmt(j.max_smoke_score)}</td><td><span class="badge ${j.alert.state}">${esc(j.alert.state)}</span></td><td class="num">${j.latency_ms}</td></tr>`;
+  $('models').innerHTML=`<table><tr><th>model</th><th class="num">conf single/seq</th><th class="num">max score</th><th>alert</th><th class="num">latency ms</th></tr>${rows}</table>
+   <div class="note" style="margin-top:.4rem">${esc(j.alert.reason||'')} · client wall ${r.wall} ms · ${esc(j.score_semantics||'')}</div>`;
+}
+function seriesOf(){ // per-frame points for the chart
+  return run.results.map((r,i)=>{const f=run.frames[i];if(r.status!==200)return{i,x:f.offset_s,err:r.status,gt:f.gt_smoke};
+    const j=r.json;const per={};if(j.mode==='accurate')for(const [n,m] of Object.entries(j.models))per[n]=m.max_alert_equivalent;
+    return{i,x:f.offset_s,y:j.max_smoke_score,state:j.alert.state,per,gt:f.gt_smoke,name:f.name,lat:j.latency_ms,mode:j.mode||'fast'}});
+}
+let tlGeom=null;
+function drawTimeline(){
+  const cv=$('tl'),dpr=window.devicePixelRatio||1,Wc=cv.clientWidth||800,Hc=270;cv.width=Wc*dpr;cv.height=Hc*dpr;
+  const c=cv.getContext('2d');c.scale(dpr,dpr);c.clearRect(0,0,Wc,Hc);
+  const pts=seriesOf();const L=46,R=120,T=14,B=84;const pw=Wc-L-R,ph=Hc-T-B;
+  const n=pts.length;const xs=i=>n<=1?L+pw/2:L+pw*i/(n-1);const ys=v=>T+ph*(1-Math.min(1,Math.max(0,v)));
+  c.font='11px system-ui';c.textBaseline='middle';
+  // grid + axis
+  c.strokeStyle='#333';c.lineWidth=1;c.fillStyle='#c3c2b7';c.textAlign='right';
+  for(const v of [0,0.25,0.5,0.75,1]){c.beginPath();c.moveTo(L,ys(v));c.lineTo(L+pw,ys(v));c.stroke();c.fillText(v.toFixed(2),L-6,ys(v))}
+  c.textAlign='left';c.fillStyle='#8d8c84';c.fillText(run.mode==='accurate'?'alert-equivalent score':'raw detector score',L,T-6);
+  // thresholds (FAST reference pair; identical scale for alert-equivalent)
+  if(health){const f=health.modes.fast;for(const [v,lab,col] of [[f.conf_seq,'watch ≥ '+f.conf_seq,STATUS.watch],[f.conf_single,'provisional ≥ '+f.conf_single,STATUS.provisional]]){
+    c.save();c.setLineDash([4,4]);c.strokeStyle=col;c.globalAlpha=.7;c.beginPath();c.moveTo(L,ys(v));c.lineTo(L+pw,ys(v));c.stroke();c.restore();c.fillStyle='#c3c2b7';c.fillText(lab,L+pw+6,ys(v))}}
+  if(!n){c.fillStyle='#8d8c84';c.textAlign='center';c.fillText('no frames yet — upload an image or replay a sequence',L+pw/2,T+ph/2);tlGeom=null;return}
+  // per-model thin lines (accurate)
+  const names=run.mode==='accurate'?modelOrder.filter(nm=>pts.some(p=>p.per&&nm in p.per)):[];
+  for(const nm of names){c.strokeStyle=modelColor(nm);c.lineWidth=1.5;c.beginPath();let started=false;
+    pts.forEach((p,i)=>{if(p.err||!(nm in p.per)){started=false;return}const x=xs(i),y=ys(p.per[nm]);started?c.lineTo(x,y):c.moveTo(x,y);started=true});c.stroke()}
+  // main line (fused / primary)
+  c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();let st=false;
+  pts.forEach((p,i)=>{if(p.err){st=false;return}const x=xs(i),y=ys(p.y);st?c.lineTo(x,y):c.moveTo(x,y);st=true});c.stroke();
+  pts.forEach((p,i)=>{if(p.err)return;c.fillStyle=STATUS[p.state]||'#fff';c.beginPath();c.arc(xs(i),ys(p.y),i===selected?6:4,0,7);c.fill();c.strokeStyle='#1a1a19';c.lineWidth=2;c.stroke()});
+  if(n<=12)pts.forEach((p,i)=>{if(p.err)return;c.fillStyle='#c3c2b7';c.textAlign='center';c.fillText(p.y.toFixed(2),xs(i),ys(p.y)-12)});
+  // alert strip + gt strip
+  const y1=T+ph+14,hs=14,cw=n>1?pw/(n-1):pw;c.textAlign='left';c.fillStyle='#8d8c84';c.fillText('alert',4,y1+hs/2);c.fillText('label',4,y1+hs+6+hs/2);
+  pts.forEach((p,i)=>{const x=xs(i)-cw/2;const w=Math.max(2,cw-2);
+    c.fillStyle=p.err?'#444':(STATUS[p.state]||'#555');c.fillRect(Math.max(L,x),y1,Math.min(w,L+pw-Math.max(L,x)),hs);
+    if(p.err){c.fillStyle='#fff';c.textAlign='center';c.fillText('×',xs(i),y1+hs/2)}
+    else if(cw>18){c.fillStyle='#111';c.textAlign='center';c.fillText(GLYPH[p.state]||'',xs(i),y1+hs/2+1)}
+    const g=p.gt;c.fillStyle=g==null?'#2b2b2a':(g?'#d8d8d0':'#3a3a38');c.fillRect(Math.max(L,x),y1+hs+6,Math.min(w,L+pw-Math.max(L,x)),hs);
+    if(g==null&&cw>18){c.fillStyle='#777';c.textAlign='center';c.fillText('?',xs(i),y1+hs+6+hs/2+1)}});
+  // x axis labels
+  c.fillStyle='#c3c2b7';c.textAlign='center';const step=Math.max(1,Math.ceil(n/12));
+  pts.forEach((p,i)=>{if(i%step===0||i===n-1)c.fillText(`${i} · ${fmt(p.x,0)}s`,xs(i),Hc-14)});
+  c.textAlign='left';c.fillStyle='#8d8c84';c.fillText('frame · offset from first frame (s)',L,Hc-3);
+  tlGeom={xs,n,pts,L,pw};
+  // legend
+  let lg=`<span class="chip"><span class="sw" style="background:#fff"></span>${run.mode==='accurate'?'fused max (alert-equivalent)':'max score (raw)'}; marker colour = alert state</span>`;
+  for(const nm of names)lg+=`<span class="chip"><span class="sw" style="background:${modelColor(nm)}"></span>${esc(nm)} max (alert-equivalent)</span>`;
+  for(const s of Object.keys(STATUS))lg+=`<span class="chip"><span class="sw" style="background:${STATUS[s]}"></span>${GLYPH[s]} ${s}</span>`;
+  lg+=`<span class="chip"><span class="sw" style="background:#d8d8d0"></span>dataset label: smoke</span><span class="chip"><span class="sw" style="background:#3a3a38"></span>no smoke</span><span class="chip"><span class="sw" style="background:#2b2b2a"></span>? no frame label</span>`;
+  $('tlLegend').innerHTML=lg;
+}
+function tlHit(ev){if(!tlGeom)return-1;const rect=$('tl').getBoundingClientRect();const x=ev.clientX-rect.left;let best=-1,bd=1e9;for(let i=0;i<tlGeom.n;i++){const d=Math.abs(tlGeom.xs(i)-x);if(d<bd){bd=d;best=i}}return bd<24?best:-1}
+$('tl').addEventListener('mousemove',ev=>{const i=tlHit(ev);const tip=$('tip');if(i<0){tip.style.display='none';return}
+  const p=tlGeom.pts[i],f=run.frames[i];let h=`<b>#${i} ${esc(f.name)}</b> · ${fmt(p.x,1)} s<br>`;
+  if(p.err)h+=`HTTP ${p.err}`;else{h+=`max ${fmt(p.y)} · <span class="badge ${p.state}" style="font-size:.7rem">${p.state}</span> · ${p.lat} ms`;for(const [nm,v] of Object.entries(p.per||{}))h+=`<br><span class="sw" style="background:${modelColor(nm)};width:9px;height:9px"></span> ${esc(nm)} ${fmt(v)}`}
+  if(f.gt_smoke!=null)h+=`<br>dataset label: ${f.gt_smoke?'smoke':'no smoke'}`;
+  tip.innerHTML=h;tip.style.display='block';const rect=$('tl').getBoundingClientRect();tip.style.left=Math.min(ev.clientX-rect.left+12,rect.width-330)+'px';tip.style.top=(ev.clientY-rect.top+12)+'px';});
+$('tl').addEventListener('mouseleave',()=>$('tip').style.display='none');
+$('tl').addEventListener('click',ev=>{const i=tlHit(ev);if(i>=0){selected=i;renderAll()}});
+function renderTable(){
+  const pts=seriesOf();if(!pts.length){$('tlTable').innerHTML='';return}
+  const names=run.mode==='accurate'?modelOrder:[];
+  let h=`<table><tr><th>#</th><th>frame</th><th class="num">offset s</th><th class="num">max</th><th>alert</th>${names.map(n=>`<th class="num">${esc(n)} raw / eq / alert</th>`).join('')}<th class="num">latency ms</th><th>label</th></tr>`;
+  pts.forEach((p,i)=>{const r=run.results[i];h+=`<tr><td>${i}</td><td class="mono">${esc(run.frames[i].name)}</td><td class="num">${fmt(p.x,1)}</td><td class="num">${p.err?'—':fmt(p.y)}</td><td>${p.err?'HTTP '+p.err:p.state}</td>${names.map(n=>{const m=r.json&&r.json.models&&r.json.models[n];return `<td class="num">${m?fmt(m.max_smoke_score)+' / '+fmt(m.max_alert_equivalent)+' / '+(m.alert?m.alert.state:'err'):'—'}</td>`}).join('')}<td class="num">${p.lat??'—'}</td><td>${p.gt==null?'—':(p.gt?'smoke':'no smoke')}</td></tr>`});
+  $('tlTable').innerHTML=h+'</table>';
+}
+// ----------------------------------------------------------- probes
+async function probe(label,blob,name,fields,expect){
+  const res=await postDetect(blob,name,fields);const ok=res.status===expect;
+  addError(`<b>${esc(label)}</b> → HTTP ${res.status} ${ok?'(expected '+expect+')':'(EXPECTED '+expect+')'}: ${esc(res.json&&res.json.detail?JSON.stringify(res.json.detail):(res.text||'').slice(0,200))}`,ok);
+  loadHealth();
+}
+$('pUnreadable').onclick=()=>probe('unreadable bytes as image',new Blob(['this is not an image']),'bad.txt',{device_id:'probe',mode:mode()},422);
+$('pOversize').onclick=()=>{const mb=25;probe(`oversized upload (${mb+1} MB zeros; server limit SMOKE_MAX_UPLOAD_MB)`,new Blob([new Uint8Array((mb+1)*1024*1024)]),'big.jpg',{device_id:'probe',mode:mode()},413)};
+$('pSource').onclick=()=>probe('source=field_test (only live_upload | historical_replay allowed)',new Blob(['x']),'x.jpg',{device_id:'probe',source:'field_test'},422);
+$('pMode').onclick=()=>probe('mode=turbo (only fast | accurate)',new Blob(['x']),'x.jpg',{device_id:'probe',mode:'turbo'},422);
+// ----------------------------------------------------------- wiring
+const drop=$('drop'),fi=$('file');
+drop.onclick=()=>fi.click();drop.ondragover=e=>{e.preventDefault();drop.classList.add('hover')};drop.ondragleave=()=>drop.classList.remove('hover');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('hover');sendUpload(e.dataTransfer.files[0])};fi.onchange=()=>sendUpload(fi.files[0]);
+$('runBtn').onclick=runReplay;$('stopBtn').onclick=()=>{aborted=true};$('seq').onchange=updateSeqNote;
+$('loadRunBtn').onclick=()=>loadRun($('runs').value);$('gtToggle').onchange=renderSelected;
+$('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify({kind:run.kind,mode:run.mode,seq:run.seq?run.seq.id:null,source:run.kind==='upload'?'live_upload':'historical_replay',frames:run.frames.map(f=>({idx:f.idx,name:f.name,ts:f.ts,offset_s:f.offset_s,gt_smoke:f.gt_smoke})),results:run.results.map(r=>({status:r.status,client_wall_ms:r.wall,response:r.json,error:r.json?undefined:r.text})),healthz_modes:health&&health.modes},null,1)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`demo_timeline_${run.mode||'x'}_${Date.now()}.json`;a.click()};
+window.addEventListener('resize',drawTimeline);
+(async function init(){
+  try{await loadHealth();await loadSequences();await loadRuns();probeSegment();}catch(e){setStatus('init failed: '+e);return}
+  if(q.get('mode')&&!document.querySelector(`input[value=${q.get('mode')}]`).disabled)document.querySelector(`input[value=${q.get('mode')}]`).checked=true;
+  if(q.get('seq'))$('seq').value=q.get('seq'),updateSeqNote();
+  drawTimeline();setStatus('ready');
+  if(q.get('run'))await loadRun(q.get('run'));else if(q.get('autorun'))await runReplay();
+  if(!run.frames.length)document.body.dataset.ready='1';
+})();
+</script>
+</body>
+</html>

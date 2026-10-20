@@ -1,0 +1,130 @@
+{
+  "arm": "C_EGT",
+  "version": "v1",
+  "corpus": "C_EGT_v1",
+  "created_utc": "2026-09-14T12:07:18+00:00",
+  "seed": 0,
+  "composition": [
+    "E",
+    "G",
+    "T"
+  ],
+  "composition_note": "components parsed from arm name; D_pre = stage-1 pretrain corpus (G), D_adapt = stage-2 adapt corpus (E+T; same content family as E_ET, differs by init)",
+  "verified_empty_negatives": true,
+  "target_subsources": [
+    "AuSmoke",
+    "Boreal",
+    "Forest_Fire"
+  ],
+  "counts": {
+    "per_component": {
+      "E": 38454,
+      "G": 14901,
+      "T": 12966
+    },
+    "per_source": {
+      "existing": 38454,
+      "firesense": 292,
+      "multinatsmoke": 25513,
+      "boreal": 2062
+    },
+    "per_label_origin": {
+      "existing": 38454,
+      "background_neg": 329,
+      "mask-derived": 25513,
+      "box-yolo": 2025
+    },
+    "n_smoke_boxes_v4": 33787,
+    "n_train_lines": 94188
+  },
+  "excluded": {
+    "aerial_holdout(boreal_val_test)": 3912,
+    "policy:no_usable_label": 5367,
+    "policy:non_image_file": 182,
+    "policy:fire_only": 19671,
+    "dedup:origin_class": 40959,
+    "forest_holdout(ausmoke_val_test)": 4342,
+    "dedup:neardup_v4": 2,
+    "convert:mask_not_found": 628
+  },
+  "multiplicities": {
+    "E": {
+      "n_raw": 38454,
+      "multiplicity": 1,
+      "n_effective": 38454
+    },
+    "G": {
+      "n_raw": 14901,
+      "multiplicity": 2,
+      "n_effective": 29802
+    },
+    "T": {
+      "n_raw": 12966,
+      "multiplicity": 2,
+      "n_effective": 25932
+    }
+  },
+  "lists": {
+    "lists/local/train.txt": {
+      "n": 94188,
+      "sha256": "e3d322a40bcacc76760cbf162096ac50eca0b043697c151e1680955596bfbb90"
+    },
+    "lists/pod/train.txt": {
+      "n": 94188,
+      "sha256": "5244402364d512eb21bdae3335a745eead2d6eaa99de4f35f22110fc9808a975"
+    },
+    "lists/local/train_E.txt": {
+      "n": 38454,
+      "sha256": "51ac91f791de57211d0f31c45365c047230d30ff5f8a4869c71b3891a05f358d"
+    },
+    "lists/pod/train_E.txt": {
+      "n": 38454,
+      "sha256": "d87e07b0839a2145ab137f57473fc6e439180094531249abfae65c9a0fd2acb3"
+    },
+    "lists/local/train_G.txt": {
+      "n": 14901,
+      "sha256": "e04ba1a518d01f196d2d8f11692f4a824e4c7872dcbdf924553bf93cff1a3ddf"
+    },
+    "lists/pod/train_G.txt": {
+      "n": 14901,
+      "sha256": "0489697236b19ccc8463cf36ce11a055bdc4eabb0fd21471e269b0da6b684ba3"
+    },
+    "lists/local/train_T.txt": {
+      "n": 12966,
+      "sha256": "e4f760f6979ebafe5eb89ddb5f72338cb61afae99aac525bb8e883b92178734b"
+    },
+    "lists/pod/train_T.txt": {
+      "n": 12966,
+      "sha256": "b34dcd88f3a726854a2969ab7e0d754de6708571c560f0baa6720c920650e993"
+    }
+  },
+  "yamls": {
+    "local": "/local/home/tianrgua/cvproject/data/v4/yolo/C_EGT_v1/yamls/local.yaml",
+    "pod": "/local/home/tianrgua/cvproject/data/v4/yolo/C_EGT_v1/yamls/pod.yaml"
+  },
+  "val": {
+    "local": "/local/home/tianrgua/cvproject/data/yolo/lists/local/sdis_val.txt",
+    "pod": "/mnt/local/smoke_data/lists/pod/sdis_val.txt"
+  },
+  "tar": {
+    "path": "/local/home/tianrgua/cvproject/data/v4/stage/C_EGT_v1.tar",
+    "bytes": 17332858880,
+    "sha256": "f64825d2f25f448884f185ea13464218aa0ce12ba4d4cb752821e2f0eb068641"
+  },
+  "missing_sources": [
+    "dfs"
+  ],
+  "box_count_mismatches": {
+    "n": 0,
+    "examples": []
+  },
+  "dedup": {
+    "parquet": "/local/home/tianrgua/cvproject/data/v4/manifests/dedup_v4.parquet",
+    "sha256": "98b03ab68eed8d232765baf0315fbb2a96ecd3ea2cd63b5b102ea5696540f2a0"
+  },
+  "aerial_split": {
+    "path": "/local/home/tianrgua/cvproject/data/v4/manifests/aerial_split_v4.json",
+    "sha256": "5307a0b6e49950c8ca1adbabe8bfc78e967c6dc387187befa3537e47f03ce866"
+  },
+  "pod_root": "/scratch/scratch/tianrgua-sandbox/smoke/v4data/C_EGT_v1"
+}

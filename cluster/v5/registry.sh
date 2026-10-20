@@ -1,0 +1,3 @@
+#!/bin/bash
+# v5 wrapper: python cluster/v5/registry.sh <reserve|release|status|sync> ...
+cd /local/home/tianrgua/cvproject && SMOKE_REGISTRY_DIR=cluster/v5 exec .venv/bin/python cluster/v4/registry.py "$@"

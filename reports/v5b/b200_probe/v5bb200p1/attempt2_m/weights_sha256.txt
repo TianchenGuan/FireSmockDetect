@@ -1,0 +1,3 @@
+0212ebff8321ae1bfb406b55558c9e7dde6ded2c42e3aa5aa342db9328b005fc  /tmp/m/run1/weights/best.pt
+4f15bbfa56e78c045043ba121a72527ca05dc9a9c40ac1ba74eeef7559b2179e  /tmp/m/run1/weights/epoch0.pt
+d2cdebcba8fa2ad88f9f46e5a42684fa566a74c227e24933c78257dcc689bdc5  /tmp/m/run1/weights/last.pt

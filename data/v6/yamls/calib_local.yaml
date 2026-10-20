@@ -1,0 +1,6 @@
+# INT8 PTQ calibration data: TRAIN + VAL only (never test)
+path: /local/home/tianrgua/cvproject/data/yolo
+train: /local/home/tianrgua/cvproject/data/yolo/lists/local/expB_train.txt
+val: /local/home/tianrgua/cvproject/data/yolo/lists/local/sdis_val.txt
+nc: 1
+names: [smoke]

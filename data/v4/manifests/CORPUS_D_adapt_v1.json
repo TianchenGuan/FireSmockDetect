@@ -1,0 +1,10 @@
+{
+  "corpus": "D_adapt_v1",
+  "n_lines": 53608,
+  "n_eet": 51420,
+  "n_g_replay": 2188,
+  "replay_frac_of_g90": 0.15,
+  "stage1": "expV4Dpre_g_s0 (61ep on B_G_v1 train90, ~0.89M exposures)",
+  "stage2_epochs": 26,
+  "list_sha256": "a8f716281c0d5d922abaf2dc7ef1b226862b0c4303b0a2abe5174358961ad87c"
+}

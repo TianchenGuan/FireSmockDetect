@@ -1,0 +1,9 @@
+n=2000 pos=1712 neg=288
+== image-level strategies (val 2000) ==
+YOLO11m alone @0.30                        P=0.940 R=0.771 negFP=0.292
+YOLO11m alone @0.15                        P=0.930 R=0.873 negFP=0.389
+SFT-9B VLM alone                           P=0.931 R=0.753 negFP=0.330
+AND: YOLO@0.30 AND VLM                     P=0.949 R=0.637 negFP=0.205
+OR: YOLO@0.30 OR VLM                       P=0.927 R=0.887 negFP=0.417
+hybrid: YOLO@0.30 OR (YOLO@0.12 AND VLM)   P=0.934 R=0.839 negFP=0.354
+hybrid: YOLO@0.45 OR (YOLO@0.12 AND VLM)   P=0.937 R=0.802 negFP=0.323

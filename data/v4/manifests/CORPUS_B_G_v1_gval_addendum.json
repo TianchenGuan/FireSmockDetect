@@ -1,0 +1,17 @@
+{
+  "corpus": "B_G_v1",
+  "created_utc": "2026-09-14T10:56:35Z",
+  "purpose": "strict source-only val for arm B / D_pre model selection",
+  "grouping": "parent_unit (md5 bucket)",
+  "val_frac_target": 0.1,
+  "n_units": 105,
+  "unresolved_to_train": 0,
+  "n_train90": 14591,
+  "n_gval": 310,
+  "list_sha256": {
+    "local/train90": "794de869138768e2bf38e9fb59484239e7fbdbd566a13a4a04ee0e3ffb940641",
+    "local/gval": "a452ca82b0809e2d07258786c71fe7841d860fc66a64ddef944a5e818aa98225",
+    "pod/train90": "bbab5b805f6af996f583f1c741ff457e80043ebf6f7715b255f635ef426d0987",
+    "pod/gval": "ed64e94eb2fd36bac3faddd2451ccded8cca09433b841d93dd11f2fef00d225c"
+  }
+}

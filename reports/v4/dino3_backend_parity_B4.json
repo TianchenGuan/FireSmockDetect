@@ -1,0 +1,395 @@
+{
+  "weights": "/local/home/tianrgua/cvproject/models/v3/runs/v4B4_lora_L/seg05/best.pt",
+  "preds": "/local/home/tianrgua/cvproject/models/v4/evals/v4B4_lora_L/sdis_val_preds.jsonl",
+  "device": "cpu",
+  "torch_threads": 96,
+  "conf_floor": 0.02,
+  "match_iou": 0.5,
+  "backend_info": {
+    "backbone_dir": "/local/home/tianrgua/cvproject/models/v3/hf/dinov3-vitl16",
+    "letterbox": [
+      1280,
+      736
+    ],
+    "lora_r": 16,
+    "lora_alpha": 32.0,
+    "lora_modules": 96,
+    "lora_params": 3145728,
+    "lora_merged_linears": 0,
+    "ckpt_step": 15026,
+    "ckpt_best_map": 0.4085586508813729,
+    "ckpt_tensors": 238,
+    "conf_floor": 0.02,
+    "device": "cpu"
+  },
+  "load_s": 1.9,
+  "images": [
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-244_2024-02-16T10-45-33.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 1,
+      "n_cluster": 1,
+      "n_matched": 1,
+      "max_abs_score_delta": 1e-06,
+      "min_iou": 0.9999,
+      "max_abs_box_delta_norm": 1e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9712
+      ],
+      "top_cluster": [
+        0.9712
+      ],
+      "timing": {
+        "latency_ms": 2000.7,
+        "preprocess_ms": 5.8,
+        "infer_ms": 1994.7,
+        "postprocess_ms": 0.2,
+        "full_pass_ms": 2000.5,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-46_2024-02-23T09-50-10.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 7e-05,
+      "min_iou": 0.9997,
+      "max_abs_box_delta_norm": 3e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9129,
+        0.5254,
+        0.1009
+      ],
+      "top_cluster": [
+        0.9129,
+        0.5254,
+        0.1009
+      ],
+      "timing": {
+        "latency_ms": 2283.3,
+        "preprocess_ms": 3.3,
+        "infer_ms": 2279.9,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2283.1,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_marguerite-29_2024-02-05T13-20-54.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 4.1e-05,
+      "min_iou": 0.9998,
+      "max_abs_box_delta_norm": 4.7e-05,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9907,
+        0.9174,
+        0.0313
+      ],
+      "top_cluster": [
+        0.9907,
+        0.9174,
+        0.0312
+      ],
+      "timing": {
+        "latency_ms": 2211.6,
+        "preprocess_ms": 3.2,
+        "infer_ms": 2208.4,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2211.5,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-244_2024-09-12T13-57-28.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 0.0002,
+      "min_iou": 0.9995,
+      "max_abs_box_delta_norm": 6e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9664,
+        0.3217,
+        0.1289
+      ],
+      "top_cluster": [
+        0.9664,
+        0.3219,
+        0.1287
+      ],
+      "timing": {
+        "latency_ms": 2104.8,
+        "preprocess_ms": 3.8,
+        "infer_ms": 2100.9,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2104.7,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_marguerite-282_2024-02-08T10-41-12.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 6.1e-05,
+      "min_iou": 0.9995,
+      "max_abs_box_delta_norm": 1.3e-05,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.9815,
+        0.8415,
+        0.0265
+      ],
+      "top_cluster": [
+        0.9815,
+        0.8415,
+        0.0266
+      ],
+      "timing": {
+        "latency_ms": 2184.4,
+        "preprocess_ms": 3.2,
+        "infer_ms": 2181.0,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2184.3,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-125_2024-04-10T08-39-07.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 2,
+      "n_cluster": 2,
+      "n_matched": 2,
+      "max_abs_score_delta": 1.8e-05,
+      "min_iou": 0.9999,
+      "max_abs_box_delta_norm": 4e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.972,
+        0.0239
+      ],
+      "top_cluster": [
+        0.972,
+        0.0239
+      ],
+      "timing": {
+        "latency_ms": 2300.3,
+        "preprocess_ms": 3.9,
+        "infer_ms": 2296.3,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2300.2,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-125_2024-06-14T07-25-12.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 3,
+      "n_cluster": 3,
+      "n_matched": 3,
+      "max_abs_score_delta": 5.9e-05,
+      "min_iou": 0.9997,
+      "max_abs_box_delta_norm": 7e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.8876,
+        0.2621,
+        0.093
+      ],
+      "top_cluster": [
+        0.8876,
+        0.2621,
+        0.093
+      ],
+      "timing": {
+        "latency_ms": 2146.2,
+        "preprocess_ms": 3.3,
+        "infer_ms": 2142.8,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2146.1,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_marguerite-339_2024-02-07T15-56-12.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 1,
+      "n_cluster": 1,
+      "n_matched": 1,
+      "max_abs_score_delta": 0.000223,
+      "min_iou": 0.9998,
+      "max_abs_box_delta_norm": 2e-06,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [
+        0.3983
+      ],
+      "top_cluster": [
+        0.3981
+      ],
+      "timing": {
+        "latency_ms": 2243.1,
+        "preprocess_ms": 3.3,
+        "infer_ms": 2239.7,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2243.0,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/val/force-06_cabanelle-327_2024-01-01T16-51-09.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 0,
+      "n_cluster": 0,
+      "n_matched": 0,
+      "max_abs_score_delta": null,
+      "min_iou": null,
+      "max_abs_box_delta_norm": null,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [],
+      "top_cluster": [],
+      "timing": {
+        "latency_ms": 2166.4,
+        "preprocess_ms": 3.5,
+        "infer_ms": 2162.8,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2166.3,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    },
+    {
+      "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_marguerite-29_2024-01-27T11-21-35.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "n_ours": 0,
+      "n_cluster": 0,
+      "n_matched": 0,
+      "max_abs_score_delta": null,
+      "min_iou": null,
+      "max_abs_box_delta_norm": null,
+      "unmatched_ours_scores": [],
+      "unmatched_cluster_scores": [],
+      "top_ours": [],
+      "top_cluster": [],
+      "timing": {
+        "latency_ms": 2193.9,
+        "preprocess_ms": 3.4,
+        "infer_ms": 2190.5,
+        "postprocess_ms": 0.1,
+        "full_pass_ms": 2193.9,
+        "tile_pass_ms": 0.0,
+        "n_tiles": 0
+      }
+    }
+  ],
+  "summary": {
+    "n_images": 10,
+    "n_matched_pairs": 19,
+    "max_abs_score_delta": 0.000223,
+    "median_abs_score_delta": 4.3e-05,
+    "min_iou": 0.9995,
+    "mean_iou": 0.99979,
+    "max_abs_box_delta_norm": 4.7e-05,
+    "n_unmatched_ours": 0,
+    "unmatched_ours_scores": [],
+    "n_unmatched_cluster": 0,
+    "unmatched_cluster_scores": [],
+    "images_with_identical_counts": 10
+  },
+  "latency": {
+    "n": 10,
+    "device": "cpu",
+    "torch_threads": 96,
+    "letterbox": [
+      1280,
+      736
+    ],
+    "lora_merged": false,
+    "batch1_ms_mean": 2175.9,
+    "batch1_ms_median": 2168.8,
+    "batch1_ms_p90": 2215.3,
+    "batch1_ms_min": 2131.4,
+    "batch1_ms_max": 2238.3,
+    "preprocess_ms_median": 3.8,
+    "infer_ms_median": 2165.0
+  },
+  "merge_check": {
+    "merged_linears": 96,
+    "lora_params_after_merge": 3145728,
+    "images": [
+      {
+        "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-244_2024-02-16T10-45-33.jpg",
+        "n_unmerged": 1,
+        "n_merged": 1,
+        "max_abs_score_delta": 1.1920928955078125e-07,
+        "max_abs_box_delta_px": 6.103515625e-05,
+        "merged_latency_ms": 2050.6
+      },
+      {
+        "image": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_cabanelle-46_2024-02-23T09-50-10.jpg",
+        "n_unmerged": 3,
+        "n_merged": 3,
+        "max_abs_score_delta": 3.337860107421875e-06,
+        "max_abs_box_delta_px": 6.103515625e-05,
+        "merged_latency_ms": 2198.1
+      }
+    ]
+  }
+}

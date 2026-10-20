@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>smoke-detect demo</title>
+<style>
+ body{font-family:system-ui,sans-serif;max-width:960px;margin:2rem auto;padding:0 1rem;background:#111;color:#eee}
+ #drop{border:2px dashed #666;border-radius:8px;padding:2rem;text-align:center;cursor:pointer}
+ #drop.hover{border-color:#e66}
+ canvas{max-width:100%;margin-top:1rem;border-radius:4px}
+ pre{background:#1c1c1c;padding:1rem;border-radius:6px;overflow-x:auto;font-size:.85rem}
+ .badge{display:inline-block;padding:.2rem .6rem;border-radius:4px;font-weight:600;margin-left:.5rem}
+ .none{background:#2a4}.watch{background:#a80}.provisional{background:#c60}.confirmed{background:#c22}
+</style>
+</head>
+<body>
+<h2>Wildfire smoke detection — demo<span id="alert" class="badge"></span></h2>
+<div id="drop">Drop an image here or click to choose. Sent to <code>/detect</code>.</div>
+<input type="file" id="file" accept="image/*" hidden>
+<canvas id="cv"></canvas>
+<pre id="out"></pre>
+<script>
+const drop=document.getElementById('drop'),fi=document.getElementById('file'),
+      cv=document.getElementById('cv'),out=document.getElementById('out'),
+      badge=document.getElementById('alert');
+drop.onclick=()=>fi.click();
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('hover')};
+drop.ondragleave=()=>drop.classList.remove('hover');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('hover');send(e.dataTransfer.files[0])};
+fi.onchange=()=>send(fi.files[0]);
+async function send(f){
+  if(!f)return;
+  const fd=new FormData();
+  fd.append('image',f);fd.append('device_id','web-demo');
+  fd.append('capture_ts',Date.now()/1000);
+  out.textContent='running inference...';
+  const r=await fetch('/detect',{method:'POST',body:fd});
+  const j=await r.json();
+  out.textContent=JSON.stringify(j,null,2);
+  badge.textContent=j.alert?j.alert.state:'error';
+  badge.className='badge '+(j.alert?j.alert.state:'none');
+  const img=new Image();
+  img.onload=()=>{
+    cv.width=img.width;cv.height=img.height;
+    const c=cv.getContext('2d');c.drawImage(img,0,0);
+    c.lineWidth=Math.max(2,img.width/400);c.font=`${Math.max(14,img.width/60)}px sans-serif`;
+    for(const d of j.detections||[]){
+      const[x1,y1,x2,y2]=d.bbox_xyxy;
+      c.strokeStyle=d.cls_name==='smoke'?'#f43':'#fa3';
+      c.fillStyle=c.strokeStyle;
+      c.strokeRect(x1,y1,x2-x1,y2-y1);
+      c.fillText(`${d.cls_name} ${d.score.toFixed(2)}`,x1+3,Math.max(y1-6,16));
+    }
+  };
+  img.src=URL.createObjectURL(f);
+}
+</script>
+</body>
+</html>

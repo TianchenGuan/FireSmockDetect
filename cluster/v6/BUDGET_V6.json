@@ -1,0 +1,13 @@
+{
+  "iteration": "6",
+  "window_start_utc": "2026-10-20T19:50:37Z",
+  "window_deadline_utc": "2026-10-21T19:50:37Z",
+  "max_concurrent_gpus": 128,
+  "max_concurrent_nodes": 16,
+  "max_nodes_by_type": {"L40S": 15, "B200": 1},
+  "node_gpu_count": 8,
+  "gpu_type": "L40S",
+  "max_allocation_gpu_hours": 3072,
+  "max_allocation_node_hours": 384,
+  "notes": "V6 SMOKE-EDGE-SYNTH: ceiling 128 GPUs = at most 120 L40S (15 g6e nodes) + 8 B200 (1 p6 node), at most ONE B200 node. Start ~32 L40S-scale + B200 probe. Bedrock spend tracked separately in cluster/v6/bedrock_ledger.json (cap USD 2000 total, USD 200 generator comparison). Never reset window_start_utc."
+}

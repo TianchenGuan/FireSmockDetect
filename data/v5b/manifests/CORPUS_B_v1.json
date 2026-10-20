@@ -1,0 +1,325 @@
+{
+ "arm": "B",
+ "version": "v1",
+ "corpus": "B_v1",
+ "created_utc": "2026-10-02T08:58:34Z",
+ "seed": 0,
+ "iteration": "5b",
+ "composition": {
+  "E": "data/yolo/lists/local/expB_train.txt (pyro-sdis train sites + D-Fire; pod /mnt/local/smoke_data)",
+  "boreal": "data/v5b/teacher/lists/train_T_boreal.txt = E_ET_v1 T list minus AuSmoke (karkkila+evo train burns + 37 verified-empty; pod v4data/E_ET_v1)",
+  "fireman": "FireMan-UAV-RGBT RGB TRAIN split only (burn A), per-video cap 600 frames uniform stride, class 0 smoke, empty txt = author explicit negative",
+  "sheffield": "Sheffield UAV all exported frames (train+val+holdout exports; ONE burn session -> TRAIN only, never val/holdout); 3 fire-only + 6 flagged empties already excluded at export"
+ },
+ "excluded": [
+  "FireSpot (licence pending)",
+  "WSDataset (blocked)",
+  "AuSmoke/MNS (permission pending; 10,904 T lines)",
+  "FIgLib (eval-only)",
+  "Boreal heinola (aerial VAL) / ruokolahti (historical test)",
+  "FireMan val/holdout/quarantine + 9 CVAT conflicts",
+  "Sheffield 3 fire-only + 6 smoke-visible empties",
+  "D-Fire fire-only (944; never in E)"
+ ],
+ "counts": {
+  "per_component": {
+   "E": 38454,
+   "boreal": 2062,
+   "fireman": 8279,
+   "sheffield": 1327
+  },
+  "per_source": {
+   "sdis": 22177,
+   "dfire": 16277,
+   "boreal": 2062,
+   "fireman": 8279,
+   "sheffield": 1327
+  },
+  "per_label_origin": {
+   "author": 50085,
+   "author_verified_empty": 37
+  },
+  "n_train_lines": 53511,
+  "n_gt_boxes_by_source": {
+   "sdis": 21944,
+   "dfire": 9550,
+   "boreal": 2061,
+   "fireman": 7262,
+   "sheffield": 5283
+  },
+  "fireman_videos": {
+   "rgb_test_video_001": {
+    "n_frames": 329,
+    "n_selected": 329
+   },
+   "rgb_train_video_001": {
+    "n_frames": 180,
+    "n_selected": 180
+   },
+   "rgb_train_video_002": {
+    "n_frames": 570,
+    "n_selected": 570
+   },
+   "rgb_train_video_003": {
+    "n_frames": 7703,
+    "n_selected": 600
+   },
+   "rgb_train_video_004": {
+    "n_frames": 3408,
+    "n_selected": 600
+   },
+   "rgb_train_video_005": {
+    "n_frames": 869,
+    "n_selected": 600
+   },
+   "rgb_train_video_006": {
+    "n_frames": 840,
+    "n_selected": 600
+   },
+   "rgb_train_video_007": {
+    "n_frames": 1469,
+    "n_selected": 600
+   },
+   "rgb_train_video_008": {
+    "n_frames": 1499,
+    "n_selected": 600
+   },
+   "rgb_train_video_018": {
+    "n_frames": 1811,
+    "n_selected": 600
+   },
+   "rgb_train_video_020": {
+    "n_frames": 630,
+    "n_selected": 600
+   },
+   "rgb_train_video_021": {
+    "n_frames": 953,
+    "n_selected": 600
+   },
+   "rgb_train_video_022": {
+    "n_frames": 953,
+    "n_selected": 600
+   },
+   "rgb_val_video_001": {
+    "n_frames": 1409,
+    "n_selected": 600
+   },
+   "rgb_val_video_005": {
+    "n_frames": 631,
+    "n_selected": 600
+   }
+  },
+  "fireman_explicit_negatives": 1572,
+  "sheffield_explicit_negatives": 24,
+  "new_source_effective_lines": 15057,
+  "new_source_effective_over_E_pct": 39.2
+ },
+ "multiplicities": {
+  "E": {
+   "n_raw": 38454,
+   "multiplicity": 1,
+   "n_effective": 38454
+  },
+  "boreal": {
+   "n_raw": 2062,
+   "multiplicity": 2,
+   "n_effective": 4124
+  },
+  "fireman": {
+   "n_raw": 8279,
+   "multiplicity": 1,
+   "n_effective": 8279
+  },
+  "sheffield": {
+   "n_raw": 1327,
+   "multiplicity": 2,
+   "n_effective": 2654
+  }
+ },
+ "multiplicity_note": null,
+ "budget": {
+  "arm_A": {
+   "list": "expB.yaml / expB_train.txt",
+   "n_lines": 38454,
+   "epochs": 60,
+   "exposures": 2307240
+  },
+  "n_lines": 53511,
+  "epochs": 43,
+  "exposures": 2300973,
+  "delta_vs_A_pct": -0.272
+ },
+ "lists": {
+  "lists/local/train.txt": {
+   "n": 53511,
+   "sha256": "28862a5b49fcc4a5ad85208119e8aa58cf8c9503787e09b42a4c46580150ba9c"
+  },
+  "lists/pod/train.txt": {
+   "n": 53511,
+   "sha256": "a8e4caeec38b3d204986c3f720f331dfe582421c3124ade18683ad5504c207fc"
+  },
+  "lists/local/train_E.txt": {
+   "n": 38454,
+   "sha256": "51ac91f791de57211d0f31c45365c047230d30ff5f8a4869c71b3891a05f358d"
+  },
+  "lists/pod/train_E.txt": {
+   "n": 38454,
+   "sha256": "d87e07b0839a2145ab137f57473fc6e439180094531249abfae65c9a0fd2acb3"
+  },
+  "lists/local/train_boreal.txt": {
+   "n": 2062,
+   "sha256": "46260ae8ded84280a25d5cfc1eecac2d2eef54203f5323b900acbf66bc350353"
+  },
+  "lists/pod/train_boreal.txt": {
+   "n": 2062,
+   "sha256": "fbbce87b5f5cef9b3dde80826c5c21c585a82b3398ae1889c49baa4fe39be5f1"
+  },
+  "lists/local/train_fireman.txt": {
+   "n": 8279,
+   "sha256": "37f5d8dfe7c29f298fc8c25c8c64fb57ec81e297bd457212c0870657ba3eeb87"
+  },
+  "lists/pod/train_fireman.txt": {
+   "n": 8279,
+   "sha256": "d1e84f0c91891916d045e475d8437572397e3f9c43feaadb3d6d6f3ecf665a62"
+  },
+  "lists/local/train_sheffield.txt": {
+   "n": 1327,
+   "sha256": "6d02577844540e2a45d45514d651f7b8e9b0e258c965e3e9c49a68a220631228"
+  },
+  "lists/pod/train_sheffield.txt": {
+   "n": 1327,
+   "sha256": "17045cb572d1a89ad997a1555975a0d37c3ff9683f10b963838eeccf51f9e143"
+  }
+ },
+ "yamls": {
+  "local": "/local/home/tianrgua/cvproject/data/v5b/yolo/B_v1/yamls/local.yaml",
+  "pod": "/local/home/tianrgua/cvproject/data/v5b/yolo/B_v1/yamls/pod.yaml",
+  "pod_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/yamls/pod/B_v1.yaml"
+ },
+ "val": {
+  "local": "/local/home/tianrgua/cvproject/data/yolo/lists/local/sdis_val.txt",
+  "pod": "/mnt/local/smoke_data/lists/pod/sdis_val.txt",
+  "note": "ultralytics model selection on sdis val, as arm A / v4"
+ },
+ "pod_root": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1",
+ "tar": {
+  "path": "/local/home/tianrgua/cvproject/data/v5b/stage/B_v1.tar",
+  "bytes": 7412582400,
+  "sha256": "44bf5bba24baf2155a41e551eb96c2e18df6ce9c96b40e6cd2546d85fe9665cb",
+  "n_members": 19231,
+  "kraken_data_tar_arg": "v5b_b=data/v5b/stage/B_v1.tar",
+  "pod_extract_root": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata",
+  "pod_resolution_check": {
+   "n": 20,
+   "all_ok": true,
+   "checks": [
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/WEB01056.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/WEB09203.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/WEB00830.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/fireman__rgb_train_video_003_frame_003973.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/val/sdis-07_brison-200_2024-01-26T15-18-13.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/fireman__rgb_train_video_008_frame_000420.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/WEB07251.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/sheffield__train__DJI_20220721141130_0005_W_MP4-0074_jpg.rf.FjaKX8SDVDUa07QW1qPz.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/train/force-06_courmettes-160_2024-01-09T16-01-25.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/train/sdis-07_brison-110_2024-01-28T10-31-40.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/fireman__rgb_train_video_007_frame_001100.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/fireman__rgb_train_video_002_frame_000443.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/train/force-06_courmettes-275_2024-02-08T17-02-46.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/train/sdis-07_brison-290_2024-01-31T15-14-07.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/train/sdis-07_brison-110_2024-02-23T11-59-50.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/scratch/scratch/tianrgua-sandbox/smoke/v5bdata/B_v1/images/fireman__rgb_train_video_007_frame_000868.jpg",
+     "ok": true,
+     "how": "tar member (image + label)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/AoF01994.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/pyro_sdis/images/val/force-06_courmettes-160_2024-04-03T09-16-20.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/AoF02696.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    },
+    {
+     "line": "/mnt/local/smoke_data/dfire_smoke/images/train/PublicDataset00815.jpg",
+     "ok": true,
+     "how": "baked /mnt/local/smoke_data (local mirror exists)"
+    }
+   ]
+  }
+ },
+ "teacher_thresholds": null,
+ "analysis_params": null,
+ "masked": null,
+ "pseudo": null,
+ "label_type_note": "author = dataset annotations (not our human review); masked = author labels unchanged + pixels of teacher-agreed unlabelled regions replaced by image mean; model-assisted = teacher pseudo boxes",
+ "builder": "scripts/v5b/build_corpus_v5b.py"
+}

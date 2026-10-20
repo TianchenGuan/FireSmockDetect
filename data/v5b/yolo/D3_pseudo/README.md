@@ -1,0 +1,4 @@
+# D3_pseudo -- MODEL-ASSISTED boxes on UNLABELLED smoke-positive material (never author labels, never human-reviewed)
+Generated 2026-10-02T10:02:05Z by scripts/v5b/build_corpus_v5b.py from models/v5b/teacher/*__train_d3.jsonl (sources: data/v5b/yolo/D3_src/sources.csv).
+Rule: D2 rules without GT filter (no author boxes exist): (a) FUSED calibrated WBF >= 0.9918 (accurate_recipe fp0.10); (b) SINGLE teacher calibrated >= 0.98 (2% neg-FP; raw {"dino_b4_lora_L": 0.9962, "dino_b6_lora_Hplus": 0.9963, "rfdetr_L": 0.8958}); (c) AGREE >=2 teachers IoU>=0.5 each calibrated >= 0.80; fused > single > agree, dedup IoU>=0.3. Image kept ONLY if >=1 pseudo box (no teacher-silence negatives from unlabelled footage); the karkkila no_smoke clip is scored for the FP statistic but never trained; D-Fire fire-only images without a box are excluded.
+Label files = pseudo lines only. Sidecar: pseudo_boxes.csv (label_type, video_level_support, rule, teachers, scores, area).

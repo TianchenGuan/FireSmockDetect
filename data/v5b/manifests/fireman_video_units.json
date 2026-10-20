@@ -1,0 +1,446 @@
+{
+ "rgb/test/video_001": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/test/video_002": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "thermal/test/video_t_01",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "rgb/test/video_003": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "thermal/test/video_t_02",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/test/video_004": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/test/video_005": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_001": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_002": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_003": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_004": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_005": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_006": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_007": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_008": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_009": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "thermal/train/video_t_01",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "rgb/train/video_010": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "thermal/train/video_t_02",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "rgb/train/video_011": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "thermal/train/video_t_03",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "rgb/train/video_012": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "thermal/train/video_t_04",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_013": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "thermal/train/video_t_05",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_014": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_015": {
+  "burn": "fireman_burnD_overcast_clearcut_edge",
+  "date": "2022-07-06 or 2023-06-14 (unresolved; the date not used by burn A)",
+  "location": "unresolved (Perho/Kestil\u00e4/Taivalkoski?)",
+  "proposed_split": "val",
+  "evidence": "single RGB video 015 (M30T pair with t_06, 958x768, no overlay): overcast cumulus sky, fire in a standing pine stand at the edge of a flat clearcut with logging debris and a small building, lake in the distance; green foliage; no match to any other video (embedding singleton); could also be the morning/afternoon of burn C (same overcast) \u2014 then val and holdout would share a day (eval-only leak, no train leak)",
+  "paired_video": "thermal/train/video_t_06",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_016": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_017": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_018": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_019": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_020": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_021": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_022": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_023": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/train/video_024": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/val/video_001": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/val/video_002": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "thermal/val/video_t_01",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "rgb/val/video_003": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/val/video_004": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": null,
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "rgb/val/video_005": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": "thermal/val/video_t_02",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "thermal/test/video_t_01": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "rgb/test/video_002",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "thermal/test/video_t_02": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "rgb/test/video_003",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "thermal/train/video_t_01": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "rgb/train/video_009",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "thermal/train/video_t_02": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "rgb/train/video_010",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "thermal/train/video_t_03": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "rgb/train/video_011",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "thermal/train/video_t_04": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "rgb/train/video_012",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "thermal/train/video_t_05": {
+  "burn": "fireman_burnB_evening_dusk_RUOKOLAHTI_CANDIDATE",
+  "date": "2022-08-16 (candidate; README lists Aug 16 2022; Boreal Ruokolahti burn = 2022-08-15)",
+  "location": "Ruokolahti (CANDIDATE, unconfirmed): val/video_003 shows a large lake with many small forested islands (Saimaa-like archipelago); same low-sun pink-haze light as 012/013/014/test_003; late-summer orange-brown mire grass",
+  "proposed_split": "quarantine",
+  "evidence": "evening (016/017/019/023/024/val_004/test_004/test_005: dim grey-blue sky, dark forest, plume from forest edge on flat mire) to dusk (012/013/014/test_003/val_003: pink sky, orange-brown sedge mire, burning standing pine stand); H20T 3840x2160 + M30T 958x7xx pairs without overlay. Membership of the evening sub-group in the same burn as the dusk sub-group is a judgment (same season colours, same day-end light); if the authors confirm it is NOT Ruokolahti this unit can be released.",
+  "paired_video": "rgb/train/video_013",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "thermal/train/video_t_06": {
+  "burn": "fireman_burnD_overcast_clearcut_edge",
+  "date": "2022-07-06 or 2023-06-14 (unresolved; the date not used by burn A)",
+  "location": "unresolved (Perho/Kestil\u00e4/Taivalkoski?)",
+  "proposed_split": "val",
+  "evidence": "single RGB video 015 (M30T pair with t_06, 958x768, no overlay): overcast cumulus sky, fire in a standing pine stand at the edge of a flat clearcut with logging debris and a small building, lake in the distance; green foliage; no match to any other video (embedding singleton); could also be the morning/afternoon of burn C (same overcast) \u2014 then val and holdout would share a day (eval-only leak, no train leak)",
+  "paired_video": "rgb/train/video_015",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "thermal/val/video_t_01": {
+  "burn": "fireman_burnC_taivalkoski_2023-08-26",
+  "date": "2023-08-26",
+  "location": "Taivalkoski (CONFIRMED: burned-in DJI overlay on paired thermal frames: \"DJI Matrice 300 RTK 2023-08-26 11:58\u201312:30, 65.452\u201365.477\u00b0N 28.41\u201328.46\u00b0E, 327\u2013400 m\")",
+  "proposed_split": "holdout",
+  "evidence": "paired thermal videos carry GPS/time overlay; RGB pairs identified by identical frame counts (009\u2194t_01 3008/3005, 010\u2194t_02 5446/5442, 011\u2194t_03 5841/5838, val_002\u2194val_t_01 1053/1053, test_002\u2194test_t_01 4111/4107) and identical scenes; overcast midday, drained peatland with ditches, dirt roads, parked cars, lake; RGB rectified to 640x512",
+  "paired_video": "rgb/val/video_002",
+  "gps": "65.45-65.48N 28.41-28.46E (overlay)",
+  "identification_confidence": "high (GPS overlay / frame-count pairing)"
+ },
+ "thermal/val/video_t_02": {
+  "burn": "fireman_burnA_sunny_bog",
+  "date": "2022-07-06 or 2023-06-14 (unresolved)",
+  "location": "Perho or Kestil\u00e4 (unresolved; NOT Taivalkoski by overlay; archipelago absent)",
+  "proposed_split": "train",
+  "evidence": "sunny midday, clear blue sky with thin cirrus streaks in every video, fresh green string-bog with pine islands and ponds, same tall white plume from one treed island (001/002/004/006 close, 020/021/022/val_005 distant); 005/018/test_001 are smoke-free pre-/off-burn flights over the same mire+clearcut landscape (embedding cluster with 004)",
+  "paired_video": "rgb/val/video_005",
+  "gps": null,
+  "identification_confidence": "low-medium (visual scene grouping only; no metadata)"
+ },
+ "_README": {
+  "purpose": "burn-level grouping units for FireMan-UAV-RGBT; filled by agent from frame content (thermal overlays, scene/light/season consistency, DINOv2 similarity). Only burn C is metadata-confirmed. Authors (contacts in README) should be asked for the per-video location/date list before any training use.",
+  "split_policy": "unit = burn; A->train (native-res sunny bog), B->quarantine (Ruokolahti candidate; Boreal ruokolahti is a historical final-test site), C->holdout (GPS-confirmed independent burn), D->val. Frames duplicating existing eval material would inherit that role (none found)."
+ }
+}

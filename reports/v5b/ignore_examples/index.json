@@ -1,0 +1,295 @@
+{
+ "note": "agent-selected examples of the C ignore-region approximation; NOT human review",
+ "examples": [
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/00_sdis_force-06_courmettes-212_2024-02-05T09-35-11.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-212_2024-02-05T09-35-11.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-212_2024-02-05T09-35-11.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.234961,
+      0.831853,
+      0.263874,
+      0.869665
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.99841,
+      "dino_b4_lora_L": 0.995583
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/01_sdis_force-06_courmettes-275_2024-01-29T16-01-09.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-275_2024-01-29T16-01-09.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-275_2024-01-29T16-01-09.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.077706,
+      0.567425,
+      0.108026,
+      0.604879
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.996656,
+      "dino_b4_lora_L": 0.997965
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/02_sdis_force-06_courmettes-275_2024-04-08T19-32-12.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-275_2024-04-08T19-32-12.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-275_2024-04-08T19-32-12.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.070622,
+      0.407956,
+      0.105848,
+      0.454713
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.992392,
+      "dino_b4_lora_L": 0.997353
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/03_sdis_sdis-07_brison-20_2024-01-18T10-26-07.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_brison-20_2024-01-18T10-26-07.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__sdis-07_brison-20_2024-01-18T10-26-07.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.168518,
+      0.427527,
+      0.18665,
+      0.469322
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.99543,
+      "dino_b4_lora_L": 0.995289
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/04_sdis_sdis-07_brison-110_2024-02-05T11-54-07.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_brison-110_2024-02-05T11-54-07.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__sdis-07_brison-110_2024-02-05T11-54-07.jpg",
+   "n_gt": 1,
+   "regions": [
+    {
+     "enclosing": [
+      0.461302,
+      0.584047,
+      0.497409,
+      0.621031
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.994975,
+      "dino_b4_lora_L": 0.99083
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/05_sdis_force-06_courmettes-160_2024-04-23T10-01-41.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-160_2024-04-23T10-01-41.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-160_2024-04-23T10-01-41.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.16768,
+      0.516391,
+      0.213952,
+      0.635316
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.997635,
+      "dino_b4_lora_L": 0.996055
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/06_dfire_WEB08952.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/dfire_smoke/images/train/WEB08952.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__dfire__WEB08952.jpg",
+   "n_gt": 1,
+   "regions": [
+    {
+     "enclosing": [
+      0.265299,
+      0.018787,
+      0.611366,
+      0.353532
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.995409,
+      "dino_b4_lora_L": 0.997946
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/07_dfire_WEB09048.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/dfire_smoke/images/train/WEB09048.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__dfire__WEB09048.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.335554,
+      0.02446,
+      0.66229,
+      0.749973
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.998175,
+      "dino_b4_lora_L": 0.999114
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/08_boreal_boreal__Boreal-Forest-Fire__Boreal-Forest-Fire-Subset-A__Evo.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/v4/yolo/E_ET_v1/images/boreal__Boreal-Forest-Fire__Boreal-Forest-Fire-Subset-A__Evo-Images__evoDJI_0001_frame10.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__boreal__boreal__Boreal-Forest-Fire__Boreal-Forest-Fire-Subset-A__Evo-Images__evoDJI_0001_frame10.jpg",
+   "n_gt": 1,
+   "regions": [
+    {
+     "enclosing": [
+      0.246278,
+      0.103858,
+      0.799878,
+      0.532244
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus",
+      "rfdetr_L"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.99898,
+      "rfdetr_L": 0.892833,
+      "dino_b4_lora_L": 0.999123
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/09_sdis_force-06_courmettes-212_2024-01-25T13-51-41.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-212_2024-01-25T13-51-41.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-212_2024-01-25T13-51-41.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.122814,
+      0.476033,
+      0.145871,
+      0.525621
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.997401,
+      "dino_b4_lora_L": 0.997113
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/10_sdis_sdis-07_brison-110_2024-03-01T11-16-17.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/sdis-07_brison-110_2024-03-01T11-16-17.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__sdis-07_brison-110_2024-03-01T11-16-17.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.289781,
+      0.594284,
+      0.319864,
+      0.665148
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.992883,
+      "dino_b4_lora_L": 0.98942
+     }
+    }
+   ]
+  },
+  {
+   "example": "/local/home/tianrgua/cvproject/reports/v5b/ignore_examples/11_sdis_force-06_courmettes-212_2024-01-25T13-52-41.jpg",
+   "original": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-212_2024-01-25T13-52-41.jpg",
+   "masked_copy": "/local/home/tianrgua/cvproject/data/v5b/yolo/C_v1/images/masked__sdis__force-06_courmettes-212_2024-01-25T13-52-41.jpg",
+   "n_gt": 0,
+   "regions": [
+    {
+     "enclosing": [
+      0.125411,
+      0.475996,
+      0.149364,
+      0.526746
+     ],
+     "teachers": [
+      "dino_b4_lora_L",
+      "dino_b6_lora_Hplus"
+     ],
+     "scores": {
+      "dino_b6_lora_Hplus": 0.994084,
+      "dino_b4_lora_L": 0.995333
+     }
+    }
+   ]
+  }
+ ]
+}

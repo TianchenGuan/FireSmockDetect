@@ -1,0 +1,9 @@
+{
+ "tar": "/local/home/tianrgua/cvproject/data/v5b/stage/seg_v5b.tar",
+ "sha256": "7021cca3111fa5a626de76681c01c6db3b59fe0cd4d71bda8a667bdd771917b1",
+ "bytes": 467742720,
+ "n_train": 665,
+ "n_val": 382,
+ "resnet50_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+ "built_utc": "2026-10-02T07:36:41Z"
+}

@@ -1,0 +1,40 @@
+# smoke-dino3-b200:v1 — V5b high-res DINOv3-L detection stack for the obsidian-pu
+# B200 node (ap-south-1). Pods have NO internet and NO S3 egress (reports/v5b/
+# B200_PROBE.md §3): everything the run needs is baked here. Pods run as uid 1001
+# -> all assets under /opt and world-readable (nothing under /root).
+#
+# Base: ap-south-1 smoke-detect:v4 (torch 2.8.0+cu128 with sm_100 kernels, cuDNN
+# 9.10.2, Python 3.11.13, curl; pyro-sdis + D-Fire images + lists already baked at
+# /opt/smoke_data — verified by `docker run ... ls /opt/smoke_data` 2026-10-02).
+# Added: transformers 5.17.0 + pycocotools 2.0.10 (wheels downloaded on the devbox
+# with the SAME image's pip -> exact py3.11 resolution; cluster/v5b/build/wheels),
+# DINOv3-L snapshot (HF rev ea8dc286, 1.2 GB), Boreal-train frames (2,062 4K JPEGs,
+# 5.5 GB; the only part of the E+Boreal corpus not in v4), src/v3 detection code +
+# dino_infer.py, the V5b COCO jsons and the local sdis_val list.
+FROM 000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v4
+
+COPY wheels /tmp/wheels
+RUN pip install --no-cache-dir --no-index --find-links /tmp/wheels \
+      transformers==5.17.0 pycocotools==2.0.10 \
+ && rm -rf /tmp/wheels \
+ && python -c "import transformers, pycocotools, torch, numpy; print('transformers', transformers.__version__, 'torch', torch.__version__, 'numpy', numpy.__version__)"
+
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/tmp/hf \
+    TORCHINDUCTOR_CACHE_DIR=/tmp/inductor_cache TRITON_CACHE_DIR=/tmp/triton_cache \
+    PYTHONUNBUFFERED=1
+
+COPY models/dinov3-vitl16 /opt/models/dinov3-vitl16
+COPY boreal /opt/smoke_data/v4data/E_ET_v1/images
+COPY code /opt/smoke_dino
+COPY coco /opt/smoke_dino/coco
+RUN chmod -R a+rX /opt/models /opt/smoke_data/v4data /opt/smoke_dino \
+ && python - <<'PY'
+import json, os
+d = json.load(open('/opt/smoke_dino/coco/instances_train_eb.json'))
+missing = [im['file_name'] for im in d['images'] if not os.path.exists(im['file_name'])]
+v = json.load(open('/opt/smoke_dino/coco/instances_val.json'))
+vmissing = [im['file_name'] for im in v['images'] if not os.path.exists('/opt/smoke_data/' + im['file_name'])]
+print('train images', len(d['images']), 'missing', len(missing), '| val images', len(v['images']), 'missing', len(vmissing))
+assert not missing and not vmissing, (missing[:3], vmissing[:3])
+PY
+WORKDIR /opt/smoke_dino

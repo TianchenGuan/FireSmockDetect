@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v4/evals/v4evalr2/v4a__forestval.jsonl",
+  "data_yaml": "data/v4/eval/yamls/forest_val.yaml",
+  "split": "val",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1471,
+  "n_positive_images": 1471,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.3636,
+      "recall": 0.4253,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.1877,
+        "small": 0.502,
+        "medium": 0.5185,
+        "large": 0.8519
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.4543,
+      "recall": 0.3575,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.1398,
+        "small": 0.4268,
+        "medium": 0.4709,
+        "large": 0.5926
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.5064,
+      "recall": 0.3028,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.1169,
+        "small": 0.3638,
+        "medium": 0.4233,
+        "large": 0.2593
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.5454,
+      "recall": 0.2678,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.1034,
+        "small": 0.325,
+        "medium": 0.3651,
+        "large": 0.1481
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.5747,
+      "recall": 0.2299,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.0939,
+        "small": 0.2741,
+        "medium": 0.3386,
+        "large": 0.0741
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.6038,
+      "recall": 0.1944,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.069,
+        "small": 0.2377,
+        "medium": 0.2804,
+        "large": 0.037
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.6445,
+      "recall": 0.1276,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.0383,
+        "small": 0.1593,
+        "medium": 0.1852,
+        "large": 0.0
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.625,
+      "recall": 0.0658,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.0019,
+        "small": 0.093,
+        "medium": 0.0741,
+        "large": 0.0
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.5769,
+      "recall": 0.0304,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.0,
+        "small": 0.0453,
+        "medium": 0.0212,
+        "large": 0.0
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.7561,
+      "recall": 0.0157,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": 0.0,
+        "small": 0.0251,
+        "medium": 0.0,
+        "large": 0.0
+      },
+      "gt_by_size": {
+        "tiny": 522,
+        "small": 1237,
+        "medium": 189,
+        "large": 27
+      }
+    }
+  ]
+}

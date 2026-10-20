@@ -1,0 +1,4 @@
+# smoke-detect-vlm:v2 = v1 + bitsandbytes for QLoRA (27B+ on L40S: zero3
+# all-gather over PCIe measured at 391 s/it -> quantized DDP instead).
+FROM 000000000001.dkr.ecr.us-east-1.amazonaws.com/smoke-detect-vlm:v1
+RUN pip install --no-cache-dir bitsandbytes

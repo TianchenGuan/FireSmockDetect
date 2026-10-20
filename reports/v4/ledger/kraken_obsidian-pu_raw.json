@@ -1,0 +1,86 @@
+{
+ "results": [
+  {
+   "jobId": "amzn1.agi.jobs.c1486608-adb0-11f1-a6bd-e2a6f8e2ea7c",
+   "jobName": "tianrgua-sv4-dgnx",
+   "jobPriority": "LOW",
+   "projectName": "obsidian-pu",
+   "containers": [
+    {
+     "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v4",
+     "command": "/bin/bash",
+     "args": [
+      "-c",
+      "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+     ],
+     "name": null,
+     "type": null,
+     "livenessProbe": null,
+     "readinessProbe": null,
+     "startupProbe": null
+    }
+   ],
+   "resourceConfig": {
+    "nodePoolNames": null,
+    "queue": "obsidian-pu-g6.2xlarge-ap-south-1b-agentic",
+    "nodeCount": 1,
+    "replicaCount": 1,
+    "requests": null,
+    "instanceFamily": null,
+    "targetTopology": null,
+    "odcrId": null,
+    "topologyPlacement": null,
+    "gpuPerReplica": null,
+    "cpuPerReplica": null,
+    "nodePoolIsolationTarget": null
+   },
+   "restartConfig": {
+    "maxRestarts": 1,
+    "restartPolicy": "All"
+   },
+   "pytorchConfig": {
+    "master": [],
+    "worker": [
+     {
+      "imageUri": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-detect:v4",
+      "command": "/bin/bash",
+      "args": [
+       "-c",
+       "set +e; G=$(nvidia-smi -L 2>/dev/null | wc -l); [ \"$G\" -gt 9 ] && G=9; X=$(curl -s -o /dev/null -w %{http_code} --max-time 30 -T /etc/hostname \"$PURL\"); echo GPUS=$G PUT=$X; case \"$X\" in 200) F=0;; 403) F=1;; 000) F=2;; *) F=3;; esac; exit $((100 + F*10 + G))"
+      ],
+      "name": null,
+      "type": null,
+      "livenessProbe": null,
+      "readinessProbe": null,
+      "startupProbe": null
+     }
+    ],
+    "useElasticPolicy": true
+   },
+   "hyperpodPytorchConfig": null,
+   "serviceConfig": null,
+   "notificationConfig": null,
+   "queue": "obsidian-pu-g6.2xlarge-ap-south-1b-agentic",
+   "nodePool": "obsidian_pu_g6.2xlarge_ap-south-1b_agentic",
+   "allocation": null,
+   "storageConfig": {
+    "enableHomeWriteOnly": true
+   },
+   "workloadTaxonomyConfig": {
+    "workloadType": "evaluation",
+    "subtype": "general",
+    "role": "general",
+    "runType": "dev"
+   },
+   "metadata": {
+    "requester": "tianrgua",
+    "status": "STOPPED",
+    "creationTime": "2026-09-11T07:16:49.379Z",
+    "secondaryStatus": "NONE",
+    "completionTime": "2026-09-14T18:32:43.997Z",
+    "runs": null,
+    "restartCount": null
+   }
+  }
+ ]
+}
