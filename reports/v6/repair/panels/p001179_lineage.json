@@ -1,0 +1,46 @@
+{
+ "bg": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/train/force-06_courmettes-212_2024-08-15T07-08-25.jpg",
+ "asset": "/local/home/tianrgua/cvproject/data/v6/assets/B/param/pp01179.png",
+ "asset_mode": "luma",
+ "placement": {
+  "x_frac": 0.12386968640689765,
+  "y_frac": 0.5531128950993689,
+  "scale": 0.16554245123252412,
+  "opacity": 0.5640235013601578,
+  "flip": true,
+  "rot_deg": 4.297412817834241,
+  "tint_strength": 0.16618856447289013,
+  "occlude_frac": 0.09054537820058398,
+  "y_mode": "bottom"
+ },
+ "degrade": {
+  "blur_sigma": 0.5833389550574947,
+  "noise_sigma": 0.008788081984374002,
+  "jpeg_q": 85,
+  "target_long": 1280
+ },
+ "boxes_norm": [
+  [
+   0.04921875,
+   0.23333333333333334,
+   0.1984375,
+   0.5458333333333333
+  ]
+ ],
+ "visible": true,
+ "support_px": 24904,
+ "n_plumes": 1,
+ "n_fragments": 1,
+ "contrast": 3.731646776199341,
+ "out": "/local/home/tianrgua/cvproject/data/v6/synthB2/images/p001179.jpg",
+ "control": "/local/home/tianrgua/cvproject/data/v6/synthB2/images/p001179_ctrl.jpg",
+ "label": "synth_smoke",
+ "type": "pos",
+ "family": "param2179",
+ "name": "p001179",
+ "anchor": [
+  0.130713,
+  0.523525
+ ],
+ "policy": "empirical"
+}

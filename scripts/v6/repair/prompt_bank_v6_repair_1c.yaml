@@ -1,0 +1,155 @@
+name: Smoke synthesis prompt bank — repair pilot, iteration C
+version: v6-repair-1c
+derived_from: v6-repair-1
+status: Pilot-tested revision; still not a validated generation recipe.
+changelog:
+- 'v1 -> v1b: dropped the appended "Avoid: ..." exclusion list. OBSERVED: GLM-Image
+  has no negative-prompt channel and renders negated concepts (magenta stage light,
+  flames, explosions appeared in nearly every v1 frame including negatives).'
+- 'v1b -> v1c (this file): (a) ALL negations removed from sent prompts — GLM renders
+  "there is no smoke, flame or fire" as smoke+flame+fire (both v1b N01 samples had
+  fire lines); negatives are now purely positive scene descriptions that never
+  mention smoke or fire. (b) Camera-hardware nouns removed — "monitoring-camera
+  frame/monitoring view" rendered literal CCTV cameras in frame (v1 x2, v1b N03 x2);
+  replaced with viewpoint phrasing. (c) Smoke color pinned to "white and pale gray"
+  with "accurate neutral white balance" to counter the persistent pink/salmon cast.
+  (d) The meta-sentence "the requested region is an edit constraint, NOT a
+  ground-truth annotation" stays in documentation but is no longer SENT to the
+  model. (e) E02 control rewritten as faithful positive reproduction ("same objects
+  in their original positions") after v1b controls dropped vehicles and restyled
+  dusk scenes.'
+- 'Background list v1c: outdoor-wildland + daylight filter added after the v1 pool
+  was found to contain an indoor red-lit bar interior and nighttime storm-chase
+  road photos (author-"none" D-Fire web images; no scene-type filter existed).'
+factors:
+  position:
+  - left of center above the near treeline
+  - right of center on the middle-distance hillside
+  - near the center at the edge of a clearing
+  - in the lower-right portion of the terrain, away from image borders
+  wind_direction:
+  - gently leftward
+  - gently rightward
+  - diagonally across the visible canopy
+  lighting:
+  - ordinary diffuse daylight
+  - late-morning side lighting with usable exposure
+  - overcast daylight with visible terrain detail
+  forest_type:
+  - temperate mixed forest
+  - conifer woodland
+  - dry Mediterranean scrub and woodland
+  - boreal forest with small clearings
+  visibility:
+    clearly_visible: The smoke is localized but readily identifiable in the full
+      frame, with a visibly structured interior.
+    small_discernible: The plume is small relative to the landscape yet stands out
+      against its backdrop when the whole frame is viewed at a distance.
+    faint_discernible: The plume is translucent and low-contrast, while its
+      interior structure stays discernible when the whole frame is viewed at a
+      distance.
+base_style: A plain documentary outdoor photograph in natural daylight, accurate
+  neutral white balance, realistic muted colors, ordinary exposure, fine photographic
+  detail, wide environmental view.
+templates:
+- id: P01_fixed_dark_canopy
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: '{base_style} The view looks out from a high hillside across a
+    pine-covered slope. A small localized plume of white and pale gray vegetation
+    smoke emerges from behind the trees at {position}, its source hidden by
+    foliage. The plume has an irregular broad base, uneven expanding wisps, a
+    denser interior and translucent frayed edges, and leans {wind_direction} in
+    the wind. The pale smoke stands out against the dark canopy. {visibility}
+    {lighting}.'
+- id: P02_oblique_drone
+  mode: full_scene
+  class_intent: smoke
+  view: oblique_uav
+  template: '{base_style} A high oblique aerial view looks down over mixed
+    woodland and a clearing. At {position}, a localized plume of white and pale
+    gray smoke rises from smoldering vegetation partly hidden under the canopy,
+    stays visually attached to that ground region, expands unevenly, and drifts
+    {wind_direction}. Trees give the scene scale and most of the landscape stays
+    open and green. {visibility} {lighting}.'
+- id: P03_sky_background
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: '{base_style} A distant tree-covered ridge lies below a pale blue-gray
+    sky. A localized plume of muted gray smoke rises just above the ridgeline at
+    {position}, its irregular interior clearly separable in tone from the sky,
+    its diffuse edges widening downwind {wind_direction}, its lower part hidden
+    behind the ridge. {visibility} {lighting}.'
+- id: P04_canopy_occlusion
+  mode: full_scene
+  class_intent: smoke
+  view: low_oblique_uav
+  template: '{base_style} A low oblique aerial view shows dense forest canopy.
+    At {position}, branches hide the bottom of a localized white-gray smoke
+    plume while uneven wisps rise above and between the trees and spread
+    {wind_direction}. The smoke occupies only a small part of the green scene.
+    {visibility} {lighting}.'
+- id: P05_crosswind_smolder
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: '{base_style} A wide view of woodland on gently sloping terrain. At
+    {position}, white and pale gray smoke from a small smoldering patch of
+    vegetation rises and then bends {wind_direction}, forming a low asymmetric
+    plume with variable density and soft diffuse edges, visibly connected to
+    that one localized source while the rest of the valley stays clear.
+    {visibility} {lighting}.'
+- id: P06_regional_variation
+  mode: full_scene
+  class_intent: smoke
+  view: oblique_uav
+  template: '{base_style} An aerial survey view of {forest_type} with realistic
+    vegetation texture and terrain. A small patch of vegetation at {position}
+    emits an irregular localized plume of white, light-gray and subtle blue-gray
+    smoke that expands and drifts {wind_direction}, with a discernible interior
+    and soft translucent edges, over an otherwise intact green landscape.
+    {visibility} {lighting}.'
+- id: N01_clean_forest
+  mode: full_scene
+  class_intent: nonsmoke
+  template: '{base_style} A view of {forest_type} under {lighting}. Healthy green
+    trees cover rolling terrain beneath a crisp clear sky with a few soft clouds;
+    the air above the canopy is perfectly clean and transparent all the way to
+    the horizon, a calm quiet landscape.'
+- id: N02_fog
+  mode: full_scene
+  class_intent: nonsmoke
+  template: '{base_style} A view of {forest_type} under {lighting}. A broad even
+    layer of natural white morning fog lies along the valley floor and winds
+    between the hills, spread smoothly across the whole landscape and thinning
+    gradually at its edges, with treetops emerging above the soft fog layer.'
+- id: N03_road_dust
+  mode: full_scene
+  class_intent: nonsmoke
+  template: '{base_style} An oblique view of woodland crossed by an unpaved dirt
+    road. A car drives along the road trailing a low localized cloud of tan road
+    dust that hangs close to the ground behind it, with green trees and open sky
+    above.'
+- id: E01_local_smoke
+  mode: image_edit
+  class_intent: smoke
+  template: 'Keep this exact photograph — same viewpoint, same terrain, same
+    trees, same lighting and exposure, every object in its original position —
+    and add one localized plume of white and pale gray vegetation smoke at
+    {position}. The plume base connects to the terrain or hides behind the
+    canopy; the plume expands irregularly, drifts {wind_direction}, and has a
+    discernible interior with translucent irregular edges. {visibility}'
+  doc_note: The requested region/position is an edit constraint, NOT a
+    ground-truth smoke annotation (kept in docs, not sent to the model).
+- id: E02_matched_control
+  mode: image_edit
+  class_intent: nonsmoke
+  template: 'Reproduce this exact photograph faithfully — same viewpoint, same
+    terrain, same trees, same sky, same lighting and exposure, every object and
+    vehicle in its original position — with clean transparent air over the whole
+    landscape.'
+  doc_note: v1b showed controls are style-matched reconstructions, not
+    pixel-preserving copies (vehicles were dropped); the blind review still
+    gates smoke/fire appearance and global restyle.

@@ -1,0 +1,14 @@
+{
+ "hash": "6272e4875676c035",
+ "spec_id": "as07",
+ "kind": "asset",
+ "prompt": "wispy white-grey smoke rising from a single ground source, tall thin column with spreading top, moderate, photorealistic volumetric smoke, morning lighting, isolated on a pure black background, no ground, no objects, no fire, no flames, no text",
+ "seed": 61,
+ "latency_s": 92.7,
+ "size": [
+  1024,
+  1024
+ ],
+ "generator": "zai-org/GLM-Image",
+ "shard": 0
+}

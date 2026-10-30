@@ -1,0 +1,28 @@
+{
+  "arm": "Crep",
+  "name": "synthREP",
+  "real": 38454,
+  "real_mult": 1,
+  "synth": 2104,
+  "synth_mult": 1,
+  "epoch_images": 40558,
+  "tar_gb": 0.62,
+  "corpus_stats": {
+    "corpus": "CORPUS_REP_v1",
+    "counts": {
+      "pos": 1351,
+      "excluded_reject_smoke_in_neg": 335,
+      "excluded_reject_low_realism": 539,
+      "excluded_uncertain": 984,
+      "excluded_reject_morphology": 229,
+      "excluded_reject_artifact": 221,
+      "neg_ctrl": 753,
+      "excluded_reject_invisible": 519,
+      "excluded_pos_blind_union_diff_bad_area": 21,
+      "excluded_pos_disagree": 8,
+      "excluded_pos_blind_only_rerender_bad_area": 2
+    },
+    "images": 2104,
+    "note": "labels are MODEL-ASSISTED weak boxes (blind review \u222a structural diff); uncertain/rejects excluded from supervision, never auto-negative"
+  }
+}

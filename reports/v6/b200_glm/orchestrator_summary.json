@@ -1,0 +1,170 @@
+{
+ "run": "v6B200_glm",
+ "image": "000000000001.dkr.ecr.ap-south-1.amazonaws.com/smoke-diffusion-b200:v6glm",
+ "queue": "obsidian-pu-hyperpod-p6-b200.48xlarge-ap-south-1-tas",
+ "states": [
+  [
+   5,
+   "PENDING:"
+  ],
+  [
+   581,
+   "RUNNING"
+  ],
+  [
+   3374,
+   "SUCCEEDED"
+  ]
+ ],
+ "pulls": [
+  {
+   "file": "entry.log",
+   "bytes": 10517,
+   "s": 6.5,
+   "ok": true
+  },
+  {
+   "file": "load_check.json",
+   "bytes": 41,
+   "s": 6.4,
+   "ok": true
+  },
+  {
+   "file": "latency.txt",
+   "bytes": 26,
+   "s": 6.6,
+   "ok": true
+  },
+  {
+   "file": "gpu_samples.csv",
+   "bytes": 11613,
+   "s": 6.7,
+   "ok": true
+  },
+  {
+   "file": "glmout.tgz",
+   "bytes": 98584953,
+   "s": 17.9,
+   "ok": true
+  }
+ ],
+ "status_samples": [
+  [
+   589,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"load_check\", \"t\": 9, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:30Z\"}"
+  ],
+  [
+   690,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   792,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   892,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   991,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1091,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1191,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1291,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1390,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1490,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1589,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1689,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1790,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1890,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   1991,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2090,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2190,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2291,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2391,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2491,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2591,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2692,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2791,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2891,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   2991,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   3090,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   3190,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"generate\", \"t\": 22, \"gpus\": 8, \"done_imgs\": 0, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T21:49:43Z\"}"
+  ],
+  [
+   3290,
+   "{\"run\": \"v6B200_glm\", \"phase\": \"retain\", \"t\": 2673, \"gpus\": 8, \"done_imgs\": 400, \"root\": \"/mnt/local/v6_glm\", \"host\": \"tianrgua-v6glmb200-coo3-worker-0\", \"ts\": \"2026-10-20T22:33:54Z\"}"
+  ]
+ ],
+ "submitted_utc": "2026-10-20T21:39:44.347708+00:00",
+ "job": "tianrgua-v6glmb200-coo3",
+ "running_after_s": 581,
+ "final_state": "SUCCEEDED",
+ "node_seconds_running_est": 2795
+}

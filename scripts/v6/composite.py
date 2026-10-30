@@ -100,7 +100,8 @@ def load_asset(path: str, mode: str) -> tuple[np.ndarray, np.ndarray]:
 def _perlinish(h, w, scale=48, seed=0):
     rng = np.random.default_rng(seed)
     g = rng.random((max(2, h // scale), max(2, w // scale))).astype(np.float32)
-    return cv2.resize(g, (w, h), interpolation=cv2.INTER_CUBIC)
+    up = cv2.resize(g, (w, h), interpolation=cv2.INTER_CUBIC)
+    return cv2.GaussianBlur(up, (0, 0), max(1.0, scale / 3.0))
 
 
 def place_asset(bg: np.ndarray, rgb: np.ndarray, a: np.ndarray, p: Placement,
@@ -119,10 +120,12 @@ def place_asset(bg: np.ndarray, rgb: np.ndarray, a: np.ndarray, p: Placement,
         rgbr = cv2.warpAffine(rgbr, M, (new_w, new_h))
         ar = cv2.warpAffine(ar, M, (new_w, new_h))
     if p.occlude_frac > 0.01:
-        occ = _perlinish(new_h, new_w, scale=24, seed=seed) > 0.45
-        band = np.zeros((new_h, new_w), bool)
-        band[int(new_h * (1 - p.occlude_frac)):, :] = True
-        ar = ar * (1 - (occ & band).astype(np.float32) * 0.9)
+        # soft canopy-occlusion: smooth noise ramp, not binary grid holes
+        occ = np.clip((_perlinish(new_h, new_w, scale=24, seed=seed) - 0.45) * 4, 0, 1)
+        band = np.zeros((new_h, new_w), np.float32)
+        y0 = int(new_h * (1 - p.occlude_frac))
+        band[y0:, :] = np.linspace(0, 1, new_h - y0)[:, None] if new_h > y0 else 0
+        ar = ar * (1 - occ * band * 0.9)
 
     ar = ar * p.opacity
     cx = int(p.x_frac * W)
@@ -148,14 +151,18 @@ def place_asset(bg: np.ndarray, rgb: np.ndarray, a: np.ndarray, p: Placement,
     if mode == "luma":
         # additive scattering: C = bg*(1-a) + S, S scaled by scene brightness
         # and tinted toward ambient so smoke inherits the scene illumination.
-        rr = rr * np.clip(bright, 0.25, 1.0) * p.opacity
+        # Scene-brightness floor is LOW on purpose: smoke scatters ambient
+        # light, so in dusk/night scenes it must fade out rather than glow
+        # (glowing grey blocks were the v1-corpus failure mode).
+        rr = rr * np.clip(bright, 0.06, 1.0) * p.opacity
         tint = amb[None, None, :] / max(float(amb.mean()), 1e-3)
         rr = rr * ((1 - p.tint_strength) + p.tint_strength * tint)
         out[dy0:dy1, dx0:dx1] = np.clip(
             patch * (1 - aa[..., None]) + np.clip(rr, 0, 1), 0, 1)
     else:
         col = rr * (1 - p.tint_strength) + amb[None, None, :] * p.tint_strength
-        col = col * np.clip(bright / max(col.mean(), 1e-3), 0.6, 1.4) ** 0.5
+        # allow strong darkening so sunny crops don't stay bright at dusk
+        col = col * np.clip(bright / max(col.mean(), 1e-3), 0.2, 1.4) ** 0.7
         out[dy0:dy1, dx0:dx1] = patch * (1 - aa[..., None]) + np.clip(col, 0, 1) * aa[..., None]
 
     full_a = np.zeros((H, W), np.float32)
@@ -305,7 +312,7 @@ def sample_placement(rng: random.Random, faint: bool,
         flip=rng.random() < 0.5,
         rot_deg=rng.uniform(-8, 8),
         tint_strength=rng.uniform(0.15, 0.45),
-        occlude_frac=rng.uniform(0.0, 0.35),
+        occlude_frac=rng.uniform(0.0, 0.12),
         y_mode=y_mode,
     )
 

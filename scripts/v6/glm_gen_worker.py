@@ -34,8 +34,15 @@ def main():
     items = [json.loads(l) for l in
              Path(os.environ["QUEUE"]).read_text().splitlines() if l.strip()]
     mine = [it for i, it in enumerate(items) if i % nshards == shard]
-    todo = [it for it in mine
-            if not (outdir / f"{it['hash']}.json").exists()]
+    def done_ok(p: Path) -> bool:
+        if not p.exists():
+            return False
+        try:  # retry items whose previous attempt recorded an error
+            return not json.loads(p.read_text()).get("error")
+        except Exception:
+            return False
+
+    todo = [it for it in mine if not done_ok(outdir / f"{it['hash']}.json")]
     log(f"{len(mine)} assigned, {len(todo)} todo")
     if not todo:
         return
@@ -64,6 +71,17 @@ def main():
         if "height" in sig:
             kw["height"] = it.get("height", imgsz)
             kw["width"] = it.get("width", imgsz)
+        if it.get("bg") and "image" in sig:
+            # i2i: condition on a real TRAIN background; output size follows
+            # the resized bg (dims /32) so pixel diffs are meaningful
+            from PIL import Image as _Im
+            bgp = Path(os.environ.get("BGDIR", "/tmp/bgs")) / it["bg"]
+            bim = _Im.open(bgp).convert("RGB")
+            s = imgsz / max(bim.size)
+            w32 = max(256, int(bim.size[0] * s) // 32 * 32)
+            h32 = max(256, int(bim.size[1] * s) // 32 * 32)
+            kw["image"] = [bim.resize((w32, h32), _Im.LANCZOS)]
+            kw["height"], kw["width"] = h32, w32
         if steps and "num_inference_steps" in sig:
             kw["num_inference_steps"] = int(steps)
         if it.get("negative") and "negative_prompt" in sig:
@@ -82,7 +100,12 @@ def main():
                  "kind": it.get("kind"), "prompt": it["prompt"],
                  "seed": it.get("seed", 0), "latency_s": lat,
                  "size": img.size, "generator": "zai-org/GLM-Image",
-                 "shard": shard}))
+                 "shard": shard, "route": it.get("route"),
+                 "visibility": it.get("visibility"),
+                 "factors": it.get("factors"), "bg": it.get("bg"),
+                 "bg_src_path": it.get("bg_src_path"),
+                 "pair": it.get("pair"),
+                 "bank_version": it.get("bank_version")}))
             if n % 5 == 0:
                 log(f"{n}/{len(todo)} last={lat}s")
         except Exception as e:

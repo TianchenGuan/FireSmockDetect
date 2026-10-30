@@ -1,0 +1,39 @@
+{
+ "bg": "/local/home/tianrgua/cvproject/data/yolo/dfire_smoke/images/train/AoF03007.jpg",
+ "asset": "/local/home/tianrgua/cvproject/data/v6/assets/B/conf/cf00580.png",
+ "asset_mode": "luma",
+ "placement": {
+  "x_frac": 0.7506861676601766,
+  "y_frac": 0.5867895217061205,
+  "scale": 0.06426408822561307,
+  "opacity": 0.3484924253868781,
+  "flip": true,
+  "rot_deg": -5.633493269158219,
+  "tint_strength": 0.4450488089628659,
+  "occlude_frac": 0.030457973180283246,
+  "y_mode": "center"
+ },
+ "degrade": {
+  "blur_sigma": 1.1367106313400461,
+  "noise_sigma": 0.0021496382105835603,
+  "jpeg_q": 94,
+  "target_long": 1280
+ },
+ "boxes_norm": [],
+ "visible": true,
+ "support_px": 1939,
+ "n_plumes": 1,
+ "n_fragments": 1,
+ "contrast": 1.1718783378601074,
+ "out": "/local/home/tianrgua/cvproject/data/v6/synthB2/images/c002380.jpg",
+ "control": null,
+ "label": "synth_confounder",
+ "type": "conf",
+ "family": "conf5580",
+ "name": "c002380",
+ "anchor": [
+  0.59645,
+  0.5684935
+ ],
+ "policy": "empirical"
+}

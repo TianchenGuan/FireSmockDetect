@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v6/evals/v6finalstd/v6Along__sheffieldholdout.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/sheffield_holdout.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 327,
+  "n_positive_images": 327,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.2834,
+      "recall": 0.2708,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0068,
+        "large": 0.3398
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.3527,
+      "recall": 0.2631,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.3317
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.3893,
+      "recall": 0.2427,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.306
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.3937,
+      "recall": 0.2082,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.2625
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.3804,
+      "recall": 0.1686,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.2126
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.3714,
+      "recall": 0.1328,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.1675
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.3542,
+      "recall": 0.0868,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.1095
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.375,
+      "recall": 0.0575,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.0725
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.5161,
+      "recall": 0.0204,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.0258
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": null,
+      "recall": 0.0,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": 0.0,
+        "medium": 0.0,
+        "large": 0.0
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 14,
+        "medium": 148,
+        "large": 621
+      }
+    }
+  ]
+}

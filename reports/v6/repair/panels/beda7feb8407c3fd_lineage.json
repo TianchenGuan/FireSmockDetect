@@ -1,0 +1,14 @@
+{
+ "hash": "beda7feb8407c3fd",
+ "spec_id": "as05",
+ "kind": "asset",
+ "prompt": "wispy white smoke rising from a single ground source, mushrooming small plume, moderate, photorealistic volumetric smoke, midday lighting, isolated on a pure black background, no ground, no objects, no fire, no flames, no text",
+ "seed": 105,
+ "latency_s": 92.9,
+ "size": [
+  1024,
+  1024
+ ],
+ "generator": "zai-org/GLM-Image",
+ "shard": 0
+}

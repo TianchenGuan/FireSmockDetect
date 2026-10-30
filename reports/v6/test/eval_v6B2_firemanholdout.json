@@ -1,0 +1,195 @@
+{
+  "weights": null,
+  "backend": "yolo",
+  "preds_jsonl": "models/v6/evals/v6finalstd/v6B2__firemanholdout.jsonl",
+  "data_yaml": "data/v5b/eval/yamls/fireman_holdout_s10.yaml",
+  "split": "test",
+  "imgsz": 1152,
+  "tile_size": 0,
+  "n_images": 1949,
+  "n_positive_images": 1949,
+  "n_negative_images": 0,
+  "match_iou": 0.4,
+  "conf_sweep": [
+    {
+      "conf": 0.05,
+      "precision": 0.3158,
+      "recall": 0.9979,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9979
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.1,
+      "precision": 0.4303,
+      "recall": 0.9964,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9964
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.15,
+      "precision": 0.5189,
+      "recall": 0.9913,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9913
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.2,
+      "precision": 0.5905,
+      "recall": 0.9877,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9877
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.25,
+      "precision": 0.6504,
+      "recall": 0.9831,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9831
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.3,
+      "precision": 0.7028,
+      "recall": 0.9692,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9692
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.4,
+      "precision": 0.7976,
+      "recall": 0.9035,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.9035
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.5,
+      "precision": 0.8682,
+      "recall": 0.7435,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.7435
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.6,
+      "precision": 0.8855,
+      "recall": 0.4207,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.4207
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    },
+    {
+      "conf": 0.7,
+      "precision": 0.9412,
+      "recall": 0.1231,
+      "neg_image_fp_rate": null,
+      "recall_by_size": {
+        "tiny": null,
+        "small": null,
+        "medium": null,
+        "large": 0.1231
+      },
+      "gt_by_size": {
+        "tiny": 0,
+        "small": 0,
+        "medium": 0,
+        "large": 1949
+      }
+    }
+  ]
+}

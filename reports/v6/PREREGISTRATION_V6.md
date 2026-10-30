@@ -149,3 +149,78 @@ IAM/network changes.
    11,257 neg). Synthetic blocks mirror the 70.7/29.3 pos:neg ratio.
    Background pool: 12,890 train-role author-negative images
    (`data/v6/background_pool_v1.json`).
+
+### A2 — 2026-10-20T22:55Z (pipeline fix, BEFORE any arm-B/C/D result was seen)
+
+Visual spot-checks of CORPUS_B_v1 found three compositor defects: (1) additive
+luma smoke "glowing" as grey blocks against dark terrain, (2) high-density
+parametric plumes rendering as square-silhouette patches, (3) binary-noise
+canopy-occlusion punching grid-patterned holes. Fixes: scene-brightness floor
+0.25→0.06 and copy-paste darkening range widened; parametric density
+0.35–0.8 + in-canvas border taper + per-octave Gaussian smoothing; soft ramped
+occlusion capped at 0.12. CORPUS_B_v1 is DISCARDED untrained (arm B's first
+run was stopped mid-training and never evaluated); arms B/C/D all build on
+compositor v2 (corpus files `synthB2`, seed 61). No metric, threshold or
+decision rule changed.
+
+**A2 addendum (2026-10-20T23:20Z, still before any arm-B/C/D result):** visual
+QC of the rebuilt corpus rejected the copy-paste asset source entirely — real
+crops under a rectangular feathered matte produce "ghost rectangle" pastes,
+and D-Fire web-image boxes contaminate crops with flames/signs (one crop was
+a white billboard). Arm B is therefore PARAMETRIC-ONLY procedural smoke
+(2,400 plume + 600 confounder assets), which the brief's "simple
+procedural/copy-paste" definition permits. D-Fire anchor pool floored at
+y_base>=0.4; flame-colour crop filter added (moot after exclusion but kept).
+
+### A3 — 2026-10-24T18:40Z (synthetic-data REPAIR phase; user brief `reports/v6/repair/CC_SMOKE_SYNTH_REPAIR.md`)
+
+Trigger: visual inspection of the dataset sample package found studio-styled
+GLM assets (colored lighting, source props, incense-like stems) and
+hard-to-see arm-B positives. Changes:
+
+1. **PAUSED**: arms C/D/E do NOT launch on the current black-background GLM
+   asset pool (`C_glm` 1,903 + `C_glm_b200` 257 accepted). The pool, its
+   manifests and rejects are PRESERVED unmodified as a diagnostic. Arm-B
+   (expV6B2_s0) result stands as the labeled crude-synthesis control. Arms
+   A/A-long results stand. No new bulk generation until the pilot passes.
+2. **Lineage audit findings** (recorded in `SYNTH_QA_REPAIR.md`): arm-B
+   corpus contains 0 GLM assets (pure parametric); `marguerite` is val-only
+   (0 occurrences in `expB_train.txt` and the background pool) — the sample
+   zip's folder name was a packaging error, not leakage; the GLM chain has
+   NO hidden prompt rewriting; diffusers 0.40 `GlmImagePipeline.__call__`
+   accepts no `negative_prompt` (hardcoded ""), so scene-spec negative
+   prompts were silently dropped for all 3,480 generations.
+3. **Route change (replaces the black-bg asset route as primary)**: repair
+   pilot ~360 images from `scripts/v6/repair/prompt_bank_v2.yaml`
+   (version v6-repair-1): Route A = GLM-Image i2i editing of eligible REAL
+   TRAIN backgrounds (E01 + matched E02 controls); Route B = full-scene
+   generation (P01–P06 positives, N01–N03 negatives/confounders);
+   exclusion lists folded into prompt prose (no native negative support).
+   Visibility mix 50/35/15 (clearly/small/faint). Labels derive from actual
+   outputs (blind model-assisted localization + i2i difference support),
+   marked weak; requested positions are NOT labels.
+4. **Review change**: blind full-frame review at detector input scale
+   (reviewer not told class or location; 'uncertain' allowed; negatives
+   reviewed identically to measure hallucination) + separate crop morphology
+   review. Mean-pixel-delta is no longer a sufficient visibility gate.
+5. **Scale gate**: only if the pilot passes do we build a frozen 2,000–5,000
+   composite corpus and run a matched-steps comparison vs real-only on
+   sdis_val. Metrics, decision rules, frozen test protocol: UNCHANGED.
+   Bedrock outputs remain excluded from training (A1.3 stands).
+
+**A3 addendum — 2026-10-24T23:10Z (pilot outcome; before any repaired-corpus training):**
+Pilot (360×3 variants, blind model-assisted review, dashboards in
+`reports/v6/repair/`): prose exclusion lists and ALL negated phrasing are
+rendered positively by GLM-Image (no negative-prompt channel) — bank revised
+to v6-repair-1c (positive-only wording); i2i preserves composition, t2i does
+not reach usable realism (pink-cast artifacts). Route selection per pilot:
+arm "Crep" uses i2i-edited REAL TRAIN backgrounds only (acceptance 53% pos /
+57% ctrl vs 16%/19% t2i). Review decision rule v3 recorded in
+`SYNTH_QA_REPAIR.md` (global_restyle rejects controls' smoke/fire drama via
+blind gate but not positives; realism≥3 uniform; `uncertain` excluded from
+supervision, never auto-negative). Scale: 5,282 i2i (1,891 unique bgs,
+luma≥0.25, dfire AoF-only). Arm Crep: expB_train + accepted uniques (no
+multiplicity), epochs ≈56 so total steps match arm A (60×38,454 ±1%), same
+init/imgsz/batch/seed 0. Metrics, val/test roles, decision thresholds:
+UNCHANGED. Weak-label caveat: synthetic boxes are model-assisted
+(blind-review localization ∪ structural diff), disclosed in all reporting.

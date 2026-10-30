@@ -1,0 +1,80 @@
+{
+ "firemanholdout": {
+  "v6Crep": {
+   "img_recall": 0.643,
+   "box_recall": 0.643,
+   "conf": 0.61,
+   "n_pos_imgs": 1949
+  },
+  "v6A": {
+   "img_recall": 0.692,
+   "box_recall": 0.692,
+   "conf": 0.62,
+   "n_pos_imgs": 1949
+  },
+  "v6Along": {
+   "img_recall": 0.617,
+   "box_recall": 0.617,
+   "conf": 0.62,
+   "n_pos_imgs": 1949
+  },
+  "v6B2": {
+   "img_recall": 0.39,
+   "box_recall": 0.39,
+   "conf": 0.61,
+   "n_pos_imgs": 1949
+  }
+ },
+ "sheffieldholdout": {
+  "v6Crep": {
+   "img_recall": 0.043,
+   "box_recall": 0.0,
+   "conf": 0.61,
+   "n_pos_imgs": 327
+  },
+  "v6A": {
+   "img_recall": 0.193,
+   "box_recall": 0.01,
+   "conf": 0.62,
+   "n_pos_imgs": 327
+  },
+  "v6Along": {
+   "img_recall": 0.058,
+   "box_recall": 0.009,
+   "conf": 0.62,
+   "n_pos_imgs": 327
+  },
+  "v6B2": {
+   "img_recall": 0.358,
+   "box_recall": 0.034,
+   "conf": 0.61,
+   "n_pos_imgs": 327
+  }
+ },
+ "foresttest": {
+  "v6Crep": {
+   "img_recall": 0.052,
+   "box_recall": 0.03,
+   "conf": 0.61,
+   "n_pos_imgs": 2871
+  },
+  "v6A": {
+   "img_recall": 0.083,
+   "box_recall": 0.053,
+   "conf": 0.62,
+   "n_pos_imgs": 2871
+  },
+  "v6Along": {
+   "img_recall": 0.054,
+   "box_recall": 0.032,
+   "conf": 0.62,
+   "n_pos_imgs": 2871
+  },
+  "v6B2": {
+   "img_recall": 0.094,
+   "box_recall": 0.061,
+   "conf": 0.61,
+   "n_pos_imgs": 2871
+  }
+ }
+}

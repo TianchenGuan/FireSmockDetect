@@ -1,0 +1,8 @@
+# V6 arm Crep (synthREP) -- generated 2026-10-27T14:54:02.574319+00:00
+# real x1 (38454) + synth x1 (2104) = 40558 per epoch
+path: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthREP
+train: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthREP/lists/trainCrep.txt
+val: /mnt/local/smoke_data/lists/pod/sdis_val.txt
+test: /mnt/local/smoke_data/lists/pod/sdis_test.txt
+nc: 1
+names: [smoke]

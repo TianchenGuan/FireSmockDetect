@@ -62,6 +62,10 @@ def main():
     ap.add_argument("--steps", default="")
     ap.add_argument("--nshards", default="8")
     ap.add_argument("--skip-weights-upload", action="store_true")
+    ap.add_argument("--bgs-tar", default="",
+                    help="optional tar of background images for i2i items")
+    ap.add_argument("--bgs-key", default="",
+                    help="reuse an already-uploaded S3 key for the bgs tar")
     ap.add_argument("--image", default=IMAGE)
     ap.add_argument("--segments", type=int, default=1,
                     help="resubmit until the queue is complete (outputs "
@@ -97,6 +101,10 @@ def run_one(args, seg):
     s3.upload_file(str(ROOT / "cluster/v6/glm_gen_entry.sh"), BUCKET, f"{kp}/entry.sh")
     s3.upload_file(str(ROOT / "scripts/v6/glm_gen_worker.py"), BUCKET, f"{kp}/worker.py")
     s3.upload_file(str(ROOT / args.queue), BUCKET, f"{kp}/queue.jsonl")
+    bgs_key = args.bgs_key
+    if args.bgs_tar and not bgs_key:
+        bgs_key = f"{kp}/bgs.tar"
+        s3.upload_file(str(ROOT / args.bgs_tar), BUCKET, bgs_key)
 
     def put(k):
         return s3.generate_presigned_url("put_object",
@@ -117,6 +125,8 @@ def run_one(args, seg):
         "IMGSZ": args.imgsz, "STEPS": args.steps, "NSHARDS": args.nshards,
         "OUTTAG": args.route,
     }
+    if bgs_key:
+        envs["URL_BGS"] = get(bgs_key)
     env_yaml = "\n".join(
         f"      - name: {k}\n        value: \"{v}\"" for k, v in envs.items())
     yfile = ROOT / "cluster/generated" / f"glmgen_{args.tag}{seg}.yaml"
@@ -152,7 +162,17 @@ def run_one(args, seg):
     import json as _json
     qhashes = [_json.loads(l)["hash"] for l in
                (ROOT / args.queue).read_text().splitlines() if l.strip()]
-    remaining = [h for h in qhashes if not (outdir / f"{h}.json").exists()]
+
+    def _ok(h):
+        p = outdir / f"{h}.json"
+        if not p.exists():
+            return False
+        try:  # error sidecars count as remaining (worker retries them)
+            return not _json.loads(p.read_text()).get("error")
+        except Exception:
+            return False
+
+    remaining = [h for h in qhashes if not _ok(h)]
     n = len(list(outdir.glob("*.jpg")))
     print(f"[seg {seg}] extracted -> {outdir} ({n} jpgs; "
           f"{len(remaining)}/{len(qhashes)} remaining)")

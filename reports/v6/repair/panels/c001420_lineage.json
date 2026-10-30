@@ -1,0 +1,39 @@
+{
+ "bg": "/local/home/tianrgua/cvproject/data/yolo/pyro_sdis/images/val/force-06_courmettes-212_2024-02-16T14-46-13.jpg",
+ "asset": "/local/home/tianrgua/cvproject/data/v6/assets/B/conf/cf00220.png",
+ "asset_mode": "luma",
+ "placement": {
+  "x_frac": 0.5323834341840911,
+  "y_frac": 0.17395748967451719,
+  "scale": 0.05349772282244951,
+  "opacity": 0.47316909106910765,
+  "flip": true,
+  "rot_deg": 5.747104546687828,
+  "tint_strength": 0.19158772311434744,
+  "occlude_frac": 0.04248965837376236,
+  "y_mode": "center"
+ },
+ "degrade": {
+  "blur_sigma": 1.1251574825929387,
+  "noise_sigma": 0.009098058475526636,
+  "jpeg_q": 93,
+  "target_long": 1280
+ },
+ "boxes_norm": [],
+ "visible": true,
+ "support_px": 2195,
+ "n_plumes": 1,
+ "n_fragments": 1,
+ "contrast": 3.3543403148651123,
+ "out": "/local/home/tianrgua/cvproject/data/v6/synthB2/images/c001420.jpg",
+ "control": null,
+ "label": "synth_confounder",
+ "type": "conf",
+ "family": "conf5220",
+ "name": "c001420",
+ "anchor": [
+  0.268645,
+  0.8291225000000001
+ ],
+ "policy": "empirical"
+}

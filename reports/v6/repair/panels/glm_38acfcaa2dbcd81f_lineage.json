@@ -1,0 +1,22 @@
+{
+ "asset": "data/v6/assets/C_glm/png/glm_38acfcaa2dbcd81f.png",
+ "mode": "luma",
+ "kind": "smoke",
+ "spec_id": "as07",
+ "seed": 0,
+ "family_id": "glm:as07:0",
+ "generator": "zai-org/GLM-Image",
+ "review": "automated",
+ "coverage": 0.3029,
+ "max_alpha": 1.0,
+ "crop": [
+  0,
+  0,
+  1024,
+  1024
+ ],
+ "size": [
+  1024,
+  1024
+ ]
+}

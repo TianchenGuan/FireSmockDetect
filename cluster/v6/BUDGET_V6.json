@@ -1,10 +1,41 @@
 {
   "iteration": "6",
   "window_start_utc": "2026-10-20T19:50:37Z",
-  "window_deadline_utc": "2026-10-21T19:50:37Z",
+  "window_deadline_utc": "2026-10-30T17:10:00Z",
+  "original_window_deadline_utc": "2026-10-21T19:50:37Z",
+  "window_extensions": [
+    {
+      "extended_to_utc": "2026-10-22T19:50:37Z",
+      "recorded_utc": "2026-10-21T22:10:00Z",
+      "reason": "first 24h window lapsed while local orchestrators were orphaned by a session restart (~23h idle, no cluster jobs running); user instructed to let GLM generation finish and continue the V6 matrix. Concurrency caps and GPU-hour ceiling unchanged."
+    },
+    {
+      "extended_to_utc": "2026-10-23T19:50:37Z",
+      "recorded_utc": "2026-10-22T19:26:00Z",
+      "reason": "second extension under the standing user instruction (10-21) to let GLM generation finish and complete the C/D/E matrix; generation was at 75% when the first extended deadline arrived (overnight Midway expiry cost ~16h of the window). Caps unchanged."
+    },
+    {
+      "extended_to_utc": "2026-10-25T19:50:37Z",
+      "recorded_utc": "2026-10-24T17:05:00Z",
+      "reason": "third extension: GLM generation and arm-B eval completed overnight 10-22/23 but the C/D/E launch gate was lost to another session end; standing user instruction to complete the matrix. Caps unchanged."
+    },
+    {
+      "extended_to_utc": "2026-10-28T19:50:37Z",
+      "recorded_utc": "2026-10-27T14:40:00Z",
+      "reason": "fourth extension: repair pipeline (prereg A3) was blocked on Midway expiry 2026-10-25T00:30Z with 90% of scale review done; mwinit is a user-manual dependency and was restored 10-27. Remaining work: 486 reviews, corpus freeze, one arm-Crep training run + val eval. Caps unchanged."
+    },
+    {
+      "extended_to_utc": "2026-10-30T17:10:00Z",
+      "recorded_utc": "2026-10-30T05:12:00Z",
+      "reason": "sprint +12h granted by user ('\u6211\u518d\u7ed9\u4f6012\u5c0f\u65f6', 2026-10-30T05:10Z): 48h sprint deadline lapsed ~2.7h earlier while session loss orphaned the candidate-eval waiters; candidates trained in time but unevaluated. Model A frozen as deliverable per the 'unclear gains -> choose A' rule; candidate evals run as post-freeze diagnostics. Caps unchanged."
+    }
+  ],
   "max_concurrent_gpus": 128,
   "max_concurrent_nodes": 16,
-  "max_nodes_by_type": {"L40S": 15, "B200": 1},
+  "max_nodes_by_type": {
+    "L40S": 15,
+    "B200": 1
+  },
   "node_gpu_count": 8,
   "gpu_type": "L40S",
   "max_allocation_gpu_hours": 3072,

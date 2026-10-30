@@ -1319,3 +1319,54 @@ first-pass wall budget. All new work under */v3/.
   cluster pull policy), 42GB image building (weights+worker+400-item queue
   baked), entry+orchestrator mirror the v5b connect/ack pattern. Ledger
   $10.88 (review $0.50). Registry 6/16 nodes.
+- [2026-10-20 22:58 UTC] GITHUB + HF PUBLISHED on user request:
+  github.com/TianchenGuan/FireSmockDetect (main 04734bd, 75MB/1449 files,
+  sanitized: account IDs->placeholders, role/provider names, no presigned
+  URLs/keys — scripts/export_github.sh + SANITIZATION.md);
+  huggingface.co/TianchenGuan/FireSmockDetect-models (AGPL-3.0:
+  expB_y11s_deployed.pt, v5bA_y11m_best.pt + model card; DINOv3 ckpts
+  withheld per Meta licence). v6 nano models to be appended when trained.
+- [2026-10-20 22:58 UTC] CORPUS B v1 DISCARDED after visual spot-check found
+  compositor defects (dark-scene glow / square plume silhouettes / binary
+  occlusion grid holes) — prereg amendment A2. Arm B job v6b0s2 stopped
+  (~1.3 node-h spent, never evaluated). Compositor v2 + asset-gen v2 fixes
+  verified on the failure case; corpus B v2 (synthB2, seed 61) rebuilding;
+  arm B relaunch follows. GLM shards a/b/c RUNNING on usw2 (arm C/D use the
+  same compositor v2).
+- [2026-10-20 23:59 UTC] ARM A COMPLETE (expV6A_realn_s0, 60ep, 3 segs, ~2.0
+  node-h) + val eval: sdis VAL matched-FP R@1/2/5/10/20% =
+  0.051/0.107/0.190/0.310/0.471 (tiny 0.014/0.045/0.103/0.195/0.344) vs
+  deployed expB_y11s 0.058/0.098/0.203/0.329/0.484 — the 2.6M nano is within
+  ~2pt of the 9.4M deployed model at 10%FP and ahead at 2%. VLM re-review of
+  corpus B v2: plausibility 0.44->0.53 (visible), negatives 100% clean,
+  confounder quality 1->4; positives med quality still 1/5 (procedural
+  ceiling — recorded; arm B is the crude control). Arm B v2 relaunched as
+  expV6B2_s0 (fresh exp name after catching a stale-resume hazard: old
+  /scratch run dir of the stopped v1 run would have resumed).
+- [2026-10-21 00:10 UTC] B200 VALIDATION COMPLETE (v6glmb200, SUCCEEDED,
+  ~0.75 B200 node-h): 400/400 GLM-Image assets generated at 49.9 s/img
+  (1.8x the L40S 91s), outputs retrieved via jobs connect (98.6MB tgz),
+  gpu samples + load-check + entry log pulled, restart-idle/ack resumability
+  exercised. Image smoke-diffusion-b200:v6glm (42GB, weights+worker+queue
+  baked) pushed to ap-south-1 ECR with cluster pull policy. Brief §3 B200
+  requirement (actual generation, retrieval, logs, resumability) satisfied.
+- [2026-10-21 00:45 UTC] A-LONG COMPLETE (expV6Along_realn_s0, early-stop at
+  81/120 ep, ~2.1 node-h) + val eval: sdis VAL matched-FP R@2/5/10/20% =
+  0.086/0.240/0.341/0.489 vs A(60ep) 0.107/0.190/0.310/0.471 — extra
+  training helps the nano at 5-10% FP (+5.0/+3.1pt), hurts at 2%. A-long is
+  now the binding extra-compute control for the synth arms (single-seed
+  caveat; seeds run later for the winner per prereg). B200 GLM batch
+  filtered: 257/400 accepted (64%; rejects = lit ground plane/purple cast).
+- [2026-10-21 22:15 UTC] RESUMED after a ~23h stall: the previous Claude Code
+  session exited and took its 4 local orchestrators with it (GLM a/b/c, arm
+  B2); the cluster finished the segments already running, then went idle (no
+  v6 jobs from ~23:10Z 10-20). The first 24h window (deadline 10-21 19:50Z)
+  lapsed during the stall. At the user's instruction ("让它生成完"), the window
+  was extended to 10-22 19:50Z in BUDGET_V6.json (window_extensions entry;
+  start unchanged, caps unchanged). The registry's 107.8 node-h estimate is
+  inflated by 4 orphaned reservations that sat "active" for ~23h; actual use
+  is reconciled from kraken history at close. Root-cause fix: orchestrators
+  now run under setsid/nohup (logs/v6/*.log), so a session restart no longer
+  kills them. Relaunched: GLM shards a/b/c (resume from /scratch outputs;
+  1,303/3,480 done -> 2,177 left, ~2.5h on 3 usw2 nodes); arm B2 from seg 2
+  (job v6b2ns2, epoch 9/30 done); local INT8/TFLite export of the arm-A nano.

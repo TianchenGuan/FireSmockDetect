@@ -153,6 +153,11 @@ def main():
                 continue
             _, cx, cy, w, h = map(float, f)
             a = (cx, min(0.99, cy + h / 2))
+            # dfire is a one-off web-image mix with no per-camera geometry:
+            # keep only ground-plausible bases (y>=0.4) in its global pool,
+            # else overlook-style backgrounds get plumes based in the clouds
+            if src == "dfire" and a[1] < 0.4:
+                continue
             anchors_global[src].append(a)
             if src == "pyro_sdis":
                 anchors_site.setdefault(site_of(Path(ip).name), []).append(a)

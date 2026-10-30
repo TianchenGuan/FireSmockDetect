@@ -65,8 +65,62 @@ outputs are used ONLY for this comparison and demo illustration — never
 training. Stability outputs may carry invisible provenance watermarks; they
 are not removed (EULA 50.12.6).
 
-## CORPUS_C/D (arm C/D — GLM-Image) — pending generation
+## CORPUS_C/D (arm C/D — GLM-Image black-bg assets) — SUPERSEDED
 
-Generator: zai-org/GLM-Image (MIT-declared; Apache-2.0 tokenizer), run on
-project GPUs from locally staged weights. Same compositor, same controls.
-(appended when frozen)
+The black-background asset route was paused by prereg A3 after visual QC
+(studio styling, source props, no native alpha). Its accepted pools
+(`C_glm` 1,903 / `C_glm_b200` 257) are preserved as diagnostics and were
+never trained on. Replaced by CORPUS_REP_v1 below.
+
+## CORPUS_REP_v1 (arm Crep — GLM-Image i2i edits of real train backgrounds)
+
+- Pipeline: `reports/v6/repair/SYNTH_QA_REPAIR.md` (prereg A3). GLM-Image
+  i2i conditioned on eligible TRAIN-role author-negative backgrounds
+  (luma≥0.25; dfire restricted to AoF fixed-camera frames after
+  non-wildland web images were found in the pool), prompt bank
+  v6-repair-1c (positive-only wording — GLM renders negated concepts),
+  E01 positives + E02 same-background style-matched controls.
+- 2,104 images = 1,351 positives + 753 controls, from 4,829 generated
+  (acceptance 28%/48% under blind review rule v3; 968 uncertain EXCLUDED
+  from supervision, never auto-negative). 1,891 unique backgrounds;
+  same-site repetition recorded in `SCALE_RENDER_MANIFEST.json`.
+- Labels: MODEL-ASSISTED weak boxes from the blind full-frame review at
+  detector scale (reviewer blinded to class/location; 'uncertain' allowed;
+  2–4% hallucination floor measured on controls). GLM i2i re-renders the
+  whole frame (structural diff spans the image), so boxes come from the
+  blind review alone; spot-check: ~3/12 boxes offset/partial — disclosed.
+- Review spend ledgered (~$26 Haiku 4.5 total for pilot+scale).
+
+## CORPUS_B_v2 revisions (visual QC before training; v1 and v2.0 discarded untrained)
+
+Spot-checks (images reviewed by the coordinating model, recorded here) found
+and fixed, in order: dark-scene additive "glow blocks" (scene-brightness
+floor 0.25→0.06); square plume silhouettes at high density (density
+0.35–0.8, border taper); checkerboard texture from unsmoothed value-noise
+octaves and binary occlusion (per-octave Gaussian smoothing; soft occlusion
+≤0.12); plumes based in cloud decks on overlook-style D-Fire backgrounds
+(D-Fire anchor pool floored at y_base≥0.4); copy-paste crops showing ghost
+rectangles and non-smoke content incl. a flame glow and a white billboard
+(copy-paste source REMOVED — arm B is parametric-only).
+Known remaining limitations: D-Fire's web-scraped backgrounds include
+lookout-webcam frames (HPWREN-style) — background usage follows D-Fire's own
+release, consistent with every iteration since v1; faint-stratum positives
+sit near the human-visibility floor by design.
+
+### CORPUS_B_v2 (final, parametric-only) — model-assisted review, same 300-sample protocol
+
+| stratum | n | smoke seen | plausible | med quality | notes vs v1 |
+|---|---|---|---|---|---|
+| faint positives | 120 | 12% | 47% | 1/5 | no more glow; fainter => less VLM-visible |
+| visible positives | 80 | 33% | 53% | 1/5 | plausibility +9pt; halo/edge flags persist |
+| confounders | 50 | 2% | 96% | 4/5 | quality 1→4 |
+| matched controls | 30 | 0% | 100% | 5/5 | fully clean |
+| plain negatives | 20 | 0% | 100% | 5/5 | fully clean |
+
+Reading: procedural smoke has a realism ceiling (~0.5 plausibility, low
+visibility at faint opacities). That is arm B's intended role as the crude
+control; the generative arms (C/D) are reviewed with the identical rubric so
+the generator-realism axis is measured, not assumed. One D-Fire "none"
+background was observed to contain real smoke-like haze — author-label noise
+shared with the real baseline (same images train arm A), recorded as a
+limitation, not corrected post hoc.

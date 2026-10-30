@@ -1,0 +1,39 @@
+{
+ "bg": "/local/home/tianrgua/cvproject/data/yolo/dfire_smoke/images/train/WEB01758.jpg",
+ "asset": "/local/home/tianrgua/cvproject/data/v6/assets/B/param/pp00945.png",
+ "asset_mode": "luma",
+ "placement": {
+  "x_frac": 0.7002946487987619,
+  "y_frac": 0.5522799655251408,
+  "scale": 0.20435556897013007,
+  "opacity": 0.6493402423656907,
+  "flip": true,
+  "rot_deg": 7.920668004426178,
+  "tint_strength": 0.3347328112765287,
+  "occlude_frac": 0.09572659480500724,
+  "y_mode": "bottom"
+ },
+ "degrade": {
+  "blur_sigma": 0.3209758726022747,
+  "noise_sigma": 0.004204174489848565,
+  "jpeg_q": 93,
+  "target_long": 1280
+ },
+ "boxes_norm": [],
+ "visible": true,
+ "support_px": 48788,
+ "n_plumes": 1,
+ "n_fragments": 1,
+ "contrast": 0.6548854112625122,
+ "out": "/local/home/tianrgua/cvproject/data/v6/synthB2/images/p024945.jpg",
+ "control": null,
+ "label": "synth_smoke",
+ "type": "pos",
+ "family": "param1945",
+ "name": "p024945",
+ "anchor": [
+  0.708984,
+  0.5718745
+ ],
+ "policy": "empirical"
+}

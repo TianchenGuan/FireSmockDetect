@@ -46,7 +46,7 @@ def check_one(png: Path, meta: dict, min_side: int):
     if colored.mean() > 0.01:
         ys = np.nonzero(colored.any(axis=1))[0]
         if ys.min() > 0.68 * h:          # confined to bottom -> crop above
-            cut = max(1, ys.min() - int(0.02 * h))
+            cut = int(max(1, ys.min() - int(0.02 * h)))
             rgb, luma, a = rgb[:cut], luma[:cut], a[:cut]
             sat = sat[:cut]
             h = cut

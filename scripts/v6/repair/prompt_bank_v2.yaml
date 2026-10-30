@@ -1,0 +1,187 @@
+name: Smoke synthesis prompt bank — repair pilot
+version: v6-repair-1
+status: Proposed, untested prompts; not a validated generation recipe.
+basis: 'Visual inspection of the uploaded v6_dataset_samples.zip: 30 images, two per folder. No prompts,
+  masks, boxes, or complete training metrics were included.'
+renderer:
+  instructions: Select a compatible family and a small structured subset of factors. Render {placeholders}.
+    Do not cross all factors blindly. Log original prompt and any expanded prompt.
+  native_negative_prompt_only_if_supported: true
+factors:
+  position:
+  - left of center above the near treeline
+  - right of center on the middle-distance hillside
+  - near the center at the edge of a clearing
+  - in the lower-right portion of the terrain, away from image borders
+  wind_direction:
+  - gently leftward
+  - gently rightward
+  - diagonally across the visible canopy
+  lighting:
+  - ordinary diffuse daylight
+  - late-morning side lighting with usable exposure
+  - overcast daylight with visible terrain detail
+  forest_type:
+  - temperate mixed forest
+  - conifer woodland
+  - dry Mediterranean scrub and woodland
+  - boreal forest with small clearings
+  visibility:
+    clearly_visible: The smoke is localized but readily identifiable in the unannotated full frame. Retain
+      a visibly structured interior rather than a featureless patch.
+    small_discernible: The plume is small relative to the landscape but identifiable at the actual detector
+      input size without a pointer, contrast enhancement, or knowledge of its location.
+    faint_discernible: The plume has low contrast and translucent edges but a coherent interior remains
+      discernible at detector input size. Do not make it effectively invisible.
+initial_positive_visibility_mix_proposal:
+  clearly_visible: 0.5
+  small_discernible: 0.35
+  faint_discernible: 0.15
+negative_prompt_optional: studio smoke photography, incense, incense burner, candle, smoking pipe, nozzle,
+  colored spotlight, saturated purple or magenta stage lighting, glowing smoke, explosive eruption, mushroom-cloud
+  explosion, giant cinematic wildfire, product photography, text, logo, watermark
+notes:
+- The negative prompt is an exclusion list only when the API supports it; use concise natural-language
+  exclusions otherwise.
+- Natural blue-gray smoke is allowed. Do not turn a color heuristic into the smoke label.
+- Size, color, visibility and class intent are requested properties, not actual annotations.
+- Positive/negative class balance is independent of the real/synthetic sampling ratio.
+- Matched controls and positives must have comparable rendering, compression and resizing artifacts.
+- Do not erase existing watermarks from source material. Use eligible sources and preserve required provenance.
+- Editing masks constrain changes; they are not automatically smoke masks.
+- An unlabeled or visibly ambiguous output is not automatically a negative.
+- The alpha-only route is optional, not a fallback that rebrands black RGB backgrounds as transparency.
+- Preserve all train/validation/test roles, including original background and incident lineage.
+pilot:
+  target_images: 300–500, stratified across view, prompt family, class and visibility; count failures
+    too.
+  method: Start with the same 24–48 training backgrounds and several seeds for paired route comparisons.
+    For full-scene generation, use grouped prompt/seed families rather than claiming that separately generated
+    frames are exact pairs.
+  review: Automated semantic and localization review at actual student resolution; store unknown/reject.
+    Export random, median, best, worst, and rejected examples. Do not require user approval of every image.
+  scale_gate: Only accepted, labelable examples enter a frozen ~2,000–5,000 pilot training corpus. Compare
+    with a real-only control using matched optimizer steps. Scale only after real validation shows useful
+    behavior.
+provider_eligibility: Retain the existing exclusion of Bedrock samples recorded in the uploaded README
+  until applicable training-use permission is affirmatively established. Use an already approved local
+  route instead of waiting or bypassing restrictions.
+templates:
+- id: P01_fixed_dark_canopy
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. An elevated forest monitoring camera
+    looks across a pine-covered hillside. A small localized vegetation-smoke plume emerges from behind
+    the trees at {position}. The source is hidden by foliage. The plume has an irregular broad base, uneven
+    expanding wisps, a denser interior and translucent frayed edges. It leans {wind_direction} in the
+    wind. Pale gray smoke contrasts with the dark canopy. {visibility}. {lighting}.
+- id: P02_oblique_drone
+  mode: full_scene
+  class_intent: smoke
+  view: oblique_uav
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. An oblique RGB drone view looks down
+    over mixed woodland and a clearing. At {position}, a localized smoke plume rises from smoldering vegetation
+    partly hidden under the canopy. The plume stays attached visually to that ground region, expands unevenly,
+    and drifts {wind_direction}. Trees provide scale. Most of the landscape remains unobscured. {visibility}.
+    {lighting}.
+- id: P03_sky_background
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. A distant tree-covered ridge lies below
+    a pale sky. A localized muted-gray plume rises just above the ridgeline at {position}, with enough
+    tonal separation to distinguish its irregular interior from the sky. Its diffuse edges widen downwind
+    {wind_direction}; its lower part is hidden behind the ridge. {visibility}. {lighting}.
+- id: P04_canopy_occlusion
+  mode: full_scene
+  class_intent: smoke
+  view: low_oblique_uav
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. A low-oblique monitoring view shows
+    dense forest canopy. At {position}, branches obscure the bottom of a localized smoke plume, while
+    uneven gray wisps are visible rising above and between the trees and spreading {wind_direction}. There
+    is no visible flame. The source occupies only a small part of the scene. {visibility}. {lighting}.
+- id: P05_crosswind_smolder
+  mode: full_scene
+  class_intent: smoke
+  view: fixed_camera
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. A wide view of woodland on gently sloping
+    terrain. At {position}, smoke from a small smoldering patch of vegetation initially rises and then
+    bends {wind_direction}, forming a low asymmetric plume with variable density and diffuse edges. It
+    is visibly connected to one localized source rather than blanketing the entire valley. {visibility}.
+    {lighting}.
+- id: P06_regional_variation
+  mode: full_scene
+  class_intent: smoke
+  view: oblique_uav
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. An RGB drone survey frame of {forest_type},
+    with realistic vegetation texture and terrain. A small patch of vegetation at {position} emits an
+    irregular localized plume of light-gray to naturally blue-gray smoke. The plume expands and drifts
+    {wind_direction}, with a discernible interior and soft edges, without visible flames or large burned
+    areas. {visibility}. {lighting}.
+- id: N01_clean_forest
+  mode: full_scene
+  class_intent: nonsmoke
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. A monitoring-camera view of {forest_type}
+    under {lighting}. Normal trees, terrain, and sky are visible. The air is clear over the canopy; there
+    is no localized emission plume, visible smoke, flame, or fire. Maintain the same ordinary-camera style
+    used for positive examples.
+- id: N02_fog
+  mode: full_scene
+  class_intent: nonsmoke
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. A monitoring-camera view of {forest_type}
+    under {lighting}. Natural diffuse fog lies along a valley and passes behind several groups of trees.
+    The fog is spread across the landscape rather than rising from one burning source. No combustion smoke
+    or visible flames are present. Keep a realistic, non-dramatic appearance.
+- id: N03_road_dust
+  mode: full_scene
+  class_intent: nonsmoke
+  template: An ordinary RGB monitoring-camera frame with realistic exposure, natural outdoor light, neutral
+    white balance, and imperfect consumer-camera detail. Keep a wide environmental view. The goal is smoke-recognition
+    training, not a dramatic or aesthetically stylized photograph. An oblique monitoring view of woodland
+    with an unpaved road. A vehicle traveling along the road raises a localized tan dust trail close to
+    the ground. Trees and sky remain visible. This is road dust, not combustion smoke; no fire or other
+    smoke source is present. {lighting}.
+- id: E01_local_smoke
+  mode: image_edit
+  class_intent: smoke
+  template: Using the supplied TRAINING background, add one localized vegetation-smoke plume within the
+    supplied editing region at {position}. Its base must be visually connected to the terrain or hidden
+    behind the canopy; the plume expands irregularly and drifts {wind_direction}. Preserve the original
+    camera viewpoint, trees, lighting, exposure, and all content outside the edit region. Use light-gray
+    or naturally blue-gray smoke with a discernible interior and translucent irregular edges. {visibility}.
+    Do not add flames or fire-source objects. The requested region is an edit constraint, NOT a ground-truth
+    smoke annotation.
+- id: E02_matched_control
+  mode: image_edit
+  class_intent: nonsmoke
+  template: Using the supplied TRAINING background and the same editing workflow as the positive partner,
+    preserve or reconstruct a smoke-free view of the selected terrain and canopy. Maintain the original
+    perspective, lighting and exposure. No emission plume or flame should be added. Do not globally restyle
+    or enhance the image. The resulting control must still be checked for unintended smoke and edit artifacts.
+- id: A01_opacity_asset
+  mode: asset_optional
+  class_intent: smoke_asset_not_training_image
+  template: A reusable isolated volume of outdoor vegetation smoke, with an irregular broad base, uneven
+    widening and wind-sheared wisps extending {wind_direction}. Natural low-saturation gray and blue-gray
+    tonal variation, diffuse outdoor illumination, and soft translucent edges around a discernible interior.
+    No source object, incense stick, candle, bowl, pipe, nozzle, pedestal, floor plane, colored spotlight,
+    or cast floor shadow. Use this template ONLY on a route that actually provides a native alpha channel
+    or a separately validated opacity matte. Asking for transparency in text does not create an alpha
+    channel.

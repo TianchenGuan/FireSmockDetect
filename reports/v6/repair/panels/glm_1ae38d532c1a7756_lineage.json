@@ -1,0 +1,22 @@
+{
+ "asset": "data/v6/assets/C_glm/png/glm_1ae38d532c1a7756.png",
+ "mode": "luma",
+ "kind": "confounder",
+ "spec_id": "cf08",
+ "seed": 66,
+ "family_id": "glm:cf08:66",
+ "generator": "zai-org/GLM-Image",
+ "review": "automated",
+ "coverage": 0.5375,
+ "max_alpha": 1.0,
+ "crop": [
+  0,
+  0,
+  1024,
+  1024
+ ],
+ "size": [
+  1024,
+  1024
+ ]
+}

@@ -32,7 +32,7 @@ def try_cp(task):
         return None
 
 
-def main(n_cp=1200, n_param=1200, n_conf=600):
+def main(n_cp=0, n_param=2400, n_conf=600):
     rng = random.Random(7)
     imgs = [l.strip() for l in TRAIN_LIST.read_text().splitlines() if l.strip()]
     rng.shuffle(imgs)

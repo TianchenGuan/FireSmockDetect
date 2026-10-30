@@ -1,7 +1,7 @@
-# V6 arm B (synthB) -- generated 2026-10-20T20:32:48.931551+00:00
+# V6 arm B (synthB2) -- generated 2026-10-20T21:53:27.434470+00:00
 # real x1 (38454) + synth x1 (38454) = 76908 per epoch
-path: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthB
-train: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthB/lists/trainB.txt
+path: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthB2
+train: /scratch/scratch/tianrgua-sandbox/smoke/v6data/synthB2/lists/trainB.txt
 val: /mnt/local/smoke_data/lists/pod/sdis_val.txt
 test: /mnt/local/smoke_data/lists/pod/sdis_test.txt
 nc: 1

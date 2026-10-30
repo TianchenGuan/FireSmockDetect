@@ -26,6 +26,12 @@ echo "weights ready: $(du -sh $WROOT/glm-image 2>/dev/null)"
 curl -sf --max-time 120 -o /tmp/worker.py "$URL_WORKER" || exit 95
 curl -sf --max-time 300 -o /tmp/queue.jsonl "$URL_QUEUE" || exit 95
 wc -l /tmp/queue.jsonl
+if [ -n "${URL_BGS:-}" ]; then
+  mkdir -p /tmp/bgs
+  curl -sf --max-time 600 -o /tmp/bgs.tar "$URL_BGS" \
+    && tar -xf /tmp/bgs.tar -C /tmp/bgs || exit 95
+  echo "bgs staged: $(ls /tmp/bgs | wc -l)"
+fi
 
 NOW=$(date +%s)
 BUDGET=$(( ${URL_EXPIRY_EPOCH:-$((NOW+2700))} - NOW - 420 ))
@@ -40,6 +46,7 @@ N=${NSHARDS:-8}
 for i in $(seq 0 $((N-1))); do
   CUDA_VISIBLE_DEVICES=$i SHARD=$i NSHARDS=$N QUEUE=/tmp/queue.jsonl \
   OUTDIR=$OUT WEIGHTS=$WROOT/glm-image IMGSZ=${IMGSZ:-1024} STEPS=${STEPS:-} \
+  BGDIR=/tmp/bgs \
   DEADLINE_EPOCH=$DEADLINE python /tmp/worker.py > /tmp/w$i.log 2>&1 &
 done
 wait
